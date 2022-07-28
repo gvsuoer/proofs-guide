@@ -1,1 +1,1 @@
-# proofs-guide
+# Constructing and Writing Mathematical Proofs: A Guide for Mathematics Students
