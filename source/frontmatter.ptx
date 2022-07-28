@@ -6,41 +6,37 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Me</personname>
-      <department>My department</department>
-      <institution>My school</institution>
+      <personname>Ted Sundstrom, Professor Emeritus</personname>
+      <department>Department of Mathematics</department>
+      <institution>Grand Valley State University</institution>
     </author>
-    <date><today/></date>
+    <date>August 4, 2020</date>
   </titlepage>
 
   <colophon>
 
     <website>
-      <name><c>my-website.org</c></name>
-      <address>http://pretextbook.org</address>
+      <name><c>tedsundstrom.com</c></name>
+      <address>http://www.tedsundstrom.com</address>
     </website>
 
     <copyright>
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2020<ndash/>2022</year>
-      <holder>Me</holder>
-      <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
+      <year>2020</year>
+      <holder>Ted Sundstrom</holder>
+      <minilicense><image source="by-nc-sa" /></minilicense>
       <shortlicense>
-        <!-- <image source="../images/by-sa.png" width="15%"/>  -->
-        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
-        To view a copy of this license, visit
-        <url 
-          href="http://creativecommons.org/licenses/by-sa/4.0/"
-          visual="creativecommons.org/licenses/by-sa/4.0">
-          CreativeCommons.org</url>
+        This work is licensed under the Creative Commons Attribution-NonCommercialShareAlike 3.0 Unported License. The graphic
+        <image source="../images/by-nc-sa.png" width="15%"/> 
+        that appears throughout the text shows that the work is licensed with the Creative Commons, that the work may be used for free by any party so long as attribution is given to the author(s), that the work and its derivatives are used in the spirit of “share and share alike,” and that no party other than the author(s) may sell this work or any of its derivatives for profit. Full details may be found by visiting <url href="http://creativecommons.org/licenses/by-nc-sa/3.0/" visual="creativecommons.org/licenses/by-nc-sa/3.0/">The Creative Commons Website</url> or sending a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
       </shortlicense>
     </copyright>
 
   </colophon>
 
-  <dedication>
+  <!-- <dedication>
     <p>
       For ...
     </p>
@@ -50,21 +46,35 @@
     <p>
       I would like to thank...
     </p>
-  </acknowledgement>
+  </acknowledgement> -->
 
-  <preface xml:id="meta_frontmatter-preface">
-    <!-- You should be a little careful about what you put here -->
-    <!-- Avoid elements that should have a number, for example  -->
-    <p>
-      About this book:
-    </p>
-  </preface>
 
   <!-- You can have more than one preface. -->
   <preface>
-    <title>Not just that..</title>
+    <title>Note to Students</title>
     <p>
-      I still have more to say!
+      This little book is not intended to be a textbook for a course dealing with an introduction to constructing and writing mathematical proofs. It is intended to be a reference book for students who need to construct and write proofs in their upper division mathematics courses. So it is assumed that students who use this as a reference have already taken an “introduction to proofs” course.
+    </p>
+    <p>
+      With the exception of <xref ref="C_preliminaries"/>, each chapter in the book has a description of a proof technique along with some justification as to why it is a valid proof method. There are then one or two completed proofs written according to the writing guidelines for mathematical proofs in <xref ref="app_guidelines"/>. The intent is to illustrate a well-written proof for that particular proof method. Each chapter then ends with three to five practice problems, most of which deal with mathematical proofs. Completed proofs (or solutions) for the practice problems are contained in <xref ref="app_solutions"/>. So students can check their work or see other examples of well-written proofs. <xref ref="C_preliminaries"/> contains most of the definitions used in the first six chapters of this book and a short summary of some logic that is pertinent to constructing mathematical proofs.
+    </p>
+    <p>
+      The proofs in this book primarily use the concepts of even and odd integers, the concept of one integer dividing another, and the concept of congruence in the integers. Most of this book is based on material in chapter 3 of the book <pubtitle>Mathematical Reasoning: Writing and Proof, Version 3</pubtitle> by Ted Sundstrom, which is a textbook for an “introduction to proofs” course. It is free to download as a pdf file at
+      <blockquote>
+        <url href="https://scholarworks.gvsu.edu/books/24/" visual='scholarworks.gvsu.edu/books/24/'>https://scholarworks.gvsu.edu/books/24/</url>
+      </blockquote>
+    </p>
+    <p>
+      A printed version of this book is also available on amazon.com for $22 at
+      <blockquote>
+        <url href="http://gvsu.edu/s/1qt" visual='gvsu.edu/s/1qt'>http://gvsu.edu/s/1qt</url>
+      </blockquote>
+    </p>
+    <p>
+      Finally, there is a website for <pubtitle>Mathematical Reasoning: Writing and Proof, Version 3</pubtitle>. Please visit
+      <blockquote>
+        <url href="https://www.tedsundstrom.com/" visual='tedsundstrom.com/'>https://www.tedsundstrom.com/</url>
+      </blockquote>
     </p>
   </preface>
 
