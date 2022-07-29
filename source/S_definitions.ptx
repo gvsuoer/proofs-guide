@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="S_definitions">
+  <title>Definitions</title>
+
+  <introduction>
+    <p>
+      Definitions play a very important role in mathematics. A direct proof of a proposition in mathematics is often a demonstration that the proposition follows logically from certain definitions and previously proven propositions. A <term>definition</term> is an agreement that a particular word or phrase will stand for some object, property, or other concept that we expect to refer to often. In many elementary proofs, the answer to the question, <q>How do we prove a certain proposition?</q>, is often answered by means of a definition. For mathematical proofs, we need very precise and carefully worded definitions.
+    </p>
+  </introduction>
+
+  <subsection xml:id="SS_def_int_real">
+    <title>Definitions Involving the Integers and the Real Numbers</title>
+
+    <assemblage>
+      <title>Definition</title>
+      <p>
+        An integer <m>a</m> is an <term>even integer</term> provided that there exists an integer <m>n</m> such that <m>a = 2n</m>. An integer a is an <term>odd integer</term> provided there exists an integer <m>n</m> such that <m>a = 2n + 1</m>.
+      </p>
+    </assemblage>
+
+    <assemblage>
+      <title>Definition</title>
+      <p>
+        A nonzero integer <m>m</m> <term>divides</term> an integer <m>n</m> provided that there is an integer <m>q</m> such that <m>n = m \cdot q</m>. We also say that <m>m</m> is a <term>divisor</term> of <m>n</m>, <m>m</m> is a <term>factor</term> of <m>n</m>, and <m>n</m> is a <term>multiple</term> of <m>m</m>. The integer 0 is not a divisor of any integer. If <m>a</m> and <m>b</m> are integers and <m>a \ne 0</m>, we frequently use the notation <m>a \mid b</m> as a shorthand for “a divides b.”
+      </p>
+    </assemblage>
+
+    <assemblage>
+      <title>Definition</title>
+      <p>
+        A natural number <m>p</m> is a <term>prime number</term> provided that it is greater than 1 and the only natural numbers that are factors of <m>p</m> are 1 and <m>p</m>. A natural number other than 1 that is not a prime number is a <term>composite number</term>. The number 1 is neither prime nor composite.
+      </p>
+    </assemblage>
+
+    <assemblage>
+      <title>Definition</title>
+      <p>
+        Let <m>n \in N</m>. If <m>a</m> and <m>b</m> are integers, then we say that <term><m>a</m> is congruent to <m>b</m> modulo <m>n</m></term> provided that <m>n</m> divides <m>a - b</m>. A standard notation for this is <m>\modulo{a}{b}{n}</m>. This is read as <q><m>a</m> is congruent to <m>b</m> modulo <m>n</m></q> or <q><m>a</m> is congruent to <m>b</m> mod <m>n</m></q>.
+      </p>
+    </assemblage>
+
+    <assemblage>
+      <title>Definition</title>
+      <p>
+        For <m>x \in R</m>, we define <m>\abs{x}</m>, called the <term>absolute value of <m>x</m></term>, by
+        <me>
+          \abs{x} = \begin{cases} x, \amp \text{if } x \geq 0 \\ -x, \amp \text{if } x \lt 0 \end{cases}
+        </me>.
+        
+      </p>
+    </assemblage>
+    
+  </subsection>
+
+  <subsection xml:id="SS_def_sets">
+    <title>Definitions Involving Sets</title>
+    
+    <assemblage>
+     <title>Definition</title>
+     <p>
+        A set <m>T</m> that is a subset of <m>\Z</m> is an <term>inductive set</term> provided that for each integer <m>k</m>, if <m>k \in T</m> , then <m>k + 1 \in T</m>.
+     </p>
+    </assemblage>
+
+    <assemblage>
+     <title>Definition</title>
+     <p>
+        Two sets, <m>A</m> and <m>B</m>, are <term>equal</term> when they have precisely the same elements. In this case, we write <m>A = B</m> . When the sets <m>A</m> and <m>B</m> are not equal, we write <m>A \ne B</m>.
+     </p>
+     <p>
+      The set <m>A</m> is a <term>subset</term> of a set <m>B</m> provided that each element of <m>A</m> is an element of <m>B</m>. In this case, we write <m>A \subseteq B</m> and also say that <m>A</m> is contained in <m>B</m>. When <m>A</m> is not a subset of <m>B</m>, we write <m>A \not \subseteq B</m>.
+     </p>
+    </assemblage>
+
+    <assemblage>
+     <title>Definition</title>
+     <p>
+        Let <m>A</m> and <m>B</m> be two sets contained in some universal set <m>U</m>. The set <m>A</m> is a <term>proper subset</term> of <m>B</m> provided that <m>A \subseteq B</m> and <m>A \ne B</m>. When <m>A</m> is a proper subset of <m>B</m>, we write <m>A \subset B</m>.
+     </p>
+    </assemblage>
+
+    <assemblage>
+     <title>Definition</title>
+     <p>
+        Let <m>A</m> and <m>B</m> be subsets of some universal set <m>U</m>. The <term>intersection</term> of <m>A</m> and <m>B</m>, written <m>A \cap B</m> and read <q><m>A</m> intersect <m>B</m>,</q> is the set of all elements that are in both <m>A</m> and <m>B</m>. That is,
+        <me>
+          A \cap B = \{ x \in U | x \in A \text{ and } x \in B \}
+        </me>.
+     </p>
+     <p>
+      The <term>union</term> of <m>A</m> and <m>B</m>, written <m>A \cup B</m> and read <q><m>A</m> union <m>B</m>,</q> is the set of all elements that are in <m>A</m> or in <m>B</m>. That is,
+      <me>
+        A \cup B = \{ x \in U | x \in A \text{ or } x \in B \}:
+      </me>.
+     </p>
+    </assemblage>
+
+    <assemblage>
+     <title>Definition</title>
+     <p>
+        Let <m>A</m> and <m>B</m> be subsets of some universal set <m>U</m>. The <term>set difference</term> of <m>A</m> and <m>B</m>, or <term>relative complement</term> of <m>B</m> with respect to <m>A</m>, written <m>A - B</m> and read <q><m>A</m> minus <m>B</m></q> or <q>the complement of <m>B</m> with respect to <m>A</m>,</q> is the set of all elements in <m>A</m> that are not in <m>B</m>. That is,
+        <me>
+          A - B = \{ x \in U | x \in A \text{ and } x \not \in B \}
+        </me>.
+     </p>
+     <p>
+      The <term>complement</term> of the set <m>A</m>, written <m>A^c</m> and read <q>the complement of <m>A</m>,</q> is the set of all elements of <m>U</m> that are not in <m>A</m>. That is,
+      <me>
+        A^c = \{ x \in U | x \not \in A \}
+      </me>.
+     </p>
+    </assemblage>
+
+  </subsection>
+  
+</section>
