@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="S_prooflogic">
+  <title>Useful Logic for Constructing Proofs</title>
+
+  <p>
+    A <term>statement</term> is a declarative sentence that is either true or false but not both. A <term>compound statement</term> is a statement that contains one or more operators. Because some operators are used so frequently in logic and mathematics, we give them names and use special symbols to represent them.
+
+    <ul>
+      <li>
+        <p>
+          The <term>conjunction</term> of the statements <m>P</m> and <m>Q</m> is the statement <q><m>P</m> <em>and</em> <m>Q</m></q> and its denoted by <m>P \wedge Q</m> . The statement <m>P \wedge Q</m> is true only when both <m>P</m> and <m>Q</m> are true only when both <m>P</m> and <m>Q</m> are true.
+        </p>
+      </li>
+      <li>
+       <p>
+         The disjunction of the statements <m>P</m> and <m>Q</m> is the statement <q><m>P</m> <em>or</em> <m>Q</m></q> and its denoted by <m>P \vee Q</m>. The statement <m>P \vee Q</m> is true only when at least one of <m>P</m> or <m>Q</m> is true.
+       </p>
+      </li>
+      <li>
+       <p>
+          The <term>negation (of a statement)</term> of the statement <m>P</m> is the statement <q><em>not</em> <m>P</m></q> and is denoted by <m>\neg P</m> . The negation of <m>P</m> is true only when <m>P</m> is false, and <m>\neg P</m> is false only when <m>P</m> is true.
+       </p>
+      </li>
+      <li>
+        <p>
+          The <term>implication</term> or <term>conditional</term> is the statement <q><em>If</em> <m>P</m> <em>then</em> <m>Q</m></q> and is denoted by <m>P \to Q</m>. The statement <m>P \to Q</m> is often read as <q><m>P</m> implies <m>Q</m></q>. The statement <m>P to Q</m> is false only when <m>P</m> is true and <m>Q</m> is false.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <term>biconditional statement</term> is the statement <q><m>P</m> <em>if and only if</em> <m>Q</m></q> and is denoted by <m>P \leftrightarrow Q</m>. The statement <m>P \leftrightarrow Q</m> is true only when both <m>P</m> and <m>Q</m> have the same truth values.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+      Two expressions <m>X</m> and <m>Y</m> are <term>logically equivalent</term> provided that they have the same truth value for all possible combinations of truth values for all variables appearing in the two expressions. In this case, we write <m>X \equiv Y</m> and say that <m>X</m> and <m>Y</m> are logically equivalent.
+    </p>
+  </assemblage>
+
+  <p>
+    <xref ref="thm-log-equiv"/> states some of the most frequently used logical equivalencies used when writing mathematical proofs.
+  </p>
+
+  <theorem xml:id="thm-log-equiv">
+    <statement>
+      <p>
+        For statements <m>P</m>, <m>Q</m>, and <m>R</m>,
+        <dl>
+          <li>
+            <title>De Morgan's Laws</title>
+            <p>
+              <m>\neg \left( P \wedge Q \right) \equiv \neg P \vee \neg Q</m>
+            </p>
+            <p>
+              <m>\neg \left( P \vee Q \right) \equiv \neg P \wedge \neg Q</m>
+            </p>
+          </li>
+          <li>
+            <title>Conditional Statements</title>
+            <p>
+              <m>P \to Q \equiv \neg Q \to \neg P \text{ (contrapositive)}</m>
+            </p>
+            <p>
+              <m>P \to Q \equiv \neg P \vee Q</m>
+            </p>
+            <p>
+              <m>\neg \left( P \to Q \right) \equiv P \wedge \not Q</m>
+            </p>
+          </li>
+          <li>
+            <title>Biconditional Statement</title>
+            <p>
+              <m>\left( P \leftrightarrow Q \right) \equiv \left( P \to Q \right) \wedge \left( Q \to P \right)</m>
+            </p>
+          </li>
+          <li>
+            <title>Double Negation</title>
+            <p>
+              <m>\neg \left( \neg P \right) \equiv P</m>
+            </p>
+          </li>
+          <li>
+            <title>Distributive Laws</title>
+            <p>
+              <m>P \vee \left( Q \wedge R \right) \equiv \left( P \vee Q \right) \wedge \left( P \vee R \right)</m>
+            </p>
+            <p>
+              <m>P \wedge \left( Q \vee R \right) \equiv \left( P \wedge Q \right) \vee \left( P \wedge R \right)</m>
+            </p>
+          </li>
+          <li>
+            <title>Conditionals with Disjunctions</title>
+            <p>
+              <m>P \to \left( Q \vee R \right) \equiv \left( P \vee \neg Q \right) \to R</m>
+            </p>
+            <p>
+              <m>\left( P \wedge \neg Q \right) \to R \equiv \left( P \to R \right) \wedge \left( Q \to R \right)</m>
+            </p>
+          </li>
+        </dl>
+      </p>
+    </statement>
+  </theorem>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+       The phrase <q>for every</q> (or its equivalents) is called a <term>universal quantifier</term>. The phrase <q>there exists</q> (or its equivalents) is called an <term>existential quantifier</term>. The symbol <m>\forall</m> is used to denote a universal quantifier, and the symbol <m>\exists</m> is used to denote an existential quantifier.
+    </p>
+  </assemblage>
+
+  <theorem xml:id="thm-neg-quant-stt">
+    <statement>
+      <p>
+        For any open sentence <m>P (x)</m>,
+        <md>
+          <mrow>\neg \left( \forall x \in U \right) [P(x)] \amp \equiv \left( \exists x \in U \right) [\neg P(x)], \text{ and }</mrow>
+          <mrow>\neg \left( \exists x \in U \right) [P(x)] \amp \equiv \left( \forall x \in U \right) [\neg P(x)]</mrow>
+        </md>.
+        
+      </p>
+    </statement>
+  </theorem>
+  
+  
+  
+</section>
