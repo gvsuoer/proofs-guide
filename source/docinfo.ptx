@@ -19,6 +19,8 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
 </macros>
 
 <!-- If you put any latex-image elements you can include preambles  -->

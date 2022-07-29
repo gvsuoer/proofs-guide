@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C_preliminaries" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Preliminaries</title>
+  
+  <introduction>
+    <p>
+      This chapter is meant primarily for review and to clearly state the definitions that will be used in proofs throughout the text. For those who are familiar with this material, it is not necessary to read this chapter. It is included primarily for reference for the discussion of proofs in the other chapters.
+    </p>
+  </introduction>
+
+  <xi:include href="S_definitions.ptx" />
+
+</chapter>
