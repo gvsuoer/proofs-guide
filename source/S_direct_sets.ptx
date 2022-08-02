@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_direct_sets">
+  <title>A Direct Proof Involving Sets</title>
+
+  <p>
+    One of the most basic types of proofs involving sets is to prove that one set is a subset of another set. If <m>S</m> and <m>T</m> are both subsets of some univesal set <m>U</m>, to prove that <m>S</m> is a subset of <m>T</m>, we need to prove that
+    <blockquote>
+      For each element in <m>U</m>, if <m>x \in S</m>, then <m>x \in T</m>.
+    </blockquote>
+    When we have to prove something that involves a universal quantifier, we frequently use a method that can be called the <term>choose-an-element method</term>. The key is that we have to prove something about all elements in <m>\Z</m>. We can then add something to the forward process by choosing an arbitrary element from the set <m>S</m>. This does not mean that we can choose a specific element of <m>S</m>. Rather, we must give the arbitrary element a name and use only the properties it has by being a member of the set <m>S</m>.
+  </p>
+  <p>
+    The truth of the next proposition may be clear, but it is included to illustrate the process of proving one set is a subset of another set. In this proposition, the set <m>S</m> is the set of all integers that are a multiple of 6. So when we <q>choose</q> an element from <m>S</m>, we are not selecting a specific element in <m>S</m> (such as 12 or 24), but rather we are selecting an arbitrary element of <m>S</m> and so the only thing we can assume is that the element is a multiple of 6.
+  </p>
+
+  <proposition xml:id="prop-subset">
+    <statement>
+      <p>
+        Let <m>S</m> be the set of all integers that are multiples of 6, and let <m>T</m> be the set of all even integers. Then <m>S</m> is a subset of <m>T</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        Let <m>S</m> be the set of all integers that are multiples of 6, and let <m>T</m> be the set of all even integers. We will show that <m>S</m> is a subset of <m>T</m> by showing that if an integer <m>x</m> is an element of <m>S</m>, then it is also an element of <m>T</m>.
+      </p>
+      <p>
+        Let <m>x \in S</m>. (Note: The use of the word <q>let</q> is often an indication that the we are choosing an arbitrary element.) This means that <m>x</m> is a multiple of 6. Therefore, there exists an integer <m>m</m> such that
+        <me>
+          x = 6m
+        </me>
+        Since <m>6 = 2 \cdot 3</m>, this equation can be written in the form
+        <me>
+          x = 2 (3m)
+        </me>
+        By closure properties of the integers, <m>3m</m> is an integer. Hence, this last equation proves that <m>x</m> must be even. Therefore, we have shown that if x is an element of <m>S</m>, then <m>x</m> is an element of <m>T</m> , and hence that <m>S \subseteq T</m> .
+      </p>
+    </proof>
+  </proposition>
+  
+</section>

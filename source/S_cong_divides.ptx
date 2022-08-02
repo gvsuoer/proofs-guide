@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_cong_divides">
+  <title>Using the Definitions of Congruence and Divides</title>
+  
+  <p>
+    We will consider the following proposition and try to determine if it is true or false.
+  </p>
+
+  <proposition xml:id="prop-mod8">
+    <statement>
+      <p>
+        For all integers <m>a</m> and <m>b</m>, if <m>\modulo{a}{5}{8}</m> and <m>\modulo{b}{6}{8}</m>, then <m>\modulo{(a + b)}{3}{8}</m>.
+      </p>
+    </statement>
+  </proposition>
+
+  <p>
+    Before we try to prove a proposition, it is a good idea to try some examples for which the hypothesis is true and then determine whether or not the conclusion is true for these examples. The idea is to convince ourselves that this proposition at least appears to be true. On the other hand, if we find an example where the hypothesis is true and the conclusion is false, then we have found a <term>counterexample</term> for the proposition and we would have prove the proposition to be false. The following table summarizes four examples that suggest this proposition is true.
+
+    <tabular halign="center" top='medium' left='medium'>
+      <row bottom='medium' header='yes'>
+        <cell right='medium'><m>a</m></cell>
+        <cell right='medium'><m>b</m></cell>
+        <cell right='medium'><m>a + b</m></cell>
+        <cell right='medium'>Is <m>\modulo{a + b}{2}{8}</m>?</cell>
+      </row>
+      <row bottom='medium'>
+        <cell right='medium'>5</cell>
+        <cell right='medium'>6</cell>
+        <cell right='medium'>11</cell>
+        <cell right='medium'>Yes, since <m>\modulo{11}{3}{8}</m></cell>
+      </row>
+      <row bottom='medium'>
+        <cell right='medium'>13</cell>
+        <cell right='medium'>22</cell>
+        <cell right='medium'>35</cell>
+        <cell right='medium'>Yes, since <m>\modulo{35}{3}{8}</m></cell>
+      </row>
+      <row bottom='medium'>
+        <cell right='medium'><m>-3</m></cell>
+        <cell right='medium'>14</cell>
+        <cell right='medium'>11</cell>
+        <cell right='medium'>Yes, since <m>\modulo{11}{3}{8}</m></cell>
+      </row>
+      <row bottom='medium'>
+        <cell right='medium'><m>-11</m></cell>
+        <cell right='medium'><m>-2</m></cell>
+        <cell right='medium'><m>-13</m></cell>
+        <cell right='medium'>Yes, since <m>\modulo{-13}{3}{8}</m></cell>
+      </row>
+    </tabular>
+  </p>
+
+  <p>
+    We will not attempt to construct a proof of this proposition. We will start with the backwards process. Please keep in mind that it is a good idea to write all of this down on paper. We should not try to construct a proof in our heads. Writing h
+  </p>
+
+  <p>
+    So we first know that the goal is to prove that <m>\modulo{(a + b)}{3}{8}</m>. So a <q>backwards question</q> is, <q>How do we prove <m>\modulo{(a + b)}{3}{8}</m>?</q> We may be able to answer this question in different ways depending on whether or not we have some previously proven results, but we can always use the definition. So an answer to this question is, <q>We can prove that 8 divides <m>(a + b) - 3</m>.</q> We now ask, <q>How can we prove that 8 divides <m>(a + b) - 3</m>?</q> Again, we can use the definition and answer that we can prove that there exists an integer <m>k</m> such that <m>(a + b) - 3 = 8k</m>. So here is what we should have written down.
+
+    <ul>
+      <li>
+        <p>
+          <m>Q</m>: <m>\modulo{(a + b)}{3}{8}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>Q1</m>: 8 divides <m>(a + b) - 3</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>Q2</m>: There exists and integer <m>k</m> such that <m>(a + b) - 3 = 8k</m>
+        </p>
+      </li>
+    </ul>
+
+    The idea is that if we can prove that <m>Q2</m> is true, then we can conclude that <m>Q1</m> is true, and then we can conclude that <m>Q</m> is true. <m>Q2</m> is a good place to stop the backwards process since it involves proving that something exists and we have an equation with which to work. So we start the forwards process. We start by writing down the assumptions stated in the hypothesis of the proposition and then make conclusions based on these assumptions. While doing this, we look at the items in the backward process and try to find ways to connect the conclusions in the forward process to the backward process. The forward process can be summarized as
+
+    <ul>
+      <li>
+        <p>
+          <m>P</m>: <m>a</m> and <m>b</m> are integers and <m>\modulo{a}{5}{8}</m> and <m>\modulo{b}{6}{8}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>P1</m>: 8 divides <m>a - 5</m> and 8 divides <m>b - 6</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>P2</m>: There exists and integer <m>m</m> such that <m>a - 5 = 8m</m> and there exists and integer <m>n</m> such that <m>b - 6 = 8n</m>
+        </p>
+      </li>
+    </ul>
+
+    It now seems that there is a way to connect the forward part (<m>P2</m>) to the backward part <m>(Q2)</m> using the existence of <m>m</m> and <m>n</m> (which have been proven to exist) and the equations in <m>P2</m> and <m>Q2</m>.
+  </p>
+
+  <p>
+    Solving the two equations in <m>P2</m> for <m>a</m> and <m>b</m>, we obtain <m>a = 8m + 5</m> and <m>b = 8n + 6</m>. We can now use these in <m>Q2</m>.
+  </p>
+
+  <paragraphs>
+    <title>Important Notes</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            We used the letter <m>k</m> in step <m>Q2</m> and so we could not use that again in the forward process since there is no way of guaranteeing that the same integer produces the equations for the equations in <m>Q2</m> and <m>P2</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            In the proof, we cannot use the integer represent by <m>k</m> in <m>Q2</m> since we have not proven that such an integer exists. The goal is to prove that such an integer exists.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+
+  <p>
+    So now we can proceed as followings:
+    <md>
+      <mrow>(a + b) - 3 \amp = (8m + 5) + (8n + 6) - 3</mrow>
+      <mrow> \amp = 8m + 8n + 8</mrow>
+      <mrow> \amp = 8 (m + n + 3)</mrow>
+    </md>
+
+
+    Since the integers are closed under addition, we conclude that <m>m + n + 3</m> is an integer and so the last equation implies that 8 divides <m>(a + b) - 3</m>. We can now write a proof. The following proof is written according to the writing guidelines in <xref ref="app_guidelines"/>.
+  </p>
+
+  <proposition xml:id="prop-mod8-repeated">
+    <statement>
+      <p>
+        For all integers <m>a</m> and <m>b</m>, if <m>\modulo{a}{5}{8}</m> and <m>\modulo{b}{6}{8}</m>, then <m>\modulo{(a + b)}{3}{8}</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We assume that <m>a</m> and <m>b</m> are integers and that <m>\modulo{a}{5}{8}</m> and <m>\modulo{b}{6}{8}</m>. We will prove that <m>\modulo{(a + b)}{3}{8}</m>. From the assumptions, we conclude that
+        <me>
+          8 \text{ divides } (a - 5) \text{ and } 8 \text{ divides } (b - 6)
+        </me>
+        So there exist integers <m>m</m> and <m>n</m> such that
+        <me>
+          a - 5 = 8m \text{ and } b - 6 = 8n
+        </me>
+        
+        Solving these equations for <m>a</m> and <m>b</m>, we obtain <m>a = 8m + 5</m> and <m>b = 8n + 6</m>. We can now substitute for <m>a</m> and <m>b</m> in the expression <m>(a + b) - 3</m>. This gives
+        <md>
+          <mrow>(a + b) - 3 \amp = (8m + 5) + (8n + 6) - 3</mrow>
+          <mrow> \amp = 8m + 8n + 8</mrow>
+          <mrow> \amp = 8 (m + n + 3)</mrow>
+        </md>
+        Since the integers are closed under addition, we conclude that <m>(m + n + 3)</m> is an integer and so the last equation implies that 8 divides <m>(a + b) - 3</m>. So by the definition of congruece, we can conclude that <m>\modulo{(a + b)}{3}{8}</m>. This proves that for all integers <m>a</m> and <m>b</m>, if <m>\modulo{(a)}{5}{8}</m> and <m>\modulo{(b)}{6}{8}</m>, then <m>\modulo{(a + b)}{3}{8}</m>
+      </p>
+    </proof>
+  </proposition>
+
+  <paragraphs>
+    <title>Note</title>
+    <p>
+      This shows a typical way to construct and write a direct proof of a proposition or theorem. We will not be going into this much detail on the construction process in all of the results proved in this book. In fact, most textbooks do not do this. What they most often show is only the final product as shown in the preceding proof. Do not be fooled that this is the way that proofs are constructed. Constructing a proof often requires trial and error and because of this, it is always a good idea to write down what is being assumed and what it is we are trying to prove. Then be willing to work backwards for what it is to be proved and works forwards from the assumptions. The hard part is often connecting the forward process to the backward process. This becomes extremely difficult if we do not write things down and try to work only in our heads.
+    </p>
+  </paragraphs>
+
+  <p>
+    We will now consider the following proposition.
+  </p>
+
+  <proposition xml:id="prop-7-divides">
+    <statement>
+      <p>
+        For each integer <m>n</m>, if 7 divides <m>( n^2 - 4 )</m>, then 7 divides <m>( n - 2 )</m>.
+      </p>
+    </statement>
+  </proposition>
+
+  <p>
+    If we think about starting a a proof, we would let <m>n</m> be an integer, assume that 7 divides <m>( n^2 - 4 )</m> and from this assumption, try to prove that 7 divides <m>( n - 2 )</m>. That is, we would assume that there exists an integer <m>k</m> such that <m>n^2 - 4 = 7k</m> and try to prove that there exists an integer <m>m</m> such that <m>n - 2 = 7m</m>. From the assumption, we can using factoring and conclude that
+    <me>
+      ( n - 2 )(n + 2 ) = 7k
+    </me>
+    There does not seem to be a direct way to prove that there is an integer <m>m</m> such that <m>n - 2 = 7m</m>. So we start looking for examples of integers <m>n</m> such that 7 divides <m>( n^2 - 4 )</m> and see if 7 divides <m>( n - 2 )</m> for these examples. After trying a few examples, we find that for <m>n = 0</m> and <m>n = 5</m>, 7 divides <m>( n^2 - 4 )</m> . (There are many other such values for <m>n</m>.) For <m>n = 5</m>, we see that
+    <me>
+      n^2 - 4 = 21 = 7 \cdot 3 \text{ and } n - 2 = 3
+    </me>
+    However, 7 does not divides 3. This shows that for <m>n = 5</m>, the hypothesis of <xref ref="prop-7-divides"/> is true and the conclusion is false. This is a counterexample for the proposition and proves that <xref ref="prop-7-divides"/> is false.
+  </p>
+
+  <paragraphs>
+    <title>Note</title>
+    <p>
+      This is the standard way to prove a conditional statement is false. Find an example (called a counterexample) in which the hypothesis is true and the conclusion is false. Sometimes, even though a proposition is false, we can modify the statement of the proposition and create a new true proposition. We can do this for <xref ref="prop-7-divides"/> once we have studied more number theory. There is a theorem from number theory that states:
+      <blockquote>
+        For each prime number <m>p</m> and all integers <m>a</m> and <m>b</m>, if <m>p</m> divides <m>ab</m>, then <m>p</m> divides <m>a</m> or <m>p</m> divides <m>b</m>.
+      </blockquote>
+      
+      This result is known as Euclid's Lemma. Using this result, when we get to the part where we conclude that <m>( n - 2)( n + 2) = 7k</m>, we can conclude that 7 divides <m>(n - 2)(n + 2)</m> and hence, 7 divides <m>n - 2/</m> or 7 divides <m>(n + 2)/</m>. So we would have the following true proposition.
+    </p>
+  </paragraphs>
+
+  <assemblage>
+    <title>Proposition</title>
+    <p>
+      For each integer <m>n</m>, if 7 divides <m>(n^2 - 4 )</m> , then 7 divides <m>(n - 2)</m> or 7 divides <m>( n + 2 )</m>.
+    </p>
+  </assemblage>
+
+</section>
