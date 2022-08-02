@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_other_exer">
+  <title>Practice Problems for <xref ref="C_othermethods"/></title>
+
+  <exercises>
+    <title></title>
+    
+    <exercise>
+      <statement>
+        <p>
+          Is the following proposition true or false?
+          <blockquote>
+            For all integers <m>a</m> and <m>b</m>, if <m>ab</m> is even, then <m>a</m> is even or <m>b</m> is even.
+          </blockquote>
+          Justify your conclusion by writing a proof if the proposition is true or by providing a counterexample if it is false.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          Are the following statements true or false? Justify your conclusion.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            For each <m>a \in \Z</m>, if <m>\modulo{a}{2}{5}</m>, then <m>\modulo{a^2}{4}{5}</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            For each <m>a \in \Z</m>, if <m>\modulo{a^2}{4}{5}</m>, then <m>\modulo{a}{2}{5}</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            For each <m>a \in \Z</m>, <m>\modulo{a}{2}{5}</m> if and only if <m>\modulo{a^2}{4}{5}</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          A real number x is defined to be a <term>rational number</term> provided
+          <blockquote>
+            there exist integers <m>m</m> and <m>n</m> with <m>n \ne 0</m> such that <m>x = \frac{m}{n}</m>.
+          </blockquote>
+          A real number that is not a rational number is called an <term>irrational number</term>.
+        </p>
+        <p>
+          It is known that if <m>x</m> is a positive rational number, then there exist positive integers <m>m</m> and <m>n</m> with <m>n ¤\ne 0</m> such that <m>x = \frac{m}{n}</m>.
+        </p>
+        <p>
+          Is the following proposition true or false? Explain.
+          <blockquote>
+            Proposition. For each positive real number <m>x</m>, if <m>x</m> is irrational, then <m>\sqrt{x}</m> is irrational.
+          </blockquote>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises>
+  
+</section>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_contrapositive">
+  <title>Using the Contrapositive</title>
+  
+  <p>
+    One of the most useful logical equivalencies to prove a conditional statement is that a conditional statement <m>P \to Q</m> is logically equivalent to its contrapositive, <m>\neg Q \to \neg P</m>. This means that if we prove the contrapositive of the conditional statement, then we have proven the conditional statement. The following are some important points to remember.
+    <ul>
+      <li>
+        <p>
+          A conditional statement is logically equivalent to its contrapositive.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use a direct proof to prove that <m>\neg Q \to \neg P</m> is true.
+        </p>
+      </li>
+      <li>
+        <p>
+          Caution: One difficulty with this type of proof is in the formation of correct negations. (We need to be very careful doing this.)
+        </p>
+      </li>
+      <li>
+        <p>
+          We might consider using a proof by contrapositive when the statements <m>P</m> and <m>Q</m> are stated as negations.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <proposition xml:id="prop-even-squared">
+    <statement>
+      <p>
+        For each integer <m>n</m>, if <m>n^2</m> is an even integer, then <m>n</m> is an even integer.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We will prove this result by proving the contrapositive of the statement, which is
+        <blockquote>
+          For each integer <m>n</m>, if <m>n</m> is an odd integer, then <m>n^2</m> is an odd integer.
+        </blockquote>
+        So we assume that <m>n</m> is an odd integer and prove that <m>n^2</m> is an odd integer. Since <m>n</m> is odd, there exists an integer <m>k</m> such that <m>n = 2k + 1</m>. Hence,
+        <md>
+          <mrow>n^2 \amp = (2k + 1)^2</mrow>
+          <mrow> \amp = 4k^2 + 4k + 1</mrow>
+          <mrow> \amp = 2(2k^2 + 2k) + 1</mrow>
+        </md>
+      </p>
+      <p>
+         Since the integers are closed under addition and multiplication, <m>(2k^2 + 2k)</m> is an integer and so the last equation proves that <m>n^2</m> is an odd integer. This proves that for all integers <m>n</m>, if <m>n</m> is an odd integer, then <m>n^2</m> is an odd integer. Since this is the contrapositive of the proposition, we have completed a proof of the proposition.
+      </p>
+    </proof>
+  </proposition>
+
+</section>

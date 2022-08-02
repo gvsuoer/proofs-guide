@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="C_othermethods" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Some Other Methods of Proof</title>
+
+  <introduction>
+    <p>
+      It is sometimes difficult to construct a direct proof of a conditional statement. Fortunately, there are certain logical equivalencies in <xref ref="thm-log-equiv"/> that can be used to justify some other methods of proof of a conditional statement. Knowing that two expressions are logically equivalent tells us that if we prove one, then we have also proven the other. In fact, once we know the truth value of a statement, then we know the truth value of any other statement that is logically equivalent to it.
+    </p>
+  </introduction>
+
+  <xi:include href="S_contrapositive.ptx" />
+  <xi:include href="S_otherlogequiv.ptx" />
+  <xi:include href="S_bicond.ptx" />
+  <xi:include href="S_other_exer.ptx" />
+  
+</chapter>
