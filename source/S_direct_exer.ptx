@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="S_direct_exer">
+  <title> Practice Problems for <xref ref="C_directproofs"/></title>
+  
+  <exercises>
+    <title></title>
+
+    <exercise>
+      <statement>
+        <p>
+          Use a counterexample to prove the following statement is false.
+          <blockquote>
+            For all integers <m>a</m> and <m>b</m>, if 5 divides <m>a</m> or 5 divides <m>b</m>, then 5 divides <m>(5a + b)</m>.
+          </blockquote>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Construct a table of values for <m>3m^2 + 4m + 6</m> using at least six different integers for <m>m</m>. Make one-half of the values for <m>m</m> even integers and the other half odd integers. Is the following proposition true or false?
+          <blockquote>
+            If <m>m</m> is an odd integer, then <m>3m^2 + 4m + 6</m> is an odd integer.
+          </blockquote>
+          Justify your conclusion. This means that if the proposition is true, then you should write a proof of the proposition. If the proposition is false, you need to provide an example of an odd integer for which <m>3m^2 + 4m + 6</m> is an even integer.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+           The Pythagorean Theorem for right triangles states that if <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse, then <m>a^2 + b^2 = c^2</m> . For example, if <m>a = 5</m> and <m>b = 12</m> are the lengths of the two sides of a right triangle and if <m>c</m> is the length of the hypotenuse, then the <m>c^2 = 5^2 + 12^2</m> and so <m>c^2 = 169</m>. Since <m>c</m> is a length and must be positive, we conclude that <m>c = 13</m>.
+        </p>
+        <p>
+          Construct and provide a well-written proof for the following proposition.
+          <blockquote>
+            Proposition. If <m>m</m> is a real number and <m>m</m>, <m>m + 1</m>, and <m>m + 2</m> are the lengths of the three sides of a right triangle, then <m>m = 3</m>.
+          </blockquote>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+           Let <m>n</m> be a natural number and let <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> be integers. Prove each of the following.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+             If <m>\modulo{a}{b}{n}</m> and <m>\modulo{c}{d}{n}</m>, then <m>\modulo{(a + c)}{(b + d)}{n}</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            If <m>\modulo{a}{b}{n}</m> and <m>\modulo{c}{d}{n}</m>, then <m>\modulo{ac}{bd}{n}</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          One way to prove that two sets are equal is to prove that each one is a subset of the other one. Consider the following proposition:
+          <blockquote>
+            Proposition. Let <m>A</m> and <m>B</m> be subsets of some universal set. Then <m>A - (A - B) = A \cap B</m>.
+          </blockquote>
+          
+          Prove this proposition is true or give a counterexample to prove it is false.
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises>
+  
+</section>

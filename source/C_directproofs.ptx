@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="C_directproofs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Direct Proofs</title>
+  
+  <introduction>
+    <p>
+      In order to prove that a conditional statement <m>P \to Q</m> is true, we only need to prove that <m>Q</m> is true whenever <m>P</m> is true. This is because the conditional statement is true whenever the hypothesis is false. So in a direct proof of <m>P \to Q</m>, we assume that <m>P</m> is true, and using this assumption, we proceed through a logical sequence of steps to arrive at the conclusion that <m>Q</m> is true. Unfortunately, it is often not easy to discover how to start this logical sequence of steps or how to get to the conclusion that <m>Q</m> is true. We will describe a method of exploration that often can help in discovering the steps of a proof. This method will involve working forward from the hypothesis, <m>P</m>, and backward from the conclusion, <m>Q</m>. We will illustrate this “forward-backward” method with the following proposition.
+    </p>
+  </introduction>
+
+  <xi:include href="S_cong_divides.ptx" />
+  <xi:include href="S_direct_sets.ptx" />
+  <xi:include href="S_direct_exer.ptx" />
+
+</chapter>
