@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_bicond">
+  <title>Proofs of Biconditional Statements</title>
+
+  <p>
+    One of the logical equivalencies in <xref ref="thm-log-equiv"/> is the following one for biconditional statements.
+    <me>
+      \left( P \leftrightarrow Q \right) \equiv \left( P \to Q \right) \wedge \left( Q \to P \right)
+    </me>
+    This logical equivalency suggests one method for proving a biconditional statement written in the form <q><m>P</m> if and only if <m>Q</m>.</q> This method is to construct separate proofs of the two conditional statements <m>P \to Q</m> and <m>Q \to P</m>.
+  </p>
+  <p>
+    We will illustrate this with a proposition about right triangles.
+  </p>
+  <p>
+    Recall that the <term>Pythagorean Theorem</term> for right triangles states that if <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse, then <m>a^2 + b^2 = c^2</m> . We also know that the area of any triangle is one-half the base times the altitude. So for the right triangle we have described, the area is <m>A = \frac{1}{2} ab</m>.
+  </p>
+
+  <proposition xml:id="prop-triangle">
+    <statement>
+      <p>
+        Suppose that <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse. This right triangle is an isosceles triangle if and only if the area of the right triangle is <m>\frac{1}{4} c^2</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We assume that we have a right triangle where <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse. We will prove that this right triangle is an isosceles triangle if and only if the area of the right triangle is <m>\frac{1}{4} c^2</m> by proving the two conditional statements associated with this biconditional statement.
+      </p>
+      <p>
+        We first prove that if this right triangle is an isosceles triangle, then the area of the right triangle is <m>\frac{1}{4} c^2</m>. So we assume the right triangle is an isosceles triangle. This means that <m>a = b</m>, and consequently, <m>A = \frac{1}{2} a^2</m>. Using the Pythagorean Theorem, we see that
+        <me>
+          c^2 = a^2 + a^2 = 2a^2
+        </me>.
+        Hence, <m>a^2 = \frac{1}{2} c^2</m>, and we obtain <m>A = \frac{1}{2} a^2 = \frac{1}{4} c^2</m>. This proves that if this right triangle is an isosceles triangle, then the area of the right triangle is <m>\frac{1}{4} c^2</m>.
+      </p>
+      <p>
+        We now prove the converse of the first conditional statement. So we assume the area of this isosceles triangle is <m>A = \frac{1}{4} c^2</m> , and will prove that <m>a = b</m>. Since the area is also <m>\frac{1}{2} ab</m>, we see that
+        <md>
+          <mrow>\frac{1}{4} c^2 \amp = \frac{1}{2}ab</mrow>
+          <mrow>c^2 \amp = 2ab</mrow>
+        </md>
+        We now use the Pythagorean Theorem to conclude that <m>a^2 + b^2 = 2ab</m>. So the last equation can be rewritten as follows:
+        <md>
+          <mrow>a^2 - 2ab + b^2 \amp = 0</mrow>
+          <mrow>(a - b)^2 \amp = 0</mrow>
+        </md>.
+        The last equation implies that <m>a = b</m> and hence the right triangle is an isosceles triangle. This proves that if the area of this right triangle is <m>A = \frac{1}{4} c^2</m>, then the right triangle is an isosceles triangle.
+      </p>
+      <p>
+        Since we have proven both conditional statements, we have proven that this right triangle is an isosceles triangle if and only if the area of the right triangle is <m>\frac{1}{4} c^2</m>.
+      </p>
+    </proof>
+  </proposition>
+  
+</section>
