@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_contra_examp">
+  <title>Explanation and an Example</title>
+
+  <p>
+    Another method of proof that is frequently used in mathematics is a proof by contradiction. This method is based on the fact that a statement <m>X</m> can only be true or false (and not both). The idea is to prove that the statement <m>X</m> is true by showing that it cannot be false. This is done by assuming that <m>X</m> is false and proving that this leads to a contradiction. (The contradiction often has the form <m>(R \wedge \neg R)</m>, where <m>R</m> is some statement.) When this happens, we can conclude that the assumption that the statement <m>X</m> is false is incorrect and hence <m>X</m> cannot be false. Since it cannot be false, then <m>X</m> must be true.
+  </p>
+  <p>
+    A logical basis for the contradiction method of proof is the tautology
+    <me>
+      \left[ \neg X \to C \right] \to X
+    </me>,
+    where <m>X</m> is a statement and <m>C</m> is a contradiction. The following truth table establishes this tautology.
+  </p>
+
+  <tabular halign='center' top='minor' left='minor'>
+    <row bottom='minor' header='yes'>
+      <cell right='minor'><m>X</m></cell>
+      <cell right='minor'><m>C</m></cell>
+      <cell right='minor'><m>\neg X</m></cell>
+      <cell right='minor'><m>\neg X \to C</m></cell>
+      <cell right='minor'><m>( \neg X \to C) \to X</m></cell>
+    </row>
+    <row bottom='minor'>
+      <cell right='minor'>T</cell>
+      <cell right='minor'>F</cell>
+      <cell right='minor'>F</cell>
+      <cell right='minor'>T</cell>
+      <cell right='minor'>T</cell>
+    </row>
+    <row bottom='minor'>
+      <cell right='minor'>F</cell>
+      <cell right='minor'>F</cell>
+      <cell right='minor'>T</cell>
+      <cell right='minor'>F</cell>
+      <cell right='minor'>T</cell>
+    </row>
+  </tabular>
+
+  <p>
+    This tautology shows that if <m>\neg X</m> leads to a contradiction, then <m>X</m> must be true. The previous truth table also shows that the statement <m>\neg X \to C</m> is logically equivalent to <m>X</m>. This means that if we have proved that <m>\neg X</m> leads to a contradiction, then we have proved statement <m>X</m>. So if we want to prove a statement <m>X</m> using a proof by contradiction, we assume that <m>\neg X</m> is true and show that this leads to a contradiction.
+  </p>
+  <p>
+    When we try to prove the conditional statement, <q>If <m>\to</m> then <m>\to</m></q> using a proof by contradiction, we must assume that <m>P \to Q</m> is false and show that this leads to a contradiction. Since we are assuming the conditional statement is false, we are, in effect, assuming its negation is true. According to <xref ref="thm-log-equiv"/>,
+    <me>
+      \neg (P \to Q) \equiv P \wedge \neg Q
+    </me>
+    We will illustrate the process of a proof by contradiction with the following proposition.
+  </p>
+
+  <proposition xml:id="prop-x-frac">
+    <statement>
+      <p>
+        For each real number <m>x</m>, if <m>0 \lt x \lt 1</m>, then <m>\frac{1}{x (1 - x)} \geq 4</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+         We will use a proof by contradiction. So we assume that the proposition is false, or that there exists a real number <m>x</m> such that <m>0 \lt x \lt 1</m> and
+         <men xml:id="frac-geq4">
+          \frac{1}{x (1 - x)} \geq 4
+         </men>
+         We note that since <m>0 \lt x \lt 1</m>, we can conclude that<m> x \gt 0</m> and that <m>x(1 - x) \gt 0</m>. Hence, <m>x(1 - x) \gt 0</m> and if we multiply both sides of inequality <xref ref="frac-geq4"/> by <m>x(1 - x)</m>, we obtain
+         <me>
+          1 \lt 4x (1-x)
+         </me>
+          We can now use algebra to rewrite the last inequality as follows:
+          <md>
+            <mrow>1 \amp \lt 4x - 4x^2</mrow>
+            <mrow>4x^2 -4x + 1 \amp \lt 0</mrow>
+            <mrow>(2x - 1)^2 \amp \lt 0</mrow>
+          </md>
+          However, <m>(2x - 1)</m> is a real number and the last inequality says that a real number squared is less than zero. This is a contradiction since the square of any real number must be greater than or equal to zero. Hence, the proposition cannot be false and we have proved that for each real number <m>x</m>, if <m>0 \lt x \lt 1</m>, then <m>\frac{1}{x (1 - x)} \geq 4</m>.
+      </p>
+    </proof>
+  </proposition>
+  
+</section>

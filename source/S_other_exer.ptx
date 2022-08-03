@@ -50,7 +50,7 @@
       </task>
     </exercise>
 
-    <exercise>
+    <exercise xml:id="exer-rational">
       <statement>
         <p>
           A real number x is defined to be a <term>rational number</term> provided

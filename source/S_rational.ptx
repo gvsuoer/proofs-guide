@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_rational">
+  <title>Rational and Irrational Numbers</title>
+
+  <p>
+    One of the most important ways to classify real numbers is as a rational number or an irrational number. Following is the definition of rational (and irrational) numbers given in <xref ref="exer-rational"/>.
+  </p>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+      A real number <m>x</m> is defined to be a <term>rational number</term> provided that there exist integers <m>m</m> and <m>n</m> with <m>n \ne 0</m> such that <m>x = \frac{m}{n}</m>. A real number that is not a rational number is called an <term>irrational number</term>.
+    </p>
+  </assemblage>
+
+  <p>
+    This may seem like a strange distinction because most people are quite familiar with the rational numbers (fractions) but the irrational numbers seem a bit unusual. However, there are many irrational numbers such as <m>\sqrt{2}</m>, <m>\sqrt{3}</m>, <m>\sqrt[3]{2}</m>, <m>\pi</m>, and the number <m>e</m>.
+  </p>
+  <p>
+    We use the symbol <m>\Q</m> to stand for the set of rational numbers. There is no standard symbol for the set of irrational numbers. Perhaps one reason for this is because of the closure properties of the rational numbers, namely that the rational numbers <m>\Q</m> are closed under addition, subtraction, multiplication, and division by nonzero rational numbers. This means that if <m>x, y \in \Q</m>, then
+    <ul>
+      <li>
+        <p>
+          <m>x + y</m>, <m>x - y</m>, and <m>xy</m> are in <m>\Q</m>; and
+        </p>
+      </li>
+      <li>
+        <p>
+           If <m>y \ne 0</m>, then <m>\frac{x}{y}</m> is in <m>\Q</m>.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The basic reasons for these facts are that if we add, subtract, multiply, or divide two fractions, the result is a fraction. One reason we do not have a symbol for the irrational numbers is that the irrational numbers are not closed under these operations. For example, <m>\sqrt{2}</m> is irrational and we see that
+    <me>
+      \sqrt{2} \sqrt{2} = 2 \text{ and } \frac{\sqrt{2}}{\sqrt{2}} = 1
+    </me>
+    This shows that the product of irrational numbers can be rational and the quotient of irrational numbers can be rational.
+  </p>
+  <p>
+    It is also important to realize that every integer is a rational number since any integer can be written as a fraction. For example, we can write <m>3 = \frac{3}{1}</m> . In general, if <m>n \in \Z</m>, then <m>n = \frac{n}{1}</m> , and hence, <m>n \in \Q</m>.
+  </p>
+  <p>
+    Because the rational numbers are closed under the standard operations and the definition of an irrational number simply says that the number is not rational, we often use a proof by contradiction to prove that a number is irrational. This is illustrated in the next proposition.
+  </p>
+  <proposition xml:id="prop-rational">
+    <statement>
+      <p>
+        For all real numbers <m>x</m> and <m>y</m>, if <m>x</m> is rational and <m>x \ne 0</m> and <m>y</m> is irrational, then <m>x \cdot y</m> is irrational.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We will use a proof by contradiction. So we assume that there exist real numbers <m>x</m> and <m>y</m> such that <m>x</m> is rational, <m>x \ne 0</m>, <m>y</m> is irrational, and <m>x \cdot y</m> is rational. Since <m>x \ne 0</m>, we can divide by <m>x</m>, and since the rational numbers are closed under division by nonzero rational numbers, we know that <m>\frac{1}{x} \in \Q</m>. We now know that <m>x \cdot y</m> and <m>\frac{1}{x}</m> are rational numbers and since the rational numbers are closed under multiplication, we conclude that
+        <me>
+          \frac{1}{x} \cdot (xy) \in \Q
+        </me>.
+        However, <m>\frac{1}{x} \cdot (xy)</m> and hence, <m>y</m> must be a rational number. Since a real number cannot be both rational and irrational, this is a contradiction to the assumption that <m>y</m> is irrational. We have therefore proved that for all real numbers <m>x</m> and <m>y</m>, if <m>x</m> is rational and <m>x \ne 0</m> and <m>y</m> is irrational, then <m>x \cdot y</m> is irrational.
+      </p>
+    </proof>
+  </proposition>
+
+  
+</section>

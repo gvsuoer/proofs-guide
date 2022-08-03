@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="C_contradiction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Proof by Contradiction</title>
+
+  <xi:include href="S_contra_examp.ptx" />
+  <xi:include href="S_dne.ptx" />
+  <xi:include href="S_rational.ptx" />
+  <xi:include href="S_exer_contra.ptx" />
+  
+</chapter>

@@ -1,5 +1,6 @@
 :root{
-  --documenttitle: #0032A0
+  --documenttitle: #0032A0;
+  --highlighttoc: var(--documenttitle);
 }
 
 /* article.proof {
