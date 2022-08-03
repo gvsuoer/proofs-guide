@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_use_induct">
+  <title>Using the Principle of Mathematical Induction</title>
+
+  <p>
+    The primary use of the Principle of Mathematical Induction is to prove statements of the form
+    <me>
+      ( \forall n \in \N)(P(n))
+    </me>
+    where <m>P(n)</m> is some open sentence. Recall that a universally quantified statement like the preceding one is true if and only if the truth set <m>T</m> of the open sentence <m>P(n)</m> is the set <m>N</m>. So our goal is to prove that <m>T = \N</m>, which is the conclusion of the Principle of Mathematical Induction. To verify the hypothesis of the Principle of Mathematical Induction, we must
+    <ol>
+      <li>
+        <p>
+          Prove that <m>1 \in T</m>. That is, prove that <m>P(n)</m> is true.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove that if <m>k \in T</m>, then <m>(k + 1) \in T</m>. That is, prove that if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true.
+        </p>
+      </li>
+    </ol>
+    The first step is called the <term>basis step</term> or the <term>initial step</term>, and the second step is called the <term>inductive step</term>. This means that a proof by mathematical induction will have the following form:
+  </p>
+
+  <assemblage>
+    <title>Procedure for a Proof by Mathematical Induction</title>
+    <p>
+      To prove: <m>( \forall n \in \N)(P(n))</m>
+      <dl>
+        <li>
+          <title>Basis step:</title>
+          <p>
+            Prove <m>P(1)</m>.
+          </p>
+        </li>
+        <li>
+          <title>Inductive step:</title>
+          <p>
+             Prove that for each <m>k \in N</m>, if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true.
+          </p>
+        </li>
+      </dl>
+      We can then conclude that <m>P (n)</m> is true for all <m>n \in N</m>.
+    </p>
+  </assemblage>
+
+  <p>
+    Note that in the inductive step, we want to prove that the conditional statement <q>for
+    each <m>k \in N</m>, if <m>P (k)</m> then <m>P (k + 1)</m></q> is true. So we will start the inductive step by assuming that <m>P (k)</m> is true. This assumption is called the <term>inductive assumption</term> or the <term>inductive hypothesis</term>.
+  </p>
+  <p>
+    The key to constructing a proof of the inductive step is to discover how <m>P (k + 1)/</m> is related to <m>P (k)</m> for an arbitrary natural number <m>k</m>. This is why it is important to write down explicitly what <m>P (k)</m> and <m>P (k + 1)</m> are within the proof. Notice how this is done in the proof of the following proposition.
+  </p>
+  
+  <proposition xml:id="prop-sum-sq">
+    <statement>
+      <p>
+        For each natural number <m>n</m>,
+        <me>
+          1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}
+        </me>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We will use a proof by mathematical induction. For each natural number <m>n</m>, we let <m>P (n)</m> be
+        <me>
+          1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}
+        </me>.
+        We first prove that <m>P (1)</m> is true. Notice that <m>\frac{1(1 + 1)(2 \cdot 1 + 1)}{6} = 1</m>. This shows that
+        <me>
+          1^2 = \frac{1(1 + 1)(2 \cdot 1 + 1)}{6}
+        </me>
+        which proves that <m>P(1)</m> is true.
+      </p>
+      <p>
+        For the inductive step, we prove that for each <m>k \in N</m>, if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true. So let <m>k</m> be a natural number and assume that <m>P (k)</m> is true. That is, assume that
+        <men xml:id="eqn-sumk-sq">
+          1^2 + 2^2 + \cdots + k^2 = \frac{k (k + 1)(2k + 1)}{6}
+        </men>
+        The goal now is to prove that <m>P (k + 1)</m> is true. That is, is must be proved that
+        <mdn>
+          <mrow number='no'>1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 \amp = \frac{(k + 1)[(k + 1) +1][(2(k + 1) + 1]}{6}</mrow>
+          <mrow xml:id="eqn-sumk1-sq"> \amp = \frac{(k + 1)(k + 2)(2k + 3)}{6}</mrow>
+        </mdn>
+        To do this, we add <m>(k + 1)^2</m> to both sides of equation <xref ref="eqn-sumk-sq"/> and algebraically rewrite the right side of the resulting equation. This gives
+        <md>
+          <mrow>1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 \amp = \frac{k (k + 1)(2k + 1)}{6} + (k + 1)^2</mrow>
+          <mrow> \amp = \frac{k (k + 1)(2k + 1) + 6(k + 1)^2}{6}</mrow>
+          <mrow> \amp = \frac{(k + 1)[k(2k + 1) + 6(k + 1)]}{6}</mrow>
+          <mrow> \amp = \frac{(k + 1)(2k^2 + 7k + 6)}{6}</mrow>
+          <mrow> \amp = \frac{(k + 1)(k+ 2)(2k + 3)}{6}</mrow>
+        </md>.
+        Comparing this result to equation <xref ref="eqn-sumk1-sq"/>, we see that if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true. Hence, the inductive step has been established, and by the Principle of Mathematical Induction, we have proved that for each natural number <m>n</m>,
+        <me>
+          1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}
+        </me>
+        
+      </p>
+    </proof>
+  </proposition>
+
+</section>

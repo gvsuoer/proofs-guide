@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_induct_extend">
+  <title>Practice Problems for <xref ref="C_induction"/></title>
+  
+  <exercises>
+    <title></title>
+    
+    <exercise>
+      <task xml:id="exer-natural-nums">
+        <statement>
+          <p>
+            Calculate <m>1 + 3 + 5 + \cdots + (2n - 1)</m> for several natural numbers <m>n</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task xml:id="exer-natural-conj">
+        <statement>
+          <p>
+            Based on your work in <xref ref="exer-natural-nums"/>, if <m>n \in N</m>, make a conjecture about the value of the sum <m>1 + 3 + 5 + \cdots + (2n - 1) = \sum_{j = 1}^{n} (2j - 1)</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use mathematical induction to prove your conjecture in <xref ref="exer-natural-conj"/>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove the following:
+          <blockquote>
+            Proposition. For each natural number <m>n</m>, 3 divides <m>\modulo{4^n}{1}{3}</m>.
+          </blockquote>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          For which natural numbers <m>n</m> is <m>3^n</m> greater than <m>5 + 2^n</m>? State a proposition (with an appropriate quantifier) and prove it.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          The <term>Fibonacci numbers</term> are a sequence of natural numbers <m>f_1, f_2, f_3, \ldots, f_n, \ldots</m> defined recursively as follows:
+          <ul>
+            <li>
+              <p>
+                <m>f_1 = 1</m> and <m>f_2 = 1</m>, and
+              </p>
+            </li>
+            <li>
+              <p>
+                For each natural number <m>n</m>, <m>f_{n + 2} = f_{n + 1} + f_n</m>.
+              </p>
+            </li>
+          </ul>
+          In words, the recursion formula states that for any natural number <m>n</m> with <m>n =\geq 3</m>, the <m>n^{th}</m> Fibonacci number is the sum of the two previous Fibonacci numbers. So we see that
+          <md>
+            <mrow>f_3 \amp = f_2 + f_1 = 1 + 1 = 2</mrow>
+            <mrow>f_4 \amp = f_3 + f_2 = 2 + 1 = 3 \text{, and }</mrow>
+            <mrow>f_5 \amp = f_4 + f_3 = 3 + 2 = 5</mrow>
+          </md>
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Calculate <m>f_6</m> through <m>f_{20}</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Is every third Fibonacci number even? That is it true that for each natural number <m>n</m>, <m>f_{3n}</m> is even? Justify your conclusion.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Is it true that for each natural number <m>n</m> with <m>n \geq 2</m>, <m>f_1 + f_3 + \cdots + f_{2n-1} = f_{n + 1} - 1</m>? Justify your conclusion.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          Prove the following proposition using mathematical induction.
+          <blockquote>
+            For each <m>n \in \N</m> with <m>n \geq 8</m>, there exist nonnegative integers <m>x</m> and <m>y</m> such that <m>n = 3x + 5y</m>.
+          </blockquote>
+        </p>
+        <p>
+          Suggestion: Use the Second Principle of Induction and have the basis step be a proof that <m>P(8)</m>, <m>P(9)</m>, and <m>P (10)</m> are true using an appropriate open sentence for <m>P(n)</m>.
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises>
+
+</section>
