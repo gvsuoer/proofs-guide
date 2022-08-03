@@ -23,6 +23,7 @@
     <xi:include href="C_directproofs.ptx" />
     <xi:include href="C_othermethods.ptx" />
     <xi:include href="C_contradiction.ptx" />
+    <xi:include href="C_cases.ptx" />
 
     <!-- <xi:include href="./backmatter.ptx" /> -->
   </book>
