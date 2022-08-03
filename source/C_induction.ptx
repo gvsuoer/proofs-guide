@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="C_induction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Mathematical Induction</title>
+
+  <introduction>
+    <p>
+      One of the defining characteristics of the set of natural numbers <m>\N</m> is the so-called Principle of Mathematical Induction.
+    </p>
+    <assemblage xml:id="prin-math-induct">
+      <title>The Principle of Mathematical Induction</title>
+      <p>
+        If <m>T</m> is a subset of <m>\N</m> such that
+        <ol>
+          <li>
+            <p>
+              <m>1 \in T</m>, and
+            </p>
+          </li>
+          <li>
+            <p>
+              For every <m>k \in \N</m>, if <m>k \in T</m>, then <m>( k + 1) \in T</m>,
+            </p>
+          </li>
+        </ol>
+      </p>
+      then <m>T = \N</m>
+    </assemblage>
+
+    <p>
+      In many mathematics courses, this principle is given as an axiom for the set of natural numbers. Although we will not do so here, the Principle of Mathematical Induction can be proved by using the so-called Well-Ordering Principle, which states that every non-empty subset of the natural numbers contains a least element. So in some courses, the Well-Ordering Principle is stated as an axiom of the natural numbers. It should be noted, however, that it is also possible to assume the Principle of Mathematical Induction as an axiom and use it to prove the Well-Ordering Principle. We will only use the Principle of Mathematical Induction in this book.
+    </p>
+  </introduction>
+
+  <xi:include href="S_use_induct.ptx" />
+  <xi:include href="S_induct_extend.ptx" />
+  <xi:include href="S_second_induct.ptx" />
+  <xi:include href="S_induct_exer.ptx" />
+  
+</chapter>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_induct_extend">
+  <title>The Extended Principle of Mathematical Induction</title>
+
+  <p>
+    A little exploration shows that the following proposition appears to be true.
+  </p>
+  
+  <proposition xml:id="prop-factorial">
+    <statement>
+      <p>
+        For each integer <m>n</m> with <m>n \geq 4</m>, <m>n! > n^4</m>.
+      </p>
+    </statement>
+  </proposition>
+
+  <p>
+    We would like to use mathematical induction to prove this, but the proposition has the added assumption that <m>n \geq 4</m>. So to do this, we use a slight modification of the Principle of Mathematical Induction called the Extended Principle of Mathematical Induction.
+  </p>
+
+  <assemblage>
+    <title>The Extended Principle of Mathematical Induction</title>
+    <p>
+      Let <m>M</m> be an integer. If <m>T</m> is a subset of <m>\Z</m> such that
+      <ul>
+        <li>
+          <p>
+            <m>M \in T</m>, and
+          </p>
+        </li>
+        <li>
+          <p>
+            For every <m>k \in \Z</m> with <m>k \geq M</m>, if <m>k \in T</m>, then <m>(k + 1) \in T</m>,
+          </p>
+        </li>
+      </ul>
+      then <m>T</m> contains all integers greater than or equal to <m>M</m>. That is, <m>\{ n \in \Z | n \geq M \} \subseteq T</m>.
+    </p>
+  </assemblage>
+
+  <p>
+    The primary use of the Principle of Mathematical Induction is to prove statements of the form
+    <me>
+      ( \forall n \in \Z, \text{ with } n \geq M)(P(n))
+    </me>,
+    where <m>M</m> is an integer and <m>P (n)</m> is some open sentence. (In most induction proofs, we will use a value of <m>M</m> that is greater than or equal to zero.) So our goal is to prove that the truth set <m>T</m> of the predicate <m>P (n)</m> contains all integers greater than or equal to <m>M</m>. So to verify the hypothesis of the Extended Principle of Mathematical Induction, we must
+    <ol>
+      <li>
+        <p>
+          Prove that <m>M \in T</m>. That is, prove that <m>P (M)</m> is true.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove that for every <m>k \in Z</m> with <m>k \geq M</m>, if <m>k \in T</m>, then <m>(k + 1) \in T</m>. That is, prove that if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true.
+        </p>
+      </li>
+    </ol>
+    As before, the first step is called the <term>basis step</term> or the <term>initial step</term>, and the second step is called the <term>inductive step</term>. This means that a proof using the Extended Principle of Mathematical Induction will have the following form:
+  </p>
+
+  <assemblage>
+    <title>Using the Extended Principle of Mathematical Induction</title>
+    <p>
+      Let <m>M</m> be an integer. To prove: <m>( \forall n \in \Z, \text{ with } n \geq M)(P(n))</m>
+      <dl>
+        <li>
+          <title>Basis step</title>
+          <p>
+            Prove <m>P(M)</m>.
+          </p>
+        </li>
+        <li>
+          <title>Inductive step</title>
+          <p>
+            Prove that for every <m>k \in Z</m> with <m>k \geq M</m>, if <m>P(k)</m> is true, then <m>P(k + 1)</m> is true.
+          </p>
+        </li>
+      </dl>
+      We can then conclude that <m>P (n)</m> is true for all <m>n \in Z</m> with <m>n \geq M</m>.
+    </p>
+  </assemblage>
+
+  <p>
+    This is basically the same procedure as the one for using the Principle of Mathematical Induction. The only difference is that the basis step uses an integer <m>M</m> other than 1. For this reason, when we write a proof that uses the Extended Principle of Mathematical Induction, we often simply say we are going to use a proof by mathematical induction. We will prove Proposition 6.2 using the Extended Principle of Mathematical Induction.
+  </p>
+
+  <proposition xml:id="prop-factorial-repeated">
+    <statement>
+      <p>
+        For each integer <m>n</m> with <m>n \geq 4</m>, <m>n! > n^4</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We will use a proof by mathematical induction. For this proof, we let
+        <blockquote>
+          <m>P(n)</m> be <q><m>n! \gt 2^n</m>.</q>
+        </blockquote>
+        We first prove that <m>P (4)</m> is true. Using <m>n = 4</m>, we see that <m>4! = 24</m> and <m>2^4 = 16</m>. This means that <m>4! \gt 2^4</m> and, hence, <m>P (4)</m> is true.
+      </p>
+      <p>
+        For the inductive step, we prove that for all <m>k \in N</m> with <m>k \geq 4</m>, if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true. So let <m>k</m> be a natural number greater than or equal to 4, and assume that <m>P (k)</m> is true. That is, assume that
+        <men xml:id="eqn-k-factorial">
+          k! \gt 2^k
+        </men>.
+        The goal is to prove that <m>P (k + 1)/</m> is true or that <m>(k + 1)! > 2^{k+1}</m> . Multiplying both sides of inequality <xref ref="eqn-k-factorial"/> by <m>k + 1</m> gives
+        <mdn>
+          <mrow number='no'>(k + 1)! \amp \gt (k + 1) \cdot 2^k \text{, or}</mrow>
+          <mrow xml:id="eqn-k1-factorial">(k + 1)! \amp \gt (k + 1) \cdot 2^k</mrow>
+        </mdn>.
+        Now, <m>k \geq 4</m>. Thus, <m>k + 1 \gt 2</m>, and hence <m>(k + 1) \cdot 2^k \gt 2 \cdot 2^k</m>. This means that
+        <men xml:id="eqn-k12k">
+          (k + 1) \cdot 2^k \gt 2^{k+1}
+        </men>
+        Inequalities <xref ref="eqn-k1-factorial"/> and <xref ref="eqn-k12k"/> show that
+        <me>
+          (k + 1)! \gt 2^{k+ 1}
+        </me>,
+        and this proves that if <m>P (k)</m> is true, then <m>P (k + 1)</m> is true. Thus, the inductive step has been established, and so by mathematical induction, we have proved that <m>n! \gt 2^n</m> for each natural number <m>n</m> with <m>n \geq 4</m>. 
+      </p>
+    </proof>
+  </proposition>
+
+</section>

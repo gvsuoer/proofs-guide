@@ -24,6 +24,7 @@
     <xi:include href="C_othermethods.ptx" />
     <xi:include href="C_contradiction.ptx" />
     <xi:include href="C_cases.ptx" />
+    <xi:include href="C_induction.ptx" />
 
     <!-- <xi:include href="./backmatter.ptx" /> -->
   </book>
