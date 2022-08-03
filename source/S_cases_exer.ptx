@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_cases_exer">
+  <title>Practice Problems for <xref ref="C_cases"/></title>
+
+  <exercises>
+    <title></title>
+    
+    <exercise>
+      <introduction>
+        <p>
+          Consider the following proposition:
+          <blockquote>
+            Proposition. For each integer <m>a</m>, if 3 divides <m>a^2</m>, then 3 divides <m>a</m>.
+          </blockquote>
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Write the contrapositive of this proposition.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Prove the proposition by proving its contrapositive.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Consider using cases based on the Division Algorithm using the remainder for <q>division by 3.</q> There will be two cases since the hypothesis of the contrapositive is, <q>3 does not divide <m>a</m>.</q>
+          </p>
+        </hint>
+      </task>
+    </exercise>
+    
+    <exercise xml:id="exer-case3">
+      <statement>
+        <p>
+          Complete the details for the proof of Case 3 of <xref ref="prop-3divides-cubed"/>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Is the following proposition true or false? Justify your conclusion with a counterexample or proof.
+          <blockquote>
+            For each integer <m>n</m>, if <m>n</m> is odd, then 8 divides <m>n^2 - 1</m>.
+          </blockquote>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises>
+  
+</section>

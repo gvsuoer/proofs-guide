@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="C_cases" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Using Cases in Proofs</title>
+
+  <introduction>
+    <p>
+      The method of using cases in a proof is often used when the hypothesis of a proposition is a disjunction. This is justified by the logical equivalency
+      <me>
+        [ ( P \vee Q ) \to R ] \equiv [ ( P \to R ) \wedge ( Q \to R )]
+      </me>.
+      This is one of the logical equivalencies in <xref ref="thm-log-equiv"/>. In some other situations when we are trying to prove a proposition or a theorem about an element <m>x</m> in some set <m>U</m>, we often run into the problem that there does not seem to be enough information about <m>x</m> to proceed. For example, consider the following proposition:
+    </p>
+
+    <proposition xml:id="prop-even-n2">
+      <statement>
+        <p>
+          If <m>n</m> is an integer, then <m>(n^2 + n)</m> is an even integer.
+        </p>
+      </statement>
+    </proposition>
+
+    <p>
+       If we were trying to write a direct proof of this proposition, the only thing we could assume is that <m>n</m> is an integer. This is not much help. In a situation such as this, we will sometimes construct our own cases to provide additional assumptions for the forward process of the proof. Cases are usually based on some common properties that the given element may or may not possess. The cases must be chosen so that they exhaust all possibilities for the object in the hypothesis of the proposition. For the <xref ref="prop-even-n2"/>, we know that an integer must be even or it must be odd. We can thus use the following two cases for the integer <m>n</m>:
+       <ul>
+        <li>
+          <p>
+            The integer <m>n</m> is an even integer; or
+          </p>
+        </li>
+        <li>
+          <p>
+            The integer <m>n</m> is an odd integer.
+          </p>
+        </li>
+       </ul>
+    </p>
+
+    <proposition xml:id="prop-even-n2-repeated">
+      <statement>
+        <p>
+          If <m>n</m> is an integer, then <m>(n^2 + n)</m> is an even integer.
+        </p>
+      </statement>
+      <proof>
+        <p>
+           We assume that <m>n</m> is an integer and will prove that <m>(n^2 + n)</m>. Since we know that any integer must be even or odd, we will use two cases. The first is the <m>b</m> is an even integer, and the second is that <m>n</m> is an odd integer.
+        </p>
+        <p>
+          In the case where <m>n</m> is an even integer, there exists an integer <m>m</m> such that
+          <me>
+            n = 2m
+          </me>.
+          Substituting this into the expression <m>(n^2 + n)</m> yields
+          <md>
+            <mrow>n^2 + n \amp = (2m)^2 + 2m</mrow>
+            <mrow> \amp = 4m^2 + 2m</mrow>
+            <mrow> \amp = 2 (2m^2 + m)</mrow>
+          </md>
+          By the closure properties of the integers, <m>2m^2 + m</m> is an integer, and hence <m>n^2 + n</m> is even. So this proves that when <m>n</m> is an even integer, <m>n^2 + n</m> is an even integer.
+        </p>
+        <p>
+          In the case where <m>n</m> is an odd integer, there exists an integer <m>k</m> such that
+          <me>
+            n = 2k + 1
+          </me>.
+          Substituting this into the expression <m>n^2 + n</m> yields
+          <md>
+            <mrow>n^2 + n \amp = (2k + 1)^2 + (2k + 1)</mrow>
+            <mrow> \amp = (4k^2 + 4k + 1) + 2k + 1</mrow>
+            <mrow> \amp = (4k^2 + 6k + 2)</mrow>
+            <mrow> \amp = 2 (2k^2 + 3k + 1)</mrow>
+          </md>
+        </p>
+        <p>
+          By the closure properties of the integers, <m>2k^2 + 3k + 1</m> is an integer, and hence <m>n^2 + n</m> is even. So this proves that when <m>n</m> is an odd integer, <m>n^2 + n</m> is an even integer.
+        </p>
+        <p>
+          Since we have proved that <m>n 2 C n</m> is even when <m>n</m> is even and when <m>n</m> is odd, we have proved that if <m>n</m> is an integer, then <m>n 2 C n</m> is an even integer.
+        </p>
+      </proof>
+    </proposition>
+  </introduction>
+
+  <xi:include href="S_commoncases.ptx" />
+  <xi:include href="S_divalgo.ptx" />
+  <xi:include href="S_cases_exer.ptx" />
+  
+</chapter>

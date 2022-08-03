@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_commoncases">
+  <title>Some Common Situations to Use Cases</title>
+
+  <p>
+    When using cases in a proof, the main rule is that the cases must be chosen so that they exhaust all possibilities for an object <m>x</m> in the hypothesis of the original proposition. Following are some common uses of cases in proofs.
+    <dl width="narrow">
+      <li>
+        <title>When the hypothesis is, <q><m>\boldsymbol{n}</m> is an integer.</q></title>
+        <p>
+          Case 1: <m>n</m> is an even integer.
+        </p>
+        <p>
+          Case 2: <m>n</m> is an odd integer.
+        </p>
+      </li>
+      <li>
+        <title>When the hypothesis is, <q><m>\boldsymbol{m}</m> and <m>\boldsymbol{n}</m> are integers.</q></title>
+        <p>
+          Case 1: <m>m</m> and <m>n</m> are even.
+        </p>
+        <p>
+          Case 2: <m>m</m> is even and <m>n</m> is odd.
+        </p>
+        <p>
+          Case 3: <m>m</m> is odd and <m>n</m> is even.
+        </p>
+        <p>
+          Case 4: <m>m</m> and <m>n</m> are both odd.
+        </p>
+      </li>
+      <li>
+        <title>When the hypothesis is, <q><m>x</m> is a real number.</q></title>
+        <p>
+          Case 1: <m>x</m> is irrational.
+        </p>
+        <p>
+          Case 2: <m>x</m> is irrational.
+        </p>
+      </li>
+      <li>
+         <title>When the hypothesis is, <q><m>\boldsymbol{x}</m> is a real number.</q></title>
+        <p>
+          Case 1: <m>a = b</m>.
+        </p>
+        <p>
+          Case 2: <m>a \ne b</m>.
+        </p>
+        <p>
+          OR
+        </p>
+        <p>
+          Case 1: <m>a \gt b</m>.
+          </p>
+          <p>
+            Case 2: <m>a = b</m>.
+          </p>
+          <p>
+            Case 3: <m>a \lt b</m>.
+        </p>
+      </li>
+      <li>
+        <title>When the hypothesis is, <q><m>a</m> and <m>b</m> are real numbers.</q></title>
+        <p>
+          Case 1: <m>a = b</m>.
+        </p>
+        <p>
+          Case 2: <m>a \ne b</m>.
+        </p>
+        <p>
+          OR
+        </p>
+        <p>
+          Case 1: <m>a \gt b</m>.
+        </p>
+        <p>
+          Case 2: <m>a = b</m>.
+        </p>
+        <p>
+          Case 3: <m>a \lt b</m>.
+        </p>
+      </li>
+    </dl>
+  </p>
+  
+</section>

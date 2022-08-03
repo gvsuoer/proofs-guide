@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_divalgo">
+  <title>Using Cases with the Division Algorithm</title>
+
+  <p>
+    An important result for the set of integers is known as the Division Algorithm. This is somewhat of a misnomer since it is stated in terms of addition and multiplication. The reason for this is that the set of integers is closed under addition and multiplication but is not closed under division. However, we have known for some time that when we divide one integer by another nonzero integer, we get a quotient and a remainder. For example, when we divide 337 by 6, we often write
+    <me>
+      \frac{337}{6} = 56 + \frac{1}{6}
+    </me>.
+    When we multiply both sides of this equation by 6, we get
+    <me>
+      337 = 6 \cdot 56 + 1
+    </me>.
+    When we are working within the system of integers, the second equation is preferred over the first since the second one uses only integers and the operations of addition and multiplication, and the integers are closed under addition and multiplication. Following is a complete statement of the Division Algorithm.
+  </p>
+
+  <assemblage xml:id="div-algo">
+    <title>The Division Algorithm</title>
+    <p>
+      For all integers <m>a</m> and <m>b</m> with <m>b \gt 0</m>, there exist unique integers <m>q</m> and <m>r</m> such that
+      <me>
+        a = bq + r \text{ and } 0 \leq r \lt b
+      </me>.
+    </p>
+  </assemblage>
+
+  <p>
+    So when we speak of <term>the quotient</term> and <term>the remainder</term> when we <q>divide an integer <m>a</m> by the positive integer <m>b</m>,</q> we will always mean the quotient <m>(q)</m> and the remainder <m>(r)</m> guaranteed by the Division Algorithm. So the remainder <m>r</m> is the least nonnegative integer such that there exists an integer (quotient) <m>q</m> with <m>a = bq + r</m>.
+  </p>
+  <p>
+    The Division Algorithm can sometimes be used to construct cases that can be used to prove a statement that is true for all integers. We have done this when we divided the integers into the even integers and the odd integers since even integers have a remainder of 0 when divided by 2 and odd integers have a remainder of 1 when divided by 2.
+  </p>
+  <p>
+    Sometimes it is more useful to divide the integer <m>a</m> by an integer other than 2. For example, if <m>a</m> is divided by 3, there are three possible remainders: 0, 1, and 2. If <m>a</m> is divided by 4, there are four possible remainders: 0, 1, 2, and 3. The remainders form the basis for the cases.
+  </p>
+  <p>
+    If the hypothesis of a proposition is that <q><m>n</m> is an integer,</q> then we can use the Division Algorithm to claim that there are unique integers <m>q</m> and <m>r</m> such that
+    <me>
+      n = 3q + r \text{ and } 0 \leq r \lt 3
+    </me>
+    We can then divide the proof into the following three cases: (1) <m>r = 0</m>; (2) <m>r = 1</m>; and (3) <m>r = 2</m>. This is done in <xref ref="prop-3divides-cubed"/>.
+  </p>
+
+  <proposition xml:id="prop-3divides-cubed">
+    <statement>
+      <p>
+        If <m>n</m> is an integer, then 3 divides <m>n^3 - n</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        Let <m>n</m> be an integer. We will show that 3 divides <m>n^3 - n</m> by examining the three cases for the remainder when <m>n</m> is divided by 3. By the Division Algorithm, there exist unique integers <m>q</m> and <m>r</m> such that
+        <me>
+          n = 3q + r \text{ and } 0 \leq r \lt 3
+        </me>
+        This means that we can consider the following three cases: (1) <m>r = 0</m>; (2) <m>r = 1</m>; and (3) <m>r = 2</m>.
+      </p>
+      <p>
+        In the case where <m>r = 0</m>, we have <m>n = 3q</m>. By substituting this into the expression <m>n^3 - n</m>, we get
+        <md>
+          <mrow>n^3 - n \amp = (3q)^3 - (3q)</mrow>
+          <mrow> \amp = 27q^3 - 3q</mrow>
+          <mrow> \amp = 3 (9q^3 - q)</mrow>
+        </md>
+        Since <m>9q^3 - q</m> is an integer, the last equation proves that <m>3 | n^3 - n</m>.
+      </p>
+      <p>
+        In the second case, <m>r = 1</m> and <m>n = 3q + 1</m>. When we substitute this into <m>(n^3 - n )</m>, we obtain
+        <md>
+          <mrow>n^3 - n \amp = (3q + 1)^3 - (3q + 1)</mrow>
+          <mrow> \amp = ( 27q^3 + 27q^2 + 9q + 1) - (3q + 1)</mrow>
+          <mrow> \amp = 27q^3 + 27q^2 + 6q</mrow>
+          <mrow> \amp = 3 (9q^3 + 9q^2 + 2q)</mrow>
+        </md>
+         Since <m>9q^3 + 9q^2 + 2q</m> is an integer, the last equation proves that <m>3 | (n^3 + n)</m>.
+      </p>
+      <p>
+        The last case is when <m>r=2</m>. The details for this case are part of <xref ref="exer-case3"/>. Once this case is completed, we will have proved that 3 divides <m>n^3 - n</m> in all three cases. Hence, we may conclude that if <m>n</m> is an integer, then 3 divides <m>n^3 - n</m>.
+      </p>
+    </proof>
+  </proposition>
+  
+</section>
