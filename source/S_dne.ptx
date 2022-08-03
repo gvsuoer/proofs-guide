@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<chapter xml:id="C_dne">
+<section xml:id="S_dne">
   <title>Proving that Something Does Not Exist</title>
 
   <p>
@@ -42,4 +42,4 @@
     </proof>
   </proposition>
   
-</chapter>
+</section>
