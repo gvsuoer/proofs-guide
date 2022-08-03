@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_exer_contra">
+  <title>Practice Problems for <xref ref="C_contradiction"/></title>
+
+  <exercises>
+    <title></title>
+    
+    <exercise>
+      <task>
+        <statement>
+          <p>
+            Determine at least five different integers that are congruent to 2 modulo 4. Are any of these integers congruent to 3 modulo 6?
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Is the following proposition true or false? Justify your conclusion with a counterexample (if it is false) or a proof (if it is true).
+            <blockquote>
+              Propostion. For each integer <m>n</m>, if <m>\modulo{n}{2}{4}</m>, then <m>\notmodulo{n}{3}{6}</m>.
+            </blockquote>
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          For the following, it may be useful to use the facts that the set of rational numbers <m>\Q</m> is closed under addition, subtraction, multiplication, and division by nonzero rational numbers.
+        </p>
+        <p>
+          Prove the following proposition:
+          <blockquote>
+            Proposition. For all real numbers <m>x</m> and <m>y</m>, if <m>x</m> is rational and <m>x \ne 0</m> and <m>y</m> is irrational, then <m>x + y</m> is irrational.
+          </blockquote>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Is the base 2 logarithm of 3, <m>\log_{2} 3</m>, a rational or irrational number? Justify your conclusion.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Is the real number <m>\sqrt{2} + \sqrt{3}</m> a rational or irrational number? Justify your conclusion.
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises>
+  
+</section>
