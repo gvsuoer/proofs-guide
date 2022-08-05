@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="C_injsurj" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Injective and Surjective Functions</title>
+
+  <introduction>
+    <p>
+      This chapter does not discuss a proof technique but applies some of the proof techniques from earlier in the book to propositions and problems dealing with functions, in particular, injections and surjections. These are concepts that some students struggle with when they first study them in an introduction to proofs course. So we give a few examples of such proofs in this chapter.
+    </p>
+    <p>
+      To understand the proofs discussed in this chapter, we need to understand functions and the definitions of an injection (one-to-one function) and a surjection (onto function). It is assumed that students have studied these concepts before, but the definitions are stated below for reference.
+    </p>
+  </introduction>
+
+  <xi:include href="S_injsurj_def.ptx" />
+  <xi:include href="S_injsurj_proofs.ptx" />
+  <xi:include href="S_injsurj_exer.ptx" />
+  
+</chapter>

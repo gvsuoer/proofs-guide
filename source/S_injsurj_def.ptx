@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_injsurj">
+  <title>Definitions and Notation</title>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+       A <term>function</term> from a set <m>A</m> to a set <m>B</m> is a rule that associates with each element <m>x</m> of the set <m>A</m> exactly one element of the set <m>B</m>. A function from <m>A</m> to <m>B</m> is also called a <term>mapping</term> from <m>A</m> to <m>B</m>.
+    </p>
+  </assemblage>
+
+  <paragraphs>
+    <title>Function Notation</title>
+
+    <p>
+      When we work with a function, we usually give it a name. The name is often a single letter, such as <m>f</m> or <m>g</m>. If <m>f</m> is a function from the set <m>A</m> to be the set <m>B</m>, we will write <m>f: A \to B</m>. This is simply shorthand notation for the fact that <m>f</m> is a function from the set <m>A</m> to the set <m>B</m>. In this case, we also say that <m>f</m> maps <m>A</m> to <m>B</m>.
+    </p>
+    
+  </paragraphs>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+       Let <m>f: A \to B</m>. (This is read, <q>Let <m>f</m> be a function from <m>A</m> to <m>B</m>.</q>) The set <m>A</m> is called the <term>domain</term> of the function <m>f</m> , and we write <m>A = \dom{f}</m>. The set <m>B</m> is called the <term>codomain</term> of the function <m>f</m> , and we write <m>B = \codom{f}</m>.
+    </p>
+    <p>
+      If <m>a \in A</m>, then the element of <m>B</m> that is associated with <m>a</m> is denoted by <m>f (a)</m> and is called the <term>image of <m>a</m> under <m>f</m></term>. If <m>f (a) = b</m>, with <m>b \in B</m>, then <m>a</m> is called a <term>preimage of <m>b</m> under <m>f</m></term>.
+    </p>
+  </assemblage>
+
+  <paragraphs>
+    <title>Some Function Terminology</title>
+    
+    <p>
+      When we have a function <m>f: A \to B</m>, we often write <m>y = f(x)</m>. In this case, we consider <m>x</m> to be an unspecified object that can be chosen from the set <m>A</m>, and we would say that <m>x</m> is the <term>independent variable</term> of the function <m>f</m> and <m>y</m> is the <term>dependent variable</term> of the function <m>f</m>.
+    </p>
+  </paragraphs>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+      Let <m>f: A \to B</m>. The set <m>\{ f(x) | x \in A \}</m> is called the <term>range of the function <m>f</m></term> and is denoted by <m>\range{f}</m>. The range of <m>f</m> is sometimes called the image of the function <m>f</m> (or the <term>image of <m>A</m> under <m>f</m></term> ).
+    </p>
+  </assemblage>
+
+  <p>
+    The range of <m>f: A \to B</m> could equivalently be defined as follows:
+    <me>
+      \range{f} = \{ y \in B | y = f(x) \text{ for some } x \in A \}
+    </me>.
+    Notice that this means that <m>\range{f} \subseteq \codom{f}</m> but does not necessarily mean that <m>\range{f} = \codom{f}</m>. Whether we have this set equality or not depends on the function <m>f</m>.
+  </p>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+      Let <m>f: A \to B</m> be a function from the set <m>A</m> to the set <m>B</m>. The function <m>f</m> is called an <term>injection</term> provided that
+      <me>
+        \text{for all } x_1, x_2 \in A, \text{ if } x_1 \ne x_2, \text{ then } f (x_1) \ne f (x_2).
+      </me>
+      When <m>f</m> is an injection, we also say that <m>f</m> is a <term>one-to-one function</term>, or that <m>f</m> is an <term>injective function</term>.
+    </p>
+  </assemblage>
+
+  <p>
+    Notice that the condition that specifies that a function <m>f</m> is an injection is given in the form of a conditional statement. As we shall see, in proofs, it is usually easier to use the contrapositive of this conditional statement.
+  </p>
+
+  <assemblage>
+    <title>Let <m>f: A \to B</m></title>
+    <p>
+      <dl width='narrow'>
+        <li>
+          <title><q>The function <m>f</m> is an injection</q> means that</title>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  For all <m>x_1, x_2 \in A</m>, if <m>x_1 \ne x_2</m>, then <m>f (x_1) \ne f (x_2)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  For all <m>x_1, x_2 \in A</m>, if <m>f (x_1) = f (x_2)</m>, then <m>x_1 = x_2</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <title><q>The function <m>f</m> is not an injection</q> means that</title>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  There exist <m>x_1, x_2 \in A</m> such that <m>x_1 \ne x_2</m> and <m>f(x_1) = f(x_2)</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </dl>
+    </p>
+  </assemblage>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+      Let <m>f: A \to B</m> be a function from the set <m>A</m> to the set <m>B</m>. The function <m>f</m> is called a <term>surjection</term> provided that the range of <m>f</m> equals the codomain of <m>f</m>. This means that
+      <blockquote>
+        For every <m>y \in B</m>, there exists an <m>x \in A</m> such that <m>f(x) = y</m>.
+      </blockquote>
+      When <m>f</m> is a surjection, we also say that <m>f</m> is an <term>onto function</term> or that <m>f</m> maps <term><m>A</m> onto <m>B</m></term>. We also say that <m>f</m> is a <term>surjective function</term>.
+    </p>
+  </assemblage>
+
+  <p>
+    One of the conditions that specifies that a function <m>f</m> is a surjection is given in the form of a universally quantified statement, which is the primary statement used in proving a function is (or is not) a surjection.
+  </p>
+
+  <assemblage>
+    <title>Let <m>f: A \to B</m></title>
+    <p>
+      <dl width='narrow'>
+        <li>
+          <title><q>The function <m>f</m> is an surjection</q> means that</title>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  <m>\range{f} = \codom{f} = B</m>; or
+                </p>
+              </li>
+              <li>
+                <p>
+                  For every <m>y \in B</m>, there exists an <m>x \in A</m> such that <m>f(x) = y</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <title><q>The function <m>f</m> is not an surjection</q> means that</title>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  <m>\range{f} \ne \codom{f}</m>; or
+                </p>
+              </li>
+              <li>
+                <p>
+                  There exists a <m>y \in B</m> such that for all <m>x \in A</m>, <m>f(x) \ne y</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </dl>
+    </p>
+  </assemblage>
+  
+  <p>
+    One last definition.
+  </p>
+
+  <assemblage>
+    <title>Definition</title>
+    <p>
+      A <term>bijection</term> is a function that is both an injection and a surjection. If the function <m>f</m> is a bijection, we also say that <m>f</m> is <term>one-to-one and onto</term> and that <m>f</m> is a <term>bijective function</term>.
+    </p>
+  </assemblage>
+  
+</section>

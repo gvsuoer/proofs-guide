@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_injsurj_proofs">
+  <title>Some Examples and Proofs</title>
+
+  <p>
+    Many of us have probably heard in precalculus and calculus courses that a linear function is a bijection. We prove this in the following proposition, but notice how careful we are with stating the domain and codomain of the function.
+  </p>
+
+  <proposition xml:id="prop-bij">
+    <statement>
+      <p>
+        Let The function <m>f: \R \to \R</m> by <m>f(x) = mx + b</m> for all <m>x</m> in <m>\R</m> is a bijection.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        We let <m>f(x) = mx + b</m> be a nonzero real number and let <m>b</m> be a real number and define <m>f: \R \to \R</m> by <m>f(x) = mx + b</m> for all <m>x</m> in <m>\R</m>. We will prove that <m>f</m> is a bijection by proving it is both an injection and a surjection.
+      </p>
+      <p>
+        To prove that <m>f</m> is an injection, we let <m>x_1</m> and <m>x_2</m> be real numbers (hence, in the domain of <m>f</m>) and assume that <m>f (x_1) = f(x_2)</m>. This means that <m>mx_1 + b = mx_2 + b</m>. We can then subtract <m>b</m> from both sides of this equation and then divide both sides by <m>m</m> since <m>m \ne 0</m> as follows:
+        <md>
+          <mrow>mx_1 + b \amp = mx_2 + b</mrow>
+          <mrow>mx_1 \amp = mx_2</mrow>
+          <mrow>x_1 \amp = x_2</mrow>
+        </md>
+        So we have proved that for all <m>x_1, x_2 \in \R</m>, if <m>f (x_1) = f(x_2)</m>, then <m>x_1 = x_2</m>, and hence, <m>f</m> is an injection.
+      </p>
+      <p>
+        To prove that <m>f</m> is a surjection, we choose a real number <m>y</m> in the codomain of <m>f</m> . We need to prove that there exists an <m>x \in \R</m> such that <m>f (x) = y</m>. Working backward, we see that if <m>mx + b = y</m>, then <m>x = \frac{y - b}{m}</m> (since <m>m \ne 0</m>). We see that <m>x \in \R</m> (the domain of <m>f</m> ) since the real numbers are closed under subtraction and division by nonzero real numbers. This is done as follows:
+        <md>
+          <mrow>f(x) \amp = f \left( \frac{y - b}{m} \right)</mrow>
+          <mrow> \amp = m \left( \frac{y - b}{m} \right) + b</mrow>
+          <mrow> \amp = ( y - b) + b</mrow>
+          <mrow> \amp = b</mrow>
+        </md>
+        This proves that for each <m>y \in \R</m>, there exists an <m>x \in \R</m> such that <m>f(x) = y</m>, and hence, <m>f</m> is a surjection.
+      </p>
+      <p>
+        Since we have proved that <m>f</m> is both an injection and a surjection, we have proved that <m>f</m> is a bijection.
+      </p>
+    </proof>
+  </proposition>
+
+  <p>
+    We will now discuss some examples of functions that will illustrate why the domain and the codomain of a function are just as important as the rule defining the outputs of a function when we need to determine if the function is an injection or a surjection.
+  </p>
+
+  <example xml:id="ex-dom-codom">
+    <title>The Importance of the Domain and Codomain</title>
+    <introduction>
+      <p>
+        Each of the following functions will have the same rule for computing the outputs corresponding to a given input. However, they will have different domains or different codomains.
+      </p>
+    </introduction>
+
+    <task xml:id="task-not-injsurj">
+      <title>A Function that Is Neither an Injection nor a Surjection</title>
+      <statement>
+        <p>
+          Let <m>f: \R \to \R</m> be defined by <m>f (x) = x^2 + 1</m>. Notice that
+          <me>
+            f(2 = 5) \text{ and } f(-2) = 5
+          </me>
+          This is enough to prove that the function <m>f</m> is not an injection since this shows that there exist two different inputs that produce the same output.
+        </p>
+        <p>
+          Since <m>f(x) = x^2 + 1</m>, we know that <m>f (x) \geq 1</m> for all <m>x \in \R</m>. This implies that the function <m>f</m> is not a surjection. For example, <m>-2</m> is in the codomain of <m>f</m> and <m>f(x) \ne -2</m> for all <m>x</m> in the domain of <m>f</m>.
+        </p>
+      </statement>
+    </task>
+
+    <task xml:id="task-surj">
+      <title>A Function that Is Not an Injection but Is a Surjection</title>
+      <statement>
+        <p>
+          Let <m>T = \{ y \in \R | y \geq 1 \}</m>, and define <m>F: \R \to T</m> by <m>F(x) = x^2 + 1</m>. As in <xref ref="task-not-injsurj"/>, the function <m>F</m> is not an injection since <m>F (2) = F(-2) = 5</m>.
+        </p>
+        <p>
+           Is the function <m>F</m> a surjection? That is, does <m>F</m> map <m>R</m> onto <m>T</m>? As in <xref ref="task-not-injsurj"/>, we do know that <m>F (x) \geq 1</m> for all <m>x \in \R</m>.
+        </p>
+        <p>
+          To see if it is a surjection, we must determine if it is true that for every <m>y \in T</m>, there exists an <m>x \in \R</m> such that <m>F (x) = y</m>. So we choose <m>y \in T</m>. The goal is to determine if there exists an <m>x \in \R</m> such that
+          <md>
+            <mrow>F(x) \amp = y \text{, or}</mrow>
+            <mrow>x^2 + 1 \amp  = y</mrow>
+          </md>.
+          One way to proceed is to work backward and solve the last equation (if possible) for <m>x</m>. Doing so, we get
+          <md>
+            <mrow>x^2 \amp = y - 1</mrow>
+            <mrow>x = \sqrt{y - 1} \amp \text{ or } x = - \sqrt{y - 1}</mrow>
+          </md>
+          Now, since <m>y \in T</m>, we know that <m>y \geq 1</m> and hence that<m>y - 1 \geq 0</m>. This means that <m>\sqrt{y - 1} \in \R</m>. Hence, if we use <m>x = \sqrt{y - 1}</m>, then <m>x \in \R</m>, and
+          <md>
+            <mrow>F(x) \amp = F \left( \sqrt{y - 1} \right)</mrow>
+            <mrow> \amp = \left( \sqrt{y - 1} \right)^2 + 1</mrow>
+            <mrow> \amp = (y - 1) + 1</mrow>
+            <mrow> \amp = y</mrow>.
+          </md>
+        </p>
+        <p>
+          This proves that <m>F</m> is a surjection since we have shown that for all <m>y \in T</m>, there exists an <m>x \in \R</m> such that <m>F (x) = y</m>. Notice that for each <m>y \in T</m>, this was a constructive proof of the existence of an <m>x \in \R</m> such that <m>F(x) = y</m>.
+        </p>
+        <p>
+          <blockquote>
+            An Important Lesson. In <xref ref="task-not-injsurj"/> and <xref ref="task-surj"/>, the same mathematical formula was used to determine the outputs for the functions. However, one function was not a surjection and the other one was a surjection. This illustrates the important fact that whether a function is surjective not only depends on the formula that defines the output of the function but also on the domain and codomain of the function.
+          </blockquote>
+        </p>
+      </statement>
+    </task>
+
+    <task xml:id="task-inj">
+      <title>A Function that Is an Injection but Is Not a Surjection</title>
+      <statement>
+        <p>
+          Let <m>\Z ^* = \{ x \in \Z | x \geq 0 \} = \N \cup \{ 0 \}</m>. Define <m>g: \Z ^* \to \N</m> by <m>g(x) = x^2 + 1</m>. (Notice that this is the same formula used in <xref ref="task-not-injsurj"/> and <xref ref="task-surj"/>.) Following is a table of values for some inputs for the function <m>g</m>.
+        </p>
+        <tabular halign='center'>
+          <row bottom='minor' header='yes'>
+            <cell right='minor'><m>x</m></cell>
+            <cell><m>g(x)</m></cell>
+          </row>
+          <row bottom='minor'>
+            <cell right='minor'>0</cell>
+            <cell>1</cell>
+          </row>
+          <row bottom='minor'>
+            <cell right='minor'>1</cell>
+            <cell>2</cell>
+          </row>
+          <row bottom='minor'>
+            <cell right='minor'>2</cell>
+            <cell>5</cell>
+          </row>
+          <row bottom='minor'>
+            <cell right='minor'>3</cell>
+            <cell>10</cell>
+          </row>
+          <row bottom='minor'>
+            <cell right='minor'>4</cell>
+            <cell>17</cell>
+          </row>
+          <row bottom='minor'>
+            <cell right='minor'>5</cell>
+            <cell>26</cell>
+          </row>
+        </tabular>
+
+        <p>
+          Notice that the codomain is <m>\N</m>, and the table of values suggests that some natural numbers are not outputs of this function. So it appears that the function <m>g</m> is not a surjection.
+        </p>
+        <p>
+          To prove that <m>g</m> is not a surjection, pick an element of <m>\N</m> that does not appear to be in the range. We will use 3, and we will use a proof by contradiction to prove that there is no <m>x</m> in the domain <m>(\Z ^* )</m> such that <m>g(x) = 3</m>. So we assume that there exists an <m>x \in \Z</m>  with <m>g(x) = 3</m>. Then
+          <md>
+            <mrow>x^2 + 1 \amp = 3</mrow>
+            <mrow>x^2 \amp = 2</mrow>
+            <mrow>x \amp = \pm \sqrt{2}</mrow>
+          </md>
+          But this is not possible since <m>\sqrt{2} \not \in \Z ^*</m>. Therefore, there is no <m>x \in \Z ^*</m> with <m>g(x) = 3</m>. This means that for every <m>x \in \Z ^*</m>, <m>g(x) \ne 3</m>. Therefore, 3 is not in the range of <m>g</m>, and hence <m>g</m> is not a surjection.
+        </p>
+        <p>
+          The table of values suggests that different inputs produce different outputs, and hence that <m>g</m> is an injection. To prove that <m>g</m> is an injection, assume that <m>s, t \in \Z ^*</m> (the domain) with <m>g(s) = g(t)</m>. Then
+          <md>
+            <mrow>s^2 + 1 \amp = t^2 + 1</mrow>
+            <mrow>s^2 \amp = t^2</mrow>
+          </md>.
+          Since <m>s, t \in \Z ^*</m>, we know that <m>s \geq 0</m> and <m>t \geq 0</m>. So the preceding equation implies that <m>s = t</m>. Hence, <m>g</m> is an injection.
+        </p>
+        <p>
+          <blockquote>
+            An Important Lesson. The functions in the three preceding examples all used the same formula to determine the outputs. The functions in <xref ref="task-not-injsurj"/> and <xref ref="task-surj"/> are not injections but the function in <xref ref="task-inj"/> is an injection. This illustrates the important fact that whether a function is injective not only depends on the formula that defines the output of the function but also on the domain of the function.
+          </blockquote>
+        </p>
+      </statement>
+    </task>
+
+  </example>
+  
+</section>

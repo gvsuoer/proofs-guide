@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="S_injsurj_exer">
+  <title>Practice Problems for <xref ref="C_injsurj"/></title>
+
+  <exercises>
+    <title></title>
+    
+    <exercise>
+      <statement>
+        <p>
+          Let <m>R^+ = \{ y \in \R | y \gt 0 \}</m>. Define
+          <blockquote>
+            <p>
+              <m>f: \R \to \R</m> by <m>f(x) = e^{-x}</m>, for each <m>x \in \R</m>, and
+            </p>
+            <p>
+              <m>g: \R \to \R ^+</m> by <m>g(x) = e^{-x}</m>, for each <m>x \in \R</m>
+            </p>
+          </blockquote>
+          Determine if each of these functions is an injection or a surjection. Justify your conclusions
+        </p>
+        <p>
+          Note: Before writing proofs, it might be helpful to draw the graph of <m>y = e^{-x}</m>. A reasonable graph can be obtained using <m>-3 \leq x \leq 3</m> and <m>-2 \leq y \leq 10</m>. Please keep in mind that the graph does not prove any conclusion, but may help us arrive at the correct conclusions, which will still need proof.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          For each of the following functions, determine if the function is an injection or a surjection (or both, and hence, a bijection). Justify all conclusions.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            <m>F: \R \to \R</m> defined by <m>F (x) = 5x + 3</m>, for all <m>x \in \R</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>G: \Z \to \Z</m> defined by <m>G (x) = 5x + 3</m>, for all <m>x \in \Z</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>f: ( \R -  \{ 4 \}) \to \R )</m> defined by <m>f(x) = \frac{3x}{x - 4}</m>, for all <m>x \in ( \R - \{ 4 \} )</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>g: ( \R -  \{ 4 \}) \to ( \R - \{ 3 \} )</m> defined by <m>g(x) = \frac{3x}{x - 4}</m>, for all <m>x \in ( \R - \{ 4 \} )</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          Let <m>s</m> be the function that associates with each natural number the sum of its distinct natural number divisors. This is called the <term>sum of the divisors function</term>. For example, the natural number divisors of 6 are 1, 2, 3, and 6, and so
+          <md>
+            <mrow>s(6) \amp = 1 + 2 + 3 + 6</mrow>
+            <mrow> \amp = 12</mrow>
+          </md>
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Calculate <m>s(k)</m> for each natural number <m>k</m> from 1 through 15.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Is the sum of the divisors function an injection? Is it a surjection? Justify your conclusions. 
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          Let <m>\M_2 (\R)</m> represent the set of all 2 by 2 matricies over <m>\R.</m>
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Define <m>\text{det: } \M_2 (\R) \to \R</m> by
+            <me>
+              \text{det} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = ab - bc
+            </me>.
+            This is the <term>determinant function</term> on the set of 2 by 2 matrices over the real numbers. Is the determinant function an injection? Is the determinant function a surjection? Justify your conclusions.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Define <m>\text{tran: } \M_2 (\R) \to \M_2 (\R)</m> by
+            <me>
+              \text{tran} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = A^T = \begin{bmatrix} a \amp c \\ b \amp d \end{bmatrix}
+            </me>.
+            This is the <term>transpose function</term> on the set of 2 by 2 matrices over the real numbers. Is the transpose function an injection? Is the transpose function a surjection? Justify your conclusions.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Define <m>F: \M_2 (\R) \to \R</m> by 
+            <me>
+              F \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = a^2 + d^2 - b^2 - c^2
+            </me>
+            Is the function <m>F</m> an injection? Is the function <m>F</m> a surjection? Justify your conclusions.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+    
+  </exercises>
+  
+</section>
