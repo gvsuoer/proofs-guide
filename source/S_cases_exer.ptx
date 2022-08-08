@@ -35,6 +35,38 @@
             Consider using cases based on the Division Algorithm using the remainder for <q>division by 3.</q> There will be two cases since the hypothesis of the contrapositive is, <q>3 does not divide <m>a</m>.</q>
           </p>
         </hint>
+        <solution>
+          <proof>
+            <p>
+              We will prove the contrapositive of this proposition, which is:
+              <blockquote>
+                For each integer <m>a</m>, if 3 does not divide <m>a</m>, then 3 does not divide <m>a^2</m>
+              </blockquote>
+              So we let <m>a</m> be an integer, assume that 3 does not divide <m>a</m>, and will prove that 3 does not divide <m>a^2</m>. Since 3 does not divide <m>a</m>, we can use the Division Algorithm to conclude that there exists an integer <m>q</m> such that <m>a = 3q + 1</m> or <m>a = 3q + 2</m>.
+            </p>
+            <p>
+              For the case where <m>a = 3q + 1</m>, we obtain
+              <md>
+                <mrow>a^2 \amp = (3q + 1)^2</mrow>
+                <mrow> \amp = 9q^2 + 6q + 1</mrow>
+                <mrow> \amp = 3 ( 3q^2 + 2q) + 1</mrow>
+              </md>
+              By the closure properties of the integers <m>( 3q^2 + 2q)</m> is an integer, and so the last equation means that <m>a^2</m> has a remainder of 1 when divided by 3 and so 3 does not divide <m>a^2</m>.
+            </p>
+            <p>
+              For the case where <m>a = 3q + 2</m>, we obtain
+              <md>
+                <mrow>a^2 \amp = (3q + 2)^2</mrow>
+                <mrow> \amp = 9q^2 + 12q + 4</mrow>
+                <mrow> \amp = 3 ( 3q^2 + 4q + 1) + 1</mrow>
+              </md>
+               By the closure properties of the integers <m>( 3q^2 + 4q + 1)</m> is an integer, and so the last equation means that <m>a^2</m> has a remainder of 1 when divided by 3 and so 3 does not divide <m>a^2</m>.
+            </p>
+            <p>
+              Since we have proved that 3 does not divide <m>a^2</m> in both cases, we have proved the contrapositive of the proposition, and hence, we have proved that for each integer <m>a</m>, if 3 divides <m>a^2</m> , then 3 divides <m>a</m>.
+            </p>
+          </proof>
+        </solution>
       </task>
     </exercise>
     
@@ -44,6 +76,18 @@
           Complete the details for the proof of Case 3 of <xref ref="prop-3divides-cubed"/>.
         </p>
       </statement>
+      <solution>
+        <p>
+          For the third case, <m>n = 3q + 2</m> and <m>r = 2</m>. When we substitute this into <m>(n^3 - n)</m>, we obtain
+          <md>
+            <mrow>n^3 - n \amp = (3q + 2)^3 - (3q + 2)</mrow>
+            <mrow> \amp = ( 27 q^3 + 54q^2+ 36q + 8) - (3q + 2)</mrow>
+            <mrow> \amp = 27 q^3 + 54q^2 + 33q + 6</mrow>
+            <mrow> \amp = 3 (9q^3 + 18q^2 + 11q + 2)</mrow>
+          </md>.
+          Since <m>9q^3 + 18q^2 + 11q + 2</m> is an integer, the last equation proves that <m>3 \ | \ (n^3 - n)</m>.
+        </p>
+      </solution>
     </exercise>
 
     <exercise>
@@ -55,6 +99,23 @@
           </blockquote>
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We let <m>n</m> be an integer, assume that <m>n</m> is odd, and will prove that 8 divides <m>n</m> 21. Since <m>n</m> is odd, there exists an integer <m>k</m> such that <m>n = 2k + 1</m>. We then see that
+            <mdn>
+              <mrow number='no'>n^2 - 1 \amp = (2k + 1)^2 - 1</mrow>
+              <mrow number='no'> \amp = 4k^2 + 4k</mrow>
+              <mrow xml:id="eqn-4kk1"> \amp = 4k (k + 1)</mrow>
+            </mdn>
+            We also know since <m>k</m> is an integer, either <m>k</m> or <m>k + 1</m> is even. In either case, the product <m>k(k + 1)</m> must be even and so there exists an integer <m>q</m> such that
+            <me>
+              k (k + 1) = 2q
+            </me>
+             Substituting this into the right side of equation <xref ref="eqn-4kk1"/>, we obtain <m>n^2 - 1 = 8q</m> and so 8 divides <m>n^2 - 1</m>. This proves that for each integer <m>n</m>, if <m>n</m> is odd, then 8 divides <m>n^2 - 1</m>.
+          </p>
+        </proof>
+      </solution>
     </exercise>
     
   </exercises>

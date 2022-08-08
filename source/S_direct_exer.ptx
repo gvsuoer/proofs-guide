@@ -14,6 +14,11 @@
           </blockquote>
         </p>
       </statement>
+      <solution>
+        <p>
+          A counterexample for this statement will be values of <m>a</m> and <m>b</m> for which 5 divides <m>a</m> or 5 divides <m>b</m>, and 5 does not divide <m>5a + b</m>. One counterexample for the statement is <m>a = 5</m> and <m>b = 1</m>. For these values, the hypothesis is true since 5 divides <m>a</m> and the conclusion is false since <m>5a + b = 26</m> and 5 does not divide 26.
+        </p>
+      </solution>
     </exercise>
 
     <exercise>
@@ -26,6 +31,27 @@
           Justify your conclusion. This means that if the proposition is true, then you should write a proof of the proposition. If the proposition is false, you need to provide an example of an odd integer for which <m>3m^2 + 4m + 6</m> is an even integer.
         </p>
       </statement>
+      <solution>
+        <p>
+          All examples should indicate the proposition is true. Following is a proof. 
+        </p>
+        <proof>
+          <p>
+            We assume that <m>m</m> is an odd integer and will prove that <m>( 3m^2 + 4m + 6 )</m> . Since <m>m</m> is an odd integer, there exists an integer <m>k</m> such that <m>m = 2k + 1</m>. Substituting this into the expression <m>( 3m^2 + 4m + 6 )</m> and using algebra, we obtain
+            <md>
+              <mrow>3m^2 + 4m + 6  \amp = 3 (2k + 1)^2 + 4 (2k+1) + 6</mrow>
+              <mrow> \amp = (12k^2 + 12k + 3 ) + (8k + 4) + 6</mrow>
+              <mrow> \amp = 12k^2 + 20k + 13</mrow>
+              <mrow> \amp = 12k^2 + 20k + 12 + 1</mrow>
+              <mrow> \amp = 2 (6k^2 + 10k + 6) + 1</mrow>
+            </md>
+             By the closure properties of the integers, <m>(6k^2 + 10k + 6)</m> is an integer, and hence, the last equation shows that <m>( 3m^2 + 4m + 6 )</m> is an odd integer.
+          </p>
+          <p>
+            This proves that if <m>m</m> is an odd integer, then <m>( 3m^2 + 4m + 6 )</m> is an odd integer.
+          </p>
+        </proof>
+      </solution>
     </exercise>
 
     <exercise>
@@ -40,6 +66,23 @@
           </blockquote>
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We let <m>m</m> be a real number and assume that <m>m</m>, <m>m + 1</m>, and <m>m + 2</m> are the lengths of the three sides of a right triangle. We will use the Pythagorean Theorem to prove that <m>m = 3</m>. Since the hypotenuse is the longest of the three sides, the Pythagorean Theorem implies that <m>m^2 + (m + 1)^2 = (m+ 2)^2</m>. We will now use algebra to rewrite both sides of this equation as follows
+            <md>
+              <mrow>m^2 + (m^2 + 2m + 1) \amp = m^2 + 4m + 4</mrow>
+              <mrow>2m^2 + 2m +1 \amp = m^2 + 4m + 4</mrow>
+            </md>
+            The last equation is a quadratic equation. To solve for <m>m</m>, we rewrite the equation in standard form and then factor the left side. This gives
+            <md>
+              <mrow>m^2 - 2m - 3 \amp = 0</mrow>
+              <mrow>(m-3)(m + 1) \amp = 0</mrow>
+            </md>
+            The two solutions of this equation are <m>m = 3</m> and <m>m = 1</m>. However, since m is the length of a side of a right triangle, <m>m</m> must be positive and we conclude that <m>m = 3</m>. This proves that if <m>m</m>, <m>m + 1</m>, and <m>m + 2</m> are the lengths of the three sides of a right triangle, then <m>m =3</m>.
+          </p>
+        </proof>
+      </solution>
     </exercise>
 
     <exercise>
@@ -55,6 +98,24 @@
              If <m>\modulo{a}{b}{n}</m> and <m>\modulo{c}{d}{n}</m>, then <m>\modulo{(a + c)}{(b + d)}{n}</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            For both parts, we assume that n is a natural number and <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> are integers and that <m>\modulo{a}{b}{n}</m> and <m>\modulo{c}{d}{n}</m>. We can then conclude that <m>n</m> divides <m>a - b</m> and <m>n</m> divides <m>c - d</m>. So there exist integers <m>k</m> and <m>m</m> such that
+            <md>
+              <mrow>a - b \amp = kn \amp \amp \text{and} \amp c - d \amp = mn</mrow>
+              <mrow>a \amp = b+ kn \amp \amp \text{and} \amp c \amp = d+ mn</mrow>
+            </md>
+          </p>
+          <p>
+            We then see that
+            <md>
+              <mrow>( a + c ) - ( b + d ) \amp = (a - b) + (c - d)</mrow>
+              <mrow> \amp = kn + mn</mrow>
+              <mrow> \amp = (k + m)n</mrow>
+            </md>
+            Since the integers are closed under addition, <m>k + m</m> is an integer and the last equation proves that <m>\modulo{a + c}{b + d}{n}</m>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -62,6 +123,24 @@
             If <m>\modulo{a}{b}{n}</m> and <m>\modulo{c}{d}{n}</m>, then <m>\modulo{ac}{bd}{n}</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            For both parts, we assume that n is a natural number and <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> are integers and that <m>\modulo{a}{b}{n}</m> and <m>\modulo{c}{d}{n}</m>. We can then conclude that <m>n</m> divides <m>a - b</m> and <m>n</m> divides <m>c - d</m>. So there exist integers <m>k</m> and <m>m</m> such that
+            <md>
+              <mrow>a - b \amp = kn \amp \amp \text{and} \amp c - d \amp = mn</mrow>
+              <mrow>a \amp = b+ kn \amp \amp \text{and} \amp c \amp = d+ mn</mrow>
+            </md>
+          </p>
+          <p>
+            We then see that
+            <md>
+              <mrow>ac - bd \amp = (b + kn)(d + mn) - bd</mrow>
+              <mrow> \amp = ( bd + bmn + knd + kmn^2) - bd</mrow>
+              <mrow> \amp = (bm + kd + kmn)n</mrow>
+            </md>
+            Since the integers are closed under addition and multiplication, <m>(bm + kd + kmn)</m> is an integer and the last equation proves that <m>\modulo{ac}{bd}{n}</m>.
+          </p>
+        </solution>
       </task>
     </exercise>
 
@@ -76,6 +155,37 @@
           Prove this proposition is true or give a counterexample to prove it is false.
         </p>
       </statement>
+      <solution>
+        <p>
+          The proposition is true. Use the choose-an-element method to prove that each set is a subset of the other set.
+        </p>
+        <proof>
+          <p>
+            Let <m>A</m> and <m>B</m> be subsets of some universal set. We will prove that <m>A - (A - B) = A \cap B</m> by proving that <m>A - (A - B) \subseteq A \cap B</m> and that <m>A \cap B \subseteq A - (A - B)</m>.
+          </p>
+          <p>
+            First, let <m>x \in A - (A - B)</m>. This means that
+            <me>
+              x \in A \text{ and } x \not \in (A - B)
+            </me>.
+            We know that an element is in <m>(A - B)</m> if and only if it is in <m>A</m> and not in <m>B</m>. Since <m>x \not \in (A - B)</m>, we conclude that <m>x \not \in A</m><m>x \in B</m>. However, we also know that <m>x \in A</m> and so we conclude that <m>x \in B</m>. This proves that
+            <me>
+              x \in A \text{ and } x \in B
+            </me>
+            This means that <m>x \in A \cap B</m>, and hence we have proved that <m>A - (A - B) \subseteq A \cap B</m>.
+          </p>
+          <p>
+            Now choose <m>y \in A \cap B</m>. This means that 
+            <me>
+              y \in A \text{ and } y \in B
+            </me>.
+            We note that <m>y \in (A - B)</m> if and only if <m>y \in A</m> and <m>y \not \in B</m> and hence, <m>y \not \in (A - B)</m> if and only if <m>y \not \in A</m> or <m>y \in B</m>. Since we have proved that <m>y \in B</m>, we can conclude that <m>y \not \in (A - B)</m>, and hence, we have established that <m>y \in A</m> and <m>y \not \in (A - B)</m>. So, <m>y \in A - (A - B)</m>, and this proves that if <m>y \in A \cap B</m>, then <m>y \in A - (A - B)</m> and hence, <m>A \cap B \subseteq A - (A - B)</m>.
+          </p>
+          <p>
+            Since we have proved that <m>A - (A - B) \subseteq A \cap B</m> and <m>A \cap B \subseteq A - (A - B)</m>, we conclude that <m>A - (A - B) = A \cap B</m>.
+          </p>
+        </proof>
+      </solution>
     </exercise>
     
   </exercises>
