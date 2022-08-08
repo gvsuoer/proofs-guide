@@ -10,8 +10,8 @@
 
   <xi:include href="app_guidelines.ptx" />
   
-  <solutions divisional="hint">
-    <title>Selected Hints</title>
+  <solutions xml:id="app_solutions" divisional="hint solution">
+    <title>Answers and Hints for the Practice Problems</title>
   </solutions>
 
   <index>

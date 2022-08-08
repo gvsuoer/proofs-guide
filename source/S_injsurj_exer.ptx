@@ -24,6 +24,14 @@
           Note: Before writing proofs, it might be helpful to draw the graph of <m>y = e^{-x}</m>. A reasonable graph can be obtained using <m>-3 \leq x \leq 3</m> and <m>-2 \leq y \leq 10</m>. Please keep in mind that the graph does not prove any conclusion, but may help us arrive at the correct conclusions, which will still need proof.
         </p>
       </statement>
+      <solution>
+        <p>
+          The function <m>f</m> is an injection but not a surjection. To see that it is an injection, let <m>a, b \in \R</m> and assume that <m>f (a) = f (b)</m>. This implies that <m>e^{-a} = e^{-b} </m>. Now use the natural logarithm function to prove that <m>a = b</m>. Since <m>e^{-x} \gt 0</m> for each real number <m>x</m>, there is no <m>x \in \R</m> such that <m>f (x) = -1</m>. So <m>f</m> is not a surjection.
+        </p>
+        <p>
+          The function <m>g</m> is an injection and is a surjection. The proof that <m>g</m> is an injection is basically the same as the proof that <m>f</m> is an injection. To prove that <m>g</m> is a surjection, let <m>b \in R+</m>. To construct the real number <m>a</m> such that <m>g(a) = b</m>, solve the equation <m>e^{-a} = b</m> for <m>a</m>. The solution is <m>a = - \ln b</m>. It can then be verified that <m>g(a) = b</m>.
+        </p>
+      </solution>
     </exercise>
 
     <exercise>
@@ -33,12 +41,29 @@
         </p>
       </introduction>
 
-      <task>
+      <task xml:id="exer-injsurj-f">
         <statement>
           <p>
-            <m>F: \R \to \R</m> defined by <m>F (x) = 5x + 3</m>, for all <m>x \in \R</m>.
+            <m>F: \ \R \to \R</m> defined by <m>F (x) = 5x + 3</m>, for all <m>x \in \R</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            Let <m>F: \ \R \to \R</m> be defined by <m>F (x) = 5x + 3</m> for all <m>x 2 R</m>. Let <m>x1, x2 \in \R</m> and assume that <m>F (x_1) = F (x_2) </m>. Then, 
+            <md>
+              <mrow>5x_1 + 3 \amp = 5x_2 + 3</mrow>
+              <mrow>5x_1 \amp = 5_x2</mrow>
+              <mrow>x_1 \amp = x_2</mrow>
+            </md>
+            Hence, <m>F</m> is an injection. Now, let <m>y \in \R</m>. Then, <m>\frac{y - 3}{5} \in \R</m> and
+            <md>
+              <mrow>F \left( \frac{y - 3}{5} \right) \amp = 5 \left( \frac{y - 3}{5} \right) + 3</mrow>
+              <mrow> \amp = ( y - 3) + 3</mrow>
+              <mrow> \amp = y</mrow>
+            </md>.
+            Thus, <m>F</m> is a surjection and hence <m>F</m> is a bijection.
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -47,14 +72,41 @@
             <m>G: \Z \to \Z</m> defined by <m>G (x) = 5x + 3</m>, for all <m>x \in \Z</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            The proof that <m>G</m> is an injection is similar to the proof in <xref ref="exer-injsurj-f"/> that <m>F</m> is an injection. Now, for each <m>x \in \Z</m>, <m>\modulo{5x + 3}{3}{5}</m>, and hence <m>\modulo{G(x)}{3}{5}</m>. This means that there is no integer <m>x</m> such that <m>G(x) = 0</m>. Therefore, <m>G</m> is not a surjection.
+          </p>
+        </solution>
       </task>
 
-      <task>
+      <task xml:id="exer-r-4">
         <statement>
           <p>
             <m>f: ( \R -  \{ 4 \}) \to \R )</m> defined by <m>f(x) = \frac{3x}{x - 4}</m>, for all <m>x \in ( \R - \{ 4 \} )</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            Let <m>a, b \in \R - \{ 4 \}</m> and assume that <m>f(a) = f(b)</m>. Then,
+            <md>
+              <mrow>\frac{3a}{a - 4} \amp = \frac{3b}{b-4}</mrow>
+              <mrow>3a(b - 4) \amp = 3b(a - 4b)</mrow>
+              <mrow>3ab - 12a \amp = 3ab - 12b</mrow>
+              <mrow>-12a \amp = -12b</mrow>
+              <mrow>a \amp = b</mrow>
+            </md>
+            So <m>f</m> is an injection.
+          </p>
+          <p>
+            Use a proof by contradiction to show there is no <m>a \in \R - \{ 4 \}</m> such that <m>f (a) = 3</m>. Assume such an <m>a</m> exists. Then
+            <md>
+              <mrow>\frac{3a}{a - 4} \amp = 3</mrow>
+              <mrow>3a \amp = 3a - 12</mrow>
+              <mrow>0 \amp = -12</mrow>
+            </md>
+            and this is a contradiction. Therefore, for all <m>x \in \R - \{ 4 \}</m>, <m>f (x) \ne 3</m> and <m>f</m> is not a surjection.
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -63,6 +115,18 @@
             <m>g: ( \R -  \{ 4 \}) \to ( \R - \{ 3 \} )</m> defined by <m>g(x) = \frac{3x}{x - 4}</m>, for all <m>x \in ( \R - \{ 4 \} )</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            The function <m>g</m> is a bijection. The proof that is an injection is similar to the proof that <m>f</m> is an injection in <xref ref="exer-r-4"/>. To prove that it is a surjection let <m>y \in \R - \{ 3 \}</m>. Then, <m>\frac{4y}{y - 3} \in \R - \{ 4 \}</m> and
+            <md>
+              <mrow>g \left(\frac{4y}{y - 3} \right) \amp = \frac{3 \left(\frac{4y}{y - 3} \right)}{\left(\frac{4y}{y - 3} \right) - 4}</mrow>
+              <mrow> \amp = \frac{12y}{4y - 4(y - 3)}</mrow>
+              <mrow> \amp = \frac{12y}{12}</mrow>
+              <mrow> \amp = y</mrow>
+            </md>.
+            This proves that <m>g</m> is a surjection.
+          </p>
+        </solution>
       </task>
     </exercise>
 
@@ -83,6 +147,16 @@
             Calculate <m>s(k)</m> for each natural number <m>k</m> from 1 through 15.
           </p>
         </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>s(1) \amp = 1 \amp s(5) \amp = 6 \amp s(9) \amp = 13 \amp s(13) \amp = 14</mrow>
+              <mrow>s(2) \amp = 3 \amp s(6) \amp = 12 \amp s(10) \amp = 18 \amp s(14) \amp = 24</mrow>
+              <mrow>s(3) \amp = 4 \amp s(7) \amp = 8 \amp s(11) \amp = 12 \amp s(15) \amp = 24</mrow>
+              <mrow>s(4) \amp = 7 \amp s(8) \amp = 15 \amp s(12) \amp = 28 \amp s(16) \amp = 31</mrow>
+            </md>
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -91,6 +165,11 @@
             Is the sum of the divisors function an injection? Is it a surjection? Justify your conclusions. 
           </p>
         </statement>
+        <solution>
+          <p>
+            The sum of the divisors function <m>s</m> is not an injection. For example, <m>s(6) = s(11)</m>. This function is also not a surjection. For example, for all <m>x \in \N</m>, <m>s(x) \ne 2</m> and for all <m>x \in \N</m>, <m>s(x) \ne 5</m>.
+          </p>
+        </solution>
       </task>
 
     </exercise>
@@ -112,6 +191,20 @@
             This is the <term>determinant function</term> on the set of 2 by 2 matrices over the real numbers. Is the determinant function an injection? Is the determinant function a surjection? Justify your conclusions.
           </p>
         </statement>
+        <solution>
+          <p>
+            The determinant function is not an injection. For example,
+            <me>
+              \text{det} \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix} = \text{det} \begin{bmatrix} 1 \amp 2 \\ 0 \amp 1 \end{bmatrix}
+            </me>.
+          </p>
+          <p>
+            The determinant function is a surjection. To prove this, let <m>a \in \R</m>. Then
+            <me>
+              \text{det} \begin{bmatrix} a \amp 0 \\ 0 \amp 1 \end{bmatrix} = a
+            </me>.
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -124,6 +217,19 @@
             This is the <term>transpose function</term> on the set of 2 by 2 matrices over the real numbers. Is the transpose function an injection? Is the transpose function a surjection? Justify your conclusions.
           </p>
         </statement>
+        <solution>
+          <p>
+            The transpose function is a bijection. To prove it is an injection let <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}, \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix} \in \M_2(\R)</m> and assume that
+            <me>
+              \text{tran} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \text{tran} \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix}
+            </me>.
+            Then <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix}</m>. Therefore, <m>a = p</m>, <m>b = q</m>, <m>c = r</m>, and <m>d = s</m> and hence, <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix}</m>. To prove that the transpose function is a surjection, let 
+            <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} \in \M_2(\R)</m>. Then,
+            <me>
+              \text{tran} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}
+            </me>.
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -136,6 +242,32 @@
             Is the function <m>F</m> an injection? Is the function <m>F</m> a surjection? Justify your conclusions.
           </p>
         </statement>
+        <solution>
+          <p>
+            The function <m>F</m> is not an injection. For example
+            <me>
+              F \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} = 0 \qquad \text{and} \qquad F \begin{bmatrix} 1 \amp 1 \\ 1 \amp 1 \end{bmatrix} = 0
+            </me>.
+            The function <m>F</m> is a surjection. To prove this, let <m>y \in \R</m>. Consider three cases.
+            <ul>
+              <li>
+                <p>
+                  If <m>y = 0</m>, then <m>F \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} = 0 = y</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>y \gt 0</m>, then <m>\sqrt{y} \in \R</m> and <m>F \begin{bmatrix} \sqrt{y} \amp 0 \\ 0 \amp 0 \end{bmatrix} = \left( \sqrt{y} \right)^2 = y</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>y \lt 0</m>, then <m>\sqrt{-y} \in \R</m> and <m>F \begin{bmatrix} 0 \amp \sqrt{-y} \\ 0 \amp 0 \end{bmatrix} = - \left( \sqrt{-y}^2 \right)^2 = y</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </solution>
       </task>
     </exercise>
     

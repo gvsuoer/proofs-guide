@@ -16,6 +16,23 @@
           Justify your conclusion by writing a proof if the proposition is true or by providing a counterexample if it is false.
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We will prove that for all integers <m>a</m> and <m>b</m>, if <m>ab</m> is even, then <m>a</m> is even or <m>b</m> is even by proving its contrapositive, which is:
+            <blockquote>
+              For all integers <m>a</m> and <m>b</m>, if <m>a</m> is odd and <m>b</m> is odd, then <m>ab</m> is odd.
+            </blockquote>
+            So we assume that both <m>a</m> and <m>b</m> are odd integers and will prove that <m>ab</m> is an odd integer. Since <m>a</m> and <m>b</m> are odd, there exist integers <m>k</m> and <m>m</m> such that <m>a = 2k + 1</m> and <m>b = 2m + 1</m>. Using substitution and algebra, we then see that
+            <md>
+              <mrow>ab \amp = (2k + 1)(2m +1)</mrow>
+              <mrow> \amp = 4km + 2k + 2m + 1</mrow>
+              <mrow> \amp = 2 (2km + k + m) + 1</mrow>
+            </md>
+            Since <m>k</m> and <m>m</m> are integers, the closure properties of the integers allow us to conclude that <m>(2km + k + m)</m> is an integer. This means that <m>ab</m> has been written as two times an integer plus 1, and hence <m>ab</m> is an odd integer. This proves that for all integers <m>a</m> and <m>b</m>, if <m>a</m> is odd and <m>b</m> is odd, then <m>ab</m> is odd, which is the contrapositive of the proposition. So we have proved that For all integers <m>a</m> and <m>b</m>, if <m>ab</m> is even, then <m>a</m> is even or <m>b</m> is even. 
+          </p>
+        </proof>
+      </solution>
     </exercise>
 
     <exercise>
@@ -31,14 +48,32 @@
             For each <m>a \in \Z</m>, if <m>\modulo{a}{2}{5}</m>, then <m>\modulo{a^2}{4}{5}</m>.
           </p>
         </statement>
+        <solution>
+          <proof>
+            <p>
+              We assume that <m>a</m> is an integer and that <m>\modulo{a}{2}{5}</m> and will prove that <m>\modulo{a^2}{4}{5}</m>. Since <m>\modulo{a}{2}{5}</m>, then there exists an integer <m>k</m> such that <m>a = 2 = 5k</m> and so <m>a = 2 + 5k</m>. Then
+              <md>
+                <mrow>a^2 - 4 \amp = (2 + 5k)^2 - 4</mrow>
+                <mrow> \amp = 20k + 25k^2</mrow>
+                <mrow> \amp = 5(4k + 5k^2)</mrow>
+              </md>
+              Since the integers are closed under addition and multiplication, <m>(4k + 5k^2 )</m> is an integer, and so the last equation proves that 5 divides <m>a^2 - 4</m>. Hence, <m>\modulo{a^2}{4}{5}</m>, and this proves that for each integer <m>a</m>, if <m>\modulo{a}{2}{5}</m>, then <m>\modulo{a^2}{4}{5}</m>.
+            </p>
+          </proof>
+        </solution>
       </task>
 
-      <task>
+      <task xml:id="task-aZ-modulo">
         <statement>
           <p>
             For each <m>a \in \Z</m>, if <m>\modulo{a^2}{4}{5}</m>, then <m>\modulo{a}{2}{5}</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            This statement is false. A counterexample is <m>a = 3</m> since <m>\modulo{3^2}{4}{5}</m> and <m>\notmodulo{3}{2}{5}</m>.
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -47,6 +82,11 @@
             For each <m>a \in \Z</m>, <m>\modulo{a}{2}{5}</m> if and only if <m>\modulo{a^2}{4}{5}</m>.
           </p>
         </statement>
+        <solution>
+          <p>
+            This statement is false since the statement in <xref ref="task-aZ-modulo"/> is false.
+          </p>
+        </solution>
       </task>
     </exercise>
 
@@ -69,6 +109,17 @@
           </blockquote>
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We will prove the contrapositive of this statement, which is
+            <blockquote>
+              For each positive real number <m>x</m>, if <m>\sqrt{x}</m> is rational, then <m>x</m> is rational.
+            </blockquote>
+            So we assume that <m>x</m> is a rational number and that <m>\sqrt{x}</m> is rational, and will prove that <m>x</m> is rational. Since <m>\sqrt{x}</m> is rational, there exist positive integers <m>m</m> and <m>n</m> such that <m>\sqrt{x} = \frac{m}{n}</m>, then <m>x = \frac{m^2}{n^2}</m>. Since <m>m</m> and <m>n</m> are positive integers, <m>m^2</m> and <m>n^2</m> are positive integers and we can conclude that <m>x</m> is a rational number. This proves the contrapositive of the statement and so we have proved that for each positive real number <m>x</m>, if <m>x</m> is irrational, then <m>\sqrt{x}</m> is irrational. 
+          </p>
+        </proof>
+      </solution>
     </exercise>
     
   </exercises>

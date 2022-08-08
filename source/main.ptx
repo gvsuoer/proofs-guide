@@ -27,6 +27,6 @@
     <xi:include href="C_induction.ptx" />
     <xi:include href="C_injsurj.ptx" />
 
-    <!-- <xi:include href="./backmatter.ptx" /> -->
+    <xi:include href="./backmatter.ptx" />
   </book>
 </pretext>

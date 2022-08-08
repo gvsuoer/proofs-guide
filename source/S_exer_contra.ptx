@@ -13,6 +13,11 @@
             Determine at least five different integers that are congruent to 2 modulo 4. Are any of these integers congruent to 3 modulo 6?
           </p>
         </statement>
+        <solution>
+          <p>
+             Some integers that are congruent to 2 modulo 4 are <m>-6</m>; <m>-2</m>; 2; 6; 10. None of these integers are congruent to 3 modulo 6. For example, <m>\notmodulo{10}{3}{6}</m> since <m>10 - 3 = 7</m> and 6 does not divide 7.
+          </p>
+        </solution>
       </task>
 
       <task>
@@ -24,6 +29,29 @@
             </blockquote>
           </p>
         </statement>
+        <solution>
+          <proof>
+            <p>
+              We will use a proof by contradiction. Let <m>n \in \Z</m> and assume that <m>\modulo{n}{2}{4}</m> and that <m>\modulo{n}{3}{6}</m>. Since <m>\modulo{n}{2}{4}</m>, we know that 4 divides <m>n - 2</m>. Hence, there exists an integer <m>k</m> such that
+              <men xml:id="eqn-n24k">
+                n - 2 = 4k
+              </men>
+              We can also use the assumption that <m>\modulo{n}{3}{6}</m> to conclude that 6 divides <m>n - 3</m> and that there exists an integer <m>m</m> such that
+              <men xml:id="eqn-n36m">
+                n - 3 = 6m
+              </men>
+              If we now solve equations <xref ref="eqn-n24k"/> and <xref ref="eqn-n36m"/> for <m>n</m> and set the two expressions equal to each other, we obtain
+              <me>
+                4k + 2 = 6m + 3
+              </me>
+               However, this equation can be rewritten as
+               <me>
+                2 (2k + 1) = 2(3m + 1) + 1
+               </me>.
+                Since <m>2k + 1</m> is an integer and <m>3m + 1</m> is an integer, this last equation is a contradiction since the left side is an even integer and the right side is an odd integer. Hence, we have proven that if <m>\modulo{n}{2}{4}</m>, then <m>\notmodulo{n}{3}{6}</m>.
+            </p>
+          </proof>
+        </solution>
       </task>
 
     </exercise>
@@ -40,6 +68,19 @@
           </blockquote>
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We will use a proof by contradiction. So we assume that there exist real numbers <m>x</m> and <m>y</m> such that <m>x</m> is rational, <m>y</m> is irrational, and <m>x + y</m> is rational. Since <m>x</m> is rational, we know that <m>-x</m> is rational. Since the rational numbers are closed under addition, we know that <m>(-x) + (x + y)</m> is rational, and we see that
+            <md>
+              <mrow>(-x) + (x + y) \amp = ((-x) + x) + y</mrow>
+              <mrow> \amp = 0 + y</mrow>
+              <mrow> \amp = y</mrow>
+            </md>
+             However, this shows that <m>y</m> must be a rational number, but we have also assumed that <m>y</m> is irrational. Since a real number cannot be both rational and irrational, this is a contradiction. We have therefore proved that for all real numbers <m>x</m> and <m>y</m>, if <m>x</m> is rational and <m>y</m> is irrational, then <m>x + y</m> is irrational.
+          </p>
+        </proof>
+      </solution>
     </exercise>
 
     <exercise>
@@ -48,6 +89,20 @@
           Is the base 2 logarithm of 3, <m>\log_{2} 3</m>, a rational or irrational number? Justify your conclusion.
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We will use a proof by contradiction to prove that <m>\log_{2} 3</m> is an irrational number.
+          </p>
+          <p>
+            So we assume that <m>\log_{2} 3</m> is a rational number. So, if <m>\log_{2} 3 = a</m>, then <m>2^a = 3</m>. This means that <m>a</m> is a positive rational number, and hence, there exist natural numbers <m>m</m> and <m>n</m> such that <m>2^{\frac{m}{n}} = 3</m>. Hence,
+            <me>
+              \left( 2^{\frac{m}{n}} \right)^n = 3^n
+            </me>,
+            From this, we conclude that <m>2^m = 3^n </m>. However, <m>2^m</m> is an even integer and <m>3^n</m> is an odd integer. This is a contradiction, and so we have proved that <m>\log_{2} 3</m> is an irrational number.
+          </p>
+        </proof>
+      </solution>
     </exercise>
 
     <exercise>
@@ -56,6 +111,23 @@
           Is the real number <m>\sqrt{2} + \sqrt{3}</m> a rational or irrational number? Justify your conclusion.
         </p>
       </statement>
+      <solution>
+        <proof>
+          <p>
+            We will use a proof by contradiction to prove that <m>\sqrt{2} + \sqrt{3}</m> is an irrational number. So we assume that <m>\sqrt{2} + \sqrt{3}</m> is a rational number and so we can write <m>\sqrt{2} + \sqrt{3} = r</m>, where <m>r</m> is a rational number and <m>r \ne 0</m>. We now rewrite this equation and then square both sides of the resulting equation to obtain
+            <md>
+              <mrow>\sqrt{3} \amp  = r - \sqrt{2}</mrow>
+              <mrow>3 \amp = r^2 - 2r \sqrt{2} + 2</mrow>
+            </md>
+             We continue and rewrite this equation to isolate <m>\sqrt{2}</m> on one side of the equation.
+             <md>
+              <mrow>2r \sqrt{2} \amp = r^2 - 1</mrow>
+              <mrow>\sqrt{2} \amp = \frac{r^2 - 1}{2r}</mrow>
+             </md>
+             Since <m>r \ne 0</m>, <m>2r \ne 0</m>, and since the rational numbers are closed under division by a nonzero rational number, the last equation shows that <m>\sqrt{2}</m> is a rational number. This is a contradiction since it is known that <m>\sqrt{2}</m> is irrational. This proves that <m>\sqrt{2} + \sqrt{3}</m> is an irrational number.
+          </p>
+        </proof>
+      </solution>
     </exercise>
     
   </exercises>
