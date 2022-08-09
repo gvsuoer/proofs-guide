@@ -2,7 +2,7 @@
 
 <section xml:id="S_bicond">
   <title>Proofs of Biconditional Statements</title>
-
+  <idx><h>Pythagorean Theorem</h></idx>
   <p>
     One of the logical equivalencies in <xref ref="thm-log-equiv"/> is the following one for biconditional statements.
     <me>

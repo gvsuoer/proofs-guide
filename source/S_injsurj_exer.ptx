@@ -131,6 +131,7 @@
     </exercise>
 
     <exercise>
+    <idx><h>sum of divisors function</h></idx>
       <introduction>
         <p>
           Let <m>s</m> be the function that associates with each natural number the sum of its distinct natural number divisors. This is called the <term>sum of the divisors function</term>. For example, the natural number divisors of 6 are 1, 2, 3, and 6, and so
@@ -182,6 +183,7 @@
       </introduction>
 
       <task>
+      <idx><h>determinant</h></idx>
         <statement>
           <p>
             Define <m>\text{det: } \M_2 (\R) \to \R</m> by
@@ -208,6 +210,7 @@
       </task>
 
       <task>
+      <idx><h>transpose</h></idx>
         <statement>
           <p>
             Define <m>\text{tran: } \M_2 (\R) \to \M_2 (\R)</m> by

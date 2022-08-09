@@ -2,6 +2,8 @@
 
 <chapter xml:id="C_cases" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Using Cases in Proofs</title>
+  <idx><h>cases</h><h>proof using</h></idx>
+  <idx><h>proof</h><h>using cases</h></idx>
 
   <introduction>
     <p>

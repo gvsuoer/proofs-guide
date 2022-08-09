@@ -2,7 +2,8 @@
 
 <section xml:id="S_contrapositive">
   <title>Using the Contrapositive</title>
-  
+  <idx><h>contrapositive</h></idx>
+  <idx><h>proof</h><h>contrapositive</h></idx>
   <p>
     One of the most useful logical equivalencies to prove a conditional statement is that a conditional statement <m>P \to Q</m> is logically equivalent to its contrapositive, <m>\neg Q \to \neg P</m>. This means that if we prove the contrapositive of the conditional statement, then we have proven the conditional statement. The following are some important points to remember.
     <ul>

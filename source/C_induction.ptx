@@ -9,6 +9,7 @@
     </p>
     <assemblage xml:id="prin-math-induct">
       <title>The Principle of Mathematical Induction</title>
+      <idx><h>Principle of Mathematical Induction</h></idx>
       <p>
         If <m>T</m> is a subset of <m>\N</m> such that
         <ol>

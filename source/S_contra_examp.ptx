@@ -2,9 +2,9 @@
 
 <section xml:id="S_contra_examp">
   <title>Explanation and an Example</title>
-
+  <idx><h>proof</h><h>by contradiction</h></idx>
   <p>
-    Another method of proof that is frequently used in mathematics is a proof by contradiction. This method is based on the fact that a statement <m>X</m> can only be true or false (and not both). The idea is to prove that the statement <m>X</m> is true by showing that it cannot be false. This is done by assuming that <m>X</m> is false and proving that this leads to a contradiction. (The contradiction often has the form <m>(R \wedge \neg R)</m>, where <m>R</m> is some statement.) When this happens, we can conclude that the assumption that the statement <m>X</m> is false is incorrect and hence <m>X</m> cannot be false. Since it cannot be false, then <m>X</m> must be true.
+    Another method of proof that is frequently used in mathematics is a <term>proof by contradiction</term>. This method is based on the fact that a statement <m>X</m> can only be true or false (and not both). The idea is to prove that the statement <m>X</m> is true by showing that it cannot be false. This is done by assuming that <m>X</m> is false and proving that this leads to a contradiction. (The contradiction often has the form <m>(R \wedge \neg R)</m>, where <m>R</m> is some statement.) When this happens, we can conclude that the assumption that the statement <m>X</m> is false is incorrect and hence <m>X</m> cannot be false. Since it cannot be false, then <m>X</m> must be true.
   </p>
   <p>
     A logical basis for the contradiction method of proof is the tautology

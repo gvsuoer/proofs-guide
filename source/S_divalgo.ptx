@@ -17,6 +17,7 @@
 
   <assemblage xml:id="div-algo">
     <title>The Division Algorithm</title>
+    <idx><h>Division Algorithm</h><h>for cases</h></idx>
     <p>
       For all integers <m>a</m> and <m>b</m> with <m>b \gt 0</m>, there exist unique integers <m>q</m> and <m>r</m> such that
       <me>
@@ -26,6 +27,8 @@
   </assemblage>
 
   <p>
+  <idx><h>quotient</h></idx>
+  <idx><h>remainder</h></idx>
     So when we speak of <term>the quotient</term> and <term>the remainder</term> when we <q>divide an integer <m>a</m> by the positive integer <m>b</m>,</q> we will always mean the quotient <m>(q)</m> and the remainder <m>(r)</m> guaranteed by the Division Algorithm. So the remainder <m>r</m> is the least nonnegative integer such that there exists an integer (quotient) <m>q</m> with <m>a = bq + r</m>.
   </p>
   <p>

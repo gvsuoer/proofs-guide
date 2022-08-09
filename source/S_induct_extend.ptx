@@ -21,6 +21,8 @@
 
   <assemblage>
     <title>The Extended Principle of Mathematical Induction</title>
+    <idx><h>Extended Principle of Mathematical Induction</h></idx>
+    <idx><h>mathematical induction</h><h>Extended Principle</h></idx>
     <p>
       Let <m>M</m> be an integer. If <m>T</m> is a subset of <m>\Z</m> such that
       <ul>
@@ -40,6 +42,9 @@
   </assemblage>
 
   <p>
+  <idx><h>basis step</h></idx>
+  <idx><h>inductive step</h></idx>
+  <idx><h>mathematical induction</h><h>basis step</h></idx>
     The primary use of the Principle of Mathematical Induction is to prove statements of the form
     <me>
       ( \forall n \in \Z, \text{ with } n \geq M)(P(n))

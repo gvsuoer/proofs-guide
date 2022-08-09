@@ -149,6 +149,7 @@
     </exercise>
 
     <exercise>
+    <idx><h>Fibonacci numbers</h></idx>
       <introduction>
         <p>
           The <term>Fibonacci numbers</term> are a sequence of natural numbers <m>f_1, f_2, f_3, \ldots, f_n, \ldots</m> defined recursively as follows:
