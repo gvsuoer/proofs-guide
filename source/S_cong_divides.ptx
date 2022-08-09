@@ -16,6 +16,7 @@
   </proposition>
 
   <p>
+  <idx><h>counterexample</h></idx>
     Before we try to prove a proposition, it is a good idea to try some examples for which the hypothesis is true and then determine whether or not the conclusion is true for these examples. The idea is to convince ourselves that this proposition at least appears to be true. On the other hand, if we find an example where the hypothesis is true and the conclusion is false, then we have found a <term>counterexample</term> for the proposition and we would have prove the proposition to be false. The following table summarizes four examples that suggest this proposition is true.
 
     <tabular halign="center" top='medium' left='medium'>
@@ -195,13 +196,15 @@
 
   <paragraphs>
     <title>Note</title>
+    <idx><h>counterexample</h></idx>
+    <idx><h>Euclid's Lemma</h></idx>
     <p>
       This is the standard way to prove a conditional statement is false. Find an example (called a counterexample) in which the hypothesis is true and the conclusion is false. Sometimes, even though a proposition is false, we can modify the statement of the proposition and create a new true proposition. We can do this for <xref ref="prop-7-divides"/> once we have studied more number theory. There is a theorem from number theory that states:
       <blockquote>
         For each prime number <m>p</m> and all integers <m>a</m> and <m>b</m>, if <m>p</m> divides <m>ab</m>, then <m>p</m> divides <m>a</m> or <m>p</m> divides <m>b</m>.
       </blockquote>
       
-      This result is known as Euclid's Lemma. Using this result, when we get to the part where we conclude that <m>( n - 2)( n + 2) = 7k</m>, we can conclude that 7 divides <m>(n - 2)(n + 2)</m> and hence, 7 divides <m>n - 2/</m> or 7 divides <m>(n + 2)/</m>. So we would have the following true proposition.
+      This result is known as <term>Euclid's Lemma</term>. Using this result, when we get to the part where we conclude that <m>( n - 2)( n + 2) = 7k</m>, we can conclude that 7 divides <m>(n - 2)(n + 2)</m> and hence, 7 divides <m>n - 2/</m> or 7 divides <m>(n + 2)/</m>. So we would have the following true proposition.
     </p>
   </paragraphs>
 

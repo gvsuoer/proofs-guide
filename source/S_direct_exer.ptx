@@ -55,9 +55,10 @@
     </exercise>
 
     <exercise>
+    <idx><h>Pythagorean Theorem</h></idx>
       <statement>
         <p>
-           The Pythagorean Theorem for right triangles states that if <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse, then <m>a^2 + b^2 = c^2</m> . For example, if <m>a = 5</m> and <m>b = 12</m> are the lengths of the two sides of a right triangle and if <m>c</m> is the length of the hypotenuse, then the <m>c^2 = 5^2 + 12^2</m> and so <m>c^2 = 169</m>. Since <m>c</m> is a length and must be positive, we conclude that <m>c = 13</m>.
+           The <term>Pythagorean Theorem</term> for right triangles states that if <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse, then <m>a^2 + b^2 = c^2</m> . For example, if <m>a = 5</m> and <m>b = 12</m> are the lengths of the two sides of a right triangle and if <m>c</m> is the length of the hypotenuse, then the <m>c^2 = 5^2 + 12^2</m> and so <m>c^2 = 169</m>. Since <m>c</m> is a length and must be positive, we conclude that <m>c = 13</m>.
         </p>
         <p>
           Construct and provide a well-written proof for the following proposition.

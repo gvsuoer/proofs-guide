@@ -5,6 +5,8 @@
 
   <assemblage>
     <title>Definition</title>
+    <idx><h>function</h></idx>
+    <idx><h>mapping</h></idx>
     <p>
        A <term>function</term> from a set <m>A</m> to a set <m>B</m> is a rule that associates with each element <m>x</m> of the set <m>A</m> exactly one element of the set <m>B</m>. A function from <m>A</m> to <m>B</m> is also called a <term>mapping</term> from <m>A</m> to <m>B</m>.
     </p>
@@ -21,6 +23,12 @@
 
   <assemblage>
     <title>Definition</title>
+    <idx><h>codomain</h></idx>
+    <idx><h>domain</h><h>of a function</h></idx>
+    <idx><h>function</h><h>codomain</h></idx>
+    <idx><h>function</h><h>domain</h></idx>
+    <idx><h>image</h><h>of an element</h></idx>
+    <idx><h>preimage</h><h>of an element</h></idx>
     <p>
        Let <m>f: A \to B</m>. (This is read, <q>Let <m>f</m> be a function from <m>A</m> to <m>B</m>.</q>) The set <m>A</m> is called the <term>domain</term> of the function <m>f</m> , and we write <m>A = \dom{f}</m>. The set <m>B</m> is called the <term>codomain</term> of the function <m>f</m> , and we write <m>B = \codom{f}</m>.
     </p>
@@ -31,7 +39,10 @@
 
   <paragraphs>
     <title>Some Function Terminology</title>
-    
+    <idx><h>dependent variable</h></idx>
+    <idx><h>independent variable</h></idx>
+    <idx><h>variable</h><h>dependent</h></idx>
+    <idx><h>variable</h><h>independent</h></idx>
     <p>
       When we have a function <m>f: A \to B</m>, we often write <m>y = f(x)</m>. In this case, we consider <m>x</m> to be an unspecified object that can be chosen from the set <m>A</m>, and we would say that <m>x</m> is the <term>independent variable</term> of the function <m>f</m> and <m>y</m> is the <term>dependent variable</term> of the function <m>f</m>.
     </p>
@@ -39,6 +50,8 @@
 
   <assemblage>
     <title>Definition</title>
+    <idx><h>function</h><h>range</h></idx>
+    <idx><h>range</h></idx>
     <p>
       Let <m>f: A \to B</m>. The set <m>\{ f(x) | x \in A \}</m> is called the <term>range of the function <m>f</m></term> and is denoted by <m>\range{f}</m>. The range of <m>f</m> is sometimes called the image of the function <m>f</m> (or the <term>image of <m>A</m> under <m>f</m></term> ).
     </p>
@@ -54,6 +67,10 @@
 
   <assemblage>
     <title>Definition</title>
+    <idx><h>function</h><h>injective</h></idx>
+    <idx><h>function</h><h>one-to-one</h></idx>
+    <idx><h>injection</h></idx>
+    <idx><h>one-to-one function</h></idx>
     <p>
       Let <m>f: A \to B</m> be a function from the set <m>A</m> to the set <m>B</m>. The function <m>f</m> is called an <term>injection</term> provided that
       <me>
@@ -106,6 +123,10 @@
 
   <assemblage>
     <title>Definition</title>
+    <idx><h>function</h><h>onto</h></idx>
+    <idx><h>function</h><h>surjective</h></idx>
+    <idx><h>onto function</h></idx>
+    <idx><h>surjection</h></idx>
     <p>
       Let <m>f: A \to B</m> be a function from the set <m>A</m> to the set <m>B</m>. The function <m>f</m> is called a <term>surjection</term> provided that the range of <m>f</m> equals the codomain of <m>f</m>. This means that
       <blockquote>
@@ -167,6 +188,8 @@
 
   <assemblage>
     <title>Definition</title>
+    <idx><h>bijection</h></idx>
+    <idx><h>function</h><h>bijective</h></idx>
     <p>
       A <term>bijection</term> is a function that is both an injection and a surjection. If the function <m>f</m> is a bijection, we also say that <m>f</m> is <term>one-to-one and onto</term> and that <m>f</m> is a <term>bijective function</term>.
     </p>

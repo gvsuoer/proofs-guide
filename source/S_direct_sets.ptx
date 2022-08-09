@@ -4,6 +4,7 @@
   <title>A Direct Proof Involving Sets</title>
 
   <p>
+  <idx><h>choose-an-element method</h></idx>
     One of the most basic types of proofs involving sets is to prove that one set is a subset of another set. If <m>S</m> and <m>T</m> are both subsets of some univesal set <m>U</m>, to prove that <m>S</m> is a subset of <m>T</m>, we need to prove that
     <blockquote>
       For each element in <m>U</m>, if <m>x \in S</m>, then <m>x \in T</m>.

@@ -4,6 +4,9 @@
   <title>Using the Principle of Mathematical Induction</title>
 
   <p>
+  <idx><h>basis step</h></idx>
+  <idx><h>inductive step</h></idx>
+  <idx><h>mathematical induction</h><h>basis step</h></idx>
     The primary use of the Principle of Mathematical Induction is to prove statements of the form
     <me>
       ( \forall n \in \N)(P(n))
@@ -47,6 +50,7 @@
   </assemblage>
 
   <p>
+  <idx><h>inductive assumption</h></idx>
     Note that in the inductive step, we want to prove that the conditional statement <q>for
     each <m>k \in N</m>, if <m>P (k)</m> then <m>P (k + 1)</m></q> is true. So we will start the inductive step by assuming that <m>P (k)</m> is true. This assumption is called the <term>inductive assumption</term> or the <term>inductive hypothesis</term>.
   </p>

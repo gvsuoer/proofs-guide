@@ -91,6 +91,8 @@
     </exercise>
 
     <exercise xml:id="exer-rational">
+    <idx><h>irrational numbers</h></idx>
+    <idx><h>rational numbers</h></idx>
       <statement>
         <p>
           A real number x is defined to be a <term>rational number</term> provided
