@@ -81,7 +81,7 @@
               <m>P \to Q \equiv \neg P \vee Q</m>
             </p>
             <p>
-              <m>\neg \left( P \to Q \right) \equiv P \wedge \not Q</m>
+              <m>\neg \left( P \to Q \right) \equiv P \wedge \neg Q</m>
             </p>
           </li>
           <li>

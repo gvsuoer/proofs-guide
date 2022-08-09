@@ -78,7 +78,7 @@
           By the closure properties of the integers, <m>2k^2 + 3k + 1</m> is an integer, and hence <m>n^2 + n</m> is even. So this proves that when <m>n</m> is an odd integer, <m>n^2 + n</m> is an even integer.
         </p>
         <p>
-          Since we have proved that <m>n 2 C n</m> is even when <m>n</m> is even and when <m>n</m> is odd, we have proved that if <m>n</m> is an integer, then <m>n 2 C n</m> is an even integer.
+          Since we have proved that <m>n^2 + n</m> is even when <m>n</m> is even and when <m>n</m> is odd, we have proved that if <m>n</m> is an integer, then <m>n^2 + n</m> is an even integer.
         </p>
       </proof>
     </proposition>
