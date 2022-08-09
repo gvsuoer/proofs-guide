@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:12-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Practice Problems for Chapter 7</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Constructing and Writing Mathematical Proofs">
+<meta property="book:author" content="Ted Sundstrom, Professor Emeritus">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom_style.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\notmodulo}[3]{#1 \not \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\dom}[1]{\text{ dom} ( #1 )}
+\newcommand{\codom}[1]{\text{ codom} ( #1 )}
+\newcommand{\range}[1]{\text{ range} ( #1 )}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="proofs-guide.html"><span class="title">Constructing and Writing Mathematical Proofs:</span> <span class="subtitle">A Guide for Mathematics Students</span></a></h1>
+<p class="byline">Ted Sundstrom, Professor Emeritus</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="S_injsurj_proofs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C_injsurj.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="S_injsurj_proofs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C_injsurj.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Note to Students</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_preliminaries.html" data-scroll="C_preliminaries" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="S_definitions.html" data-scroll="S_definitions" class="internal">Definitions</a></li>
+<li><a href="S_prooflogic.html" data-scroll="S_prooflogic" class="internal">Useful Logic for Constructing Proofs</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_directproofs.html" data-scroll="C_directproofs" class="internal"><span class="codenumber">2</span> <span class="title">Direct Proofs</span></a><ul>
+<li><a href="S_cong_divides.html" data-scroll="S_cong_divides" class="internal">Using the Definitions of Congruence and Divides</a></li>
+<li><a href="S_direct_sets.html" data-scroll="S_direct_sets" class="internal">A Direct Proof Involving Sets</a></li>
+<li><a href="S_direct_exer.html" data-scroll="S_direct_exer" class="internal">Practice Problems for Chapter 2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_othermethods.html" data-scroll="C_othermethods" class="internal"><span class="codenumber">3</span> <span class="title">Some Other Methods of Proof</span></a><ul>
+<li><a href="S_contrapositive.html" data-scroll="S_contrapositive" class="internal">Using the Contrapositive</a></li>
+<li><a href="S_otherlogequiv.html" data-scroll="S_otherlogequiv" class="internal">Using Other Logical Equivalencies</a></li>
+<li><a href="S_bicond.html" data-scroll="S_bicond" class="internal">Proofs of Biconditional Statements</a></li>
+<li><a href="S_other_exer.html" data-scroll="S_other_exer" class="internal">Practice Problems for Chapter 3</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_contradiction.html" data-scroll="C_contradiction" class="internal"><span class="codenumber">4</span> <span class="title">Proof by Contradiction</span></a><ul>
+<li><a href="S_contra_examp.html" data-scroll="S_contra_examp" class="internal">Explanation and an Example</a></li>
+<li><a href="S_dne.html" data-scroll="S_dne" class="internal">Proving that Something Does Not Exist</a></li>
+<li><a href="S_rational.html" data-scroll="S_rational" class="internal">Rational and Irrational Numbers</a></li>
+<li><a href="S_exer_contra.html" data-scroll="S_exer_contra" class="internal">Practice Problems for Chapter 4</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_cases.html" data-scroll="C_cases" class="internal"><span class="codenumber">5</span> <span class="title">Using Cases in Proofs</span></a><ul>
+<li><a href="S_commoncases.html" data-scroll="S_commoncases" class="internal">Some Common Situations to Use Cases</a></li>
+<li><a href="S_divalgo.html" data-scroll="S_divalgo" class="internal">Using Cases with the Division Algorithm</a></li>
+<li><a href="S_cases_exer.html" data-scroll="S_cases_exer" class="internal">Practice Problems for Chapter 5</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_induction.html" data-scroll="C_induction" class="internal"><span class="codenumber">6</span> <span class="title">Mathematical Induction</span></a><ul>
+<li><a href="S_use_induct.html" data-scroll="S_use_induct" class="internal">Using the Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_extend.html" data-scroll="S_induct_extend" class="internal">The Extended Principle of Mathematical Induction</a></li>
+<li><a href="S_second_induct.html" data-scroll="S_second_induct" class="internal">The Second Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_exer.html" data-scroll="S_induct_exer" class="internal">Practice Problems for Chapter 6</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_injsurj.html" data-scroll="C_injsurj" class="internal"><span class="codenumber">7</span> <span class="title">Injective and Surjective Functions</span></a><ul>
+<li><a href="S_injsurj.html" data-scroll="S_injsurj" class="internal">Definitions and Notation</a></li>
+<li><a href="S_injsurj_proofs.html" data-scroll="S_injsurj_proofs" class="internal">Some Examples and Proofs</a></li>
+<li><a href="S_injsurj_exer.html" data-scroll="S_injsurj_exer" class="active">Practice Problems for Chapter 7</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="app_guidelines.html" data-scroll="app_guidelines" class="internal"><span class="codenumber">A</span> <span class="title">Guidelines for Writing Mathematical Proofs</span></a></li>
+<li class="link"><a href="app_solutions.html" data-scroll="app_solutions" class="internal"><span class="codenumber">B</span> <span class="title">Answers and Hints for the Practice Problems</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="S_injsurj_exer"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">Practice Problems for Chapter 7</span>
+</h2>
+<section class="exercises" id="exercises-6"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title"></span>
+</h3>
+<article class="exercise exercise-like" id="exercise-21"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-351">Let <span class="process-math">\(R^+ = \{ y \in \R | y \gt 0 \}\text{.}\)</span> Define <blockquote class="blockquote" id="blockquote-35">
+<p id="p-352"><span class="process-math">\(f: \R \to \R\)</span> by <span class="process-math">\(f(x) = e^{-x}\text{,}\)</span> for each <span class="process-math">\(x \in \R\text{,}\)</span> and</p>
+<p id="p-353"><span class="process-math">\(g: \R \to \R ^+\)</span> by <span class="process-math">\(g(x) = e^{-x}\text{,}\)</span> for each <span class="process-math">\(x \in \R\)</span></p>
+</blockquote> Determine if each of these functions is an injection or a surjection. Justify your conclusions</p>
+<p id="p-354">Note: Before writing proofs, it might be helpful to draw the graph of <span class="process-math">\(y = e^{-x}\text{.}\)</span> A reasonable graph can be obtained using <span class="process-math">\(-3 \leq x \leq 3\)</span> and <span class="process-math">\(-2 \leq y \leq 10\text{.}\)</span> Please keep in mind that the graph does not prove any conclusion, but may help us arrive at the correct conclusions, which will still need proof.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-27" id="solution-27"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-27"><div class="solution solution-like">
+<p id="p-355">The function <span class="process-math">\(f\)</span> is an injection but not a surjection. To see that it is an injection, let <span class="process-math">\(a, b \in \R\)</span> and assume that <span class="process-math">\(f (a) = f (b)\text{.}\)</span> This implies that <span class="process-math">\(e^{-a} = e^{-b} \text{.}\)</span> Now use the natural logarithm function to prove that <span class="process-math">\(a = b\text{.}\)</span> Since <span class="process-math">\(e^{-x} \gt 0\)</span> for each real number <span class="process-math">\(x\text{,}\)</span> there is no <span class="process-math">\(x \in \R\)</span> such that <span class="process-math">\(f (x) = -1\text{.}\)</span> So <span class="process-math">\(f\)</span> is not a surjection.</p>
+<p id="p-356">The function <span class="process-math">\(g\)</span> is an injection and is a surjection. The proof that <span class="process-math">\(g\)</span> is an injection is basically the same as the proof that <span class="process-math">\(f\)</span> is an injection. To prove that <span class="process-math">\(g\)</span> is a surjection, let <span class="process-math">\(b \in R+\text{.}\)</span> To construct the real number <span class="process-math">\(a\)</span> such that <span class="process-math">\(g(a) = b\text{,}\)</span> solve the equation <span class="process-math">\(e^{-a} = b\)</span> for <span class="process-math">\(a\text{.}\)</span> The solution is <span class="process-math">\(a = - \ln b\text{.}\)</span> It can then be verified that <span class="process-math">\(g(a) = b\text{.}\)</span></p>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-22"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-13"><p id="p-357">For each of the following functions, determine if the function is an injection or a surjection (or both, and hence, a bijection). Justify all conclusions.</p></div>
+<article class="task exercise-like" id="exer-injsurj-f"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<p id="p-358"><span class="process-math">\(F: \ \R \to \R\)</span> defined by <span class="process-math">\(F (x) = 5x + 3\text{,}\)</span> for all <span class="process-math">\(x \in \R\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-28" id="solution-28"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-28"><div class="solution solution-like">
+<p id="p-359">Let <span class="process-math">\(F: \ \R \to \R\)</span> be defined by <span class="process-math">\(F (x) = 5x + 3\)</span> for all <span class="process-math">\(x 2 R\text{.}\)</span> Let <span class="process-math">\(x1, x2 \in \R\)</span> and assume that <span class="process-math">\(F (x_1) = F (x_2) \text{.}\)</span> Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-45">
+\begin{align*}
+5x_1 + 3 \amp = 5x_2 + 3\\
+5x_1 \amp = 5_x2\\
+x_1 \amp = x_2
+\end{align*}
+</div>
+<p class="continuation">Hence, <span class="process-math">\(F\)</span> is an injection. Now, let <span class="process-math">\(y \in \R\text{.}\)</span> Then, <span class="process-math">\(\frac{y - 3}{5} \in \R\)</span> and</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-46">
+\begin{align*}
+F \left( \frac{y - 3}{5} \right) \amp = 5 \left( \frac{y - 3}{5} \right) + 3\\
+\amp = ( y - 3) + 3\\
+\amp = y\text{.}
+\end{align*}
+</div>
+<p class="continuation">Thus, <span class="process-math">\(F\)</span> is a surjection and hence <span class="process-math">\(F\)</span> is a bijection.</p>
+</div></div>
+</div></article><article class="task exercise-like" id="task-20"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<p id="p-360"><span class="process-math">\(G: \Z \to \Z\)</span> defined by <span class="process-math">\(G (x) = 5x + 3\text{,}\)</span> for all <span class="process-math">\(x \in \Z\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-29" id="solution-29"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-29"><div class="solution solution-like"><p id="p-361">The proof that <span class="process-math">\(G\)</span> is an injection is similar to the proof in <a href="" class="xref" data-knowl="./knowl/exer-injsurj-f.html" title="Task 7.3.2.a">Task 7.3.2.a</a> that <span class="process-math">\(F\)</span> is an injection. Now, for each <span class="process-math">\(x \in \Z\text{,}\)</span> <span class="process-math">\(\modulo{5x + 3}{3}{5}\text{,}\)</span> and hence <span class="process-math">\(\modulo{G(x)}{3}{5}\text{.}\)</span> This means that there is no integer <span class="process-math">\(x\)</span> such that <span class="process-math">\(G(x) = 0\text{.}\)</span> Therefore, <span class="process-math">\(G\)</span> is not a surjection.</p></div></div>
+</div></article><article class="task exercise-like" id="exer-r-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<p id="p-362"><span class="process-math">\(f: ( \R -  \{ 4 \}) \to \R )\)</span> defined by <span class="process-math">\(f(x) = \frac{3x}{x - 4}\text{,}\)</span> for all <span class="process-math">\(x \in ( \R - \{ 4 \} )\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-30" id="solution-30"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-30"><div class="solution solution-like">
+<p id="p-363">Let <span class="process-math">\(a, b \in \R - \{ 4 \}\)</span> and assume that <span class="process-math">\(f(a) = f(b)\text{.}\)</span> Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-47">
+\begin{align*}
+\frac{3a}{a - 4} \amp = \frac{3b}{b-4}\\
+3a(b - 4) \amp = 3b(a - 4b)\\
+3ab - 12a \amp = 3ab - 12b\\
+-12a \amp = -12b\\
+a \amp = b
+\end{align*}
+</div>
+<p class="continuation">So <span class="process-math">\(f\)</span> is an injection.</p>
+<p id="p-364">Use a proof by contradiction to show there is no <span class="process-math">\(a \in \R - \{ 4 \}\)</span> such that <span class="process-math">\(f (a) = 3\text{.}\)</span> Assume such an <span class="process-math">\(a\)</span> exists. Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-48">
+\begin{align*}
+\frac{3a}{a - 4} \amp = 3\\
+3a \amp = 3a - 12\\
+0 \amp = -12
+\end{align*}
+</div>
+<p class="continuation">and this is a contradiction. Therefore, for all <span class="process-math">\(x \in \R - \{ 4 \}\text{,}\)</span> <span class="process-math">\(f (x) \ne 3\)</span> and <span class="process-math">\(f\)</span> is not a surjection.</p>
+</div></div>
+</div></article><article class="task exercise-like" id="task-22"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<p id="p-365"><span class="process-math">\(g: ( \R -  \{ 4 \}) \to ( \R - \{ 3 \} )\)</span> defined by <span class="process-math">\(g(x) = \frac{3x}{x - 4}\text{,}\)</span> for all <span class="process-math">\(x \in ( \R - \{ 4 \} )\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-31" id="solution-31"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-31"><div class="solution solution-like">
+<p id="p-366">The function <span class="process-math">\(g\)</span> is a bijection. The proof that is an injection is similar to the proof that <span class="process-math">\(f\)</span> is an injection in <a href="" class="xref" data-knowl="./knowl/exer-r-4.html" title="Task 7.3.2.c">Task 7.3.2.c</a>. To prove that it is a surjection let <span class="process-math">\(y \in \R - \{ 3 \}\text{.}\)</span> Then, <span class="process-math">\(\frac{4y}{y - 3} \in \R - \{ 4 \}\)</span> and</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/exer-r-4.html" id="md-49">
+\begin{align*}
+g \left(\frac{4y}{y - 3} \right) \amp = \frac{3 \left(\frac{4y}{y - 3} \right)}{\left(\frac{4y}{y - 3} \right) - 4}\\
+\amp = \frac{12y}{4y - 4(y - 3)}\\
+\amp = \frac{12y}{12}\\
+\amp = y\text{.}
+\end{align*}
+</div>
+<p class="continuation">This proves that <span class="process-math">\(g\)</span> is a surjection.</p>
+</div></div>
+</div></article></article><article class="exercise exercise-like" id="exercise-23"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-14">
+<p id="p-367">Let <span class="process-math">\(s\)</span> be the function that associates with each natural number the sum of its distinct natural number divisors. This is called the <dfn class="terminology">sum of the divisors function</dfn>. For example, the natural number divisors of 6 are 1, 2, 3, and 6, and so</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-50">
+\begin{align*}
+s(6) \amp = 1 + 2 + 3 + 6\\
+\amp = 12
+\end{align*}
+</div>
+</div>
+<article class="task exercise-like" id="task-23"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<p id="p-368">Calculate <span class="process-math">\(s(k)\)</span> for each natural number <span class="process-math">\(k\)</span> from 1 through 15.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-32" id="solution-32"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-32"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-51">
+\begin{align*}
+s(1) \amp = 1 \amp s(5) \amp = 6 \amp s(9) \amp = 13 \amp s(13) \amp = 14\\
+s(2) \amp = 3 \amp s(6) \amp = 12 \amp s(10) \amp = 18 \amp s(14) \amp = 24\\
+s(3) \amp = 4 \amp s(7) \amp = 8 \amp s(11) \amp = 12 \amp s(15) \amp = 24\\
+s(4) \amp = 7 \amp s(8) \amp = 15 \amp s(12) \amp = 28 \amp s(16) \amp = 31
+\end{align*}
+</div></div></div>
+</div></article><article class="task exercise-like" id="task-24"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<p id="p-370">Is the sum of the divisors function an injection? Is it a surjection? Justify your conclusions.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-33" id="solution-33"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-33"><div class="solution solution-like"><p id="p-371">The sum of the divisors function <span class="process-math">\(s\)</span> is not an injection. For example, <span class="process-math">\(s(6) = s(11)\text{.}\)</span> This function is also not a surjection. For example, for all <span class="process-math">\(x \in \N\text{,}\)</span> <span class="process-math">\(s(x) \ne 2\)</span> and for all <span class="process-math">\(x \in \N\text{,}\)</span> <span class="process-math">\(s(x) \ne 5\text{.}\)</span></p></div></div>
+</div></article></article><article class="exercise exercise-like" id="exercise-24"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-15"><p id="p-372">Let <span class="process-math">\(\M_2 (\R)\)</span> represent the set of all 2 by 2 matricies over <span class="process-math">\(\R.\)</span></p></div>
+<article class="task exercise-like" id="task-25"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<p id="p-373">Define <span class="process-math">\(\text{det: } \M_2 (\R) \to \R\)</span> by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{det} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = ab - bc\text{.}
+\end{equation*}
+</div>
+<p class="continuation">This is the <dfn class="terminology">determinant function</dfn> on the set of 2 by 2 matrices over the real numbers. Is the determinant function an injection? Is the determinant function a surjection? Justify your conclusions.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-34" id="solution-34"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-34"><div class="solution solution-like">
+<p id="p-374">The determinant function is not an injection. For example,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{det} \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix} = \text{det} \begin{bmatrix} 1 \amp 2 \\ 0 \amp 1 \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+<p id="p-375">The determinant function is a surjection. To prove this, let <span class="process-math">\(a \in \R\text{.}\)</span> Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{det} \begin{bmatrix} a \amp 0 \\ 0 \amp 1 \end{bmatrix} = a\text{.}
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="task exercise-like" id="task-26"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<p id="p-376">Define <span class="process-math">\(\text{tran: } \M_2 (\R) \to \M_2 (\R)\)</span> by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{tran} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = A^T = \begin{bmatrix} a \amp c \\ b \amp d \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">This is the <dfn class="terminology">transpose function</dfn> on the set of 2 by 2 matrices over the real numbers. Is the transpose function an injection? Is the transpose function a surjection? Justify your conclusions.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-35" id="solution-35"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-35"><div class="solution solution-like">
+<p id="p-377">The transpose function is a bijection. To prove it is an injection let <span class="process-math">\(\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}, \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix} \in \M_2(\R)\)</span> and assume that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{tran} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \text{tran} \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Then <span class="process-math">\(\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix}\text{.}\)</span> Therefore, <span class="process-math">\(a = p\text{,}\)</span> <span class="process-math">\(b = q\text{,}\)</span> <span class="process-math">\(c = r\text{,}\)</span> and <span class="process-math">\(d = s\)</span> and hence, <span class="process-math">\(\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \begin{bmatrix} p \amp q \\ r \amp s \end{bmatrix}\text{.}\)</span> To prove that the transpose function is a surjection, let <span class="process-math">\(\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} \in \M_2(\R)\text{.}\)</span> Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{tran} \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="task exercise-like" id="task-27"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<p id="p-378">Define <span class="process-math">\(F: \M_2 (\R) \to \R\)</span> by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F \begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix} = a^2 + d^2 - b^2 - c^2
+\end{equation*}
+</div>
+<p class="continuation">Is the function <span class="process-math">\(F\)</span> an injection? Is the function <span class="process-math">\(F\)</span> a surjection? Justify your conclusions.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-36" id="solution-36"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-36"><div class="solution solution-like">
+<p id="p-379">The function <span class="process-math">\(F\)</span> is not an injection. For example</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} = 0 \qquad \text{and} \qquad F \begin{bmatrix} 1 \amp 1 \\ 1 \amp 1 \end{bmatrix} = 0\text{.}
+\end{equation*}
+</div>
+<p class="continuation">The function <span class="process-math">\(F\)</span> is a surjection. To prove this, let <span class="process-math">\(y \in \R\text{.}\)</span> Consider three cases.</p>
+<ul class="disc">
+<li id="li-69"><p id="p-380">If <span class="process-math">\(y = 0\text{,}\)</span> then <span class="process-math">\(F \begin{bmatrix} 0 \amp 0 \\ 0 \amp 0 \end{bmatrix} = 0 = y\text{.}\)</span></p></li>
+<li id="li-70"><p id="p-381">If <span class="process-math">\(y \gt 0\text{,}\)</span> then <span class="process-math">\(\sqrt{y} \in \R\)</span> and <span class="process-math">\(F \begin{bmatrix} \sqrt{y} \amp 0 \\ 0 \amp 0 \end{bmatrix} = \left( \sqrt{y} \right)^2 = y\text{.}\)</span></p></li>
+<li id="li-71"><p id="p-382">If <span class="process-math">\(y \lt 0\text{,}\)</span> then <span class="process-math">\(\sqrt{-y} \in \R\)</span> and <span class="process-math">\(F \begin{bmatrix} 0 \amp \sqrt{-y} \\ 0 \amp 0 \end{bmatrix} = - \left( \sqrt{-y}^2 \right)^2 = y\text{.}\)</span></p></li>
+</ul>
+</div></div>
+</div></article></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:16-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h4 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.4.2.1</span><span class="period">.</span>
+</h4>
+<article class="proof"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5>
+<p>We will use a proof by mathematical induction. For each natural number <span class="process-math">\(n\text{,}\)</span> we let <span class="process-math">\(P (n)\)</span> be</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\modulo{4^n}{1}{3}
+\end{equation*}
+</div>
+<p class="continuation">We first prove that <span class="process-math">\(P (1)\)</span> is true. Notice that when <span class="process-math">\(n = 1\text{,}\)</span> <span class="process-math">\(4^n = 4^1 = 4\)</span> and <span class="process-math">\(\modulo{4}{1}{3}\text{.}\)</span> This proves that <span class="process-math">\(P (1)\)</span> is true.</p>
+<p>For the inductive step, we prove that for each <span class="process-math">\(k \in \N\text{,}\)</span> if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true. So let <span class="process-math">\(k\)</span> be a natural number and assume that <span class="process-math">\(P (k)\)</span> is true. That is, assume that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\modulo{4^k}{1}{3}\tag{13}
+\end{equation}
+</div>
+<p class="continuation">The goal now is to prove that <span class="process-math">\(P (k + 1)\)</span> is true. That is, it must be proved that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\modulo{4^{k+1}}{1}{3}\tag{14}
+\end{equation}
+</div>
+<p class="continuation">Since we have to assume that <span class="process-math">\(\modulo{4^k}{1}{3}\text{,}\)</span> we conclude that 3 divides <span class="process-math">\(\left( 4^k + 1 \right)\)</span> and so there exists and integer <span class="process-math">\(m\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+4^k - 1 = 3m\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Multiplying both sides of this equation by 4, we obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+4 \left( 4^k + 1 \right) \amp = 4(3m)\\
+4^{k + 1} - 4 \amp = 12m\\
+4^{k + 1} - 3 - 1 \amp = 12m\\
+4^{k + 1} - 1 \amp = 3 + 12m\\
+4^{k + 1} -  \amp 3( 1 + 4m)
+\end{align*}
+</div>
+<p class="continuation">So we have proved that if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true. Hence, the inductive step has been established, and by the Principle of Mathematical Induction, we have proved that for each natural number <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(\modulo{4^n}{1}{3}\text{.}\)</span></p></article>
+</div>
+<span class="incontext"><a href="S_induct_exer.html#solution-21" class="internal">in-context</a></span>
+</body>
+</html>

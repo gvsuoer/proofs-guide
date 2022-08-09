@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:10-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Using the Definitions of Congruence and Divides</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Constructing and Writing Mathematical Proofs">
+<meta property="book:author" content="Ted Sundstrom, Professor Emeritus">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom_style.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\notmodulo}[3]{#1 \not \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\dom}[1]{\text{ dom} ( #1 )}
+\newcommand{\codom}[1]{\text{ codom} ( #1 )}
+\newcommand{\range}[1]{\text{ range} ( #1 )}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="proofs-guide.html"><span class="title">Constructing and Writing Mathematical Proofs:</span> <span class="subtitle">A Guide for Mathematics Students</span></a></h1>
+<p class="byline">Ted Sundstrom, Professor Emeritus</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="C_directproofs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C_directproofs.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="S_direct_sets.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="C_directproofs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C_directproofs.html" title="Up">Up</a><a class="next-button button toolbar-item" href="S_direct_sets.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Note to Students</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_preliminaries.html" data-scroll="C_preliminaries" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="S_definitions.html" data-scroll="S_definitions" class="internal">Definitions</a></li>
+<li><a href="S_prooflogic.html" data-scroll="S_prooflogic" class="internal">Useful Logic for Constructing Proofs</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_directproofs.html" data-scroll="C_directproofs" class="internal"><span class="codenumber">2</span> <span class="title">Direct Proofs</span></a><ul>
+<li><a href="S_cong_divides.html" data-scroll="S_cong_divides" class="active">Using the Definitions of Congruence and Divides</a></li>
+<li><a href="S_direct_sets.html" data-scroll="S_direct_sets" class="internal">A Direct Proof Involving Sets</a></li>
+<li><a href="S_direct_exer.html" data-scroll="S_direct_exer" class="internal">Practice Problems for Chapter 2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_othermethods.html" data-scroll="C_othermethods" class="internal"><span class="codenumber">3</span> <span class="title">Some Other Methods of Proof</span></a><ul>
+<li><a href="S_contrapositive.html" data-scroll="S_contrapositive" class="internal">Using the Contrapositive</a></li>
+<li><a href="S_otherlogequiv.html" data-scroll="S_otherlogequiv" class="internal">Using Other Logical Equivalencies</a></li>
+<li><a href="S_bicond.html" data-scroll="S_bicond" class="internal">Proofs of Biconditional Statements</a></li>
+<li><a href="S_other_exer.html" data-scroll="S_other_exer" class="internal">Practice Problems for Chapter 3</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_contradiction.html" data-scroll="C_contradiction" class="internal"><span class="codenumber">4</span> <span class="title">Proof by Contradiction</span></a><ul>
+<li><a href="S_contra_examp.html" data-scroll="S_contra_examp" class="internal">Explanation and an Example</a></li>
+<li><a href="S_dne.html" data-scroll="S_dne" class="internal">Proving that Something Does Not Exist</a></li>
+<li><a href="S_rational.html" data-scroll="S_rational" class="internal">Rational and Irrational Numbers</a></li>
+<li><a href="S_exer_contra.html" data-scroll="S_exer_contra" class="internal">Practice Problems for Chapter 4</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_cases.html" data-scroll="C_cases" class="internal"><span class="codenumber">5</span> <span class="title">Using Cases in Proofs</span></a><ul>
+<li><a href="S_commoncases.html" data-scroll="S_commoncases" class="internal">Some Common Situations to Use Cases</a></li>
+<li><a href="S_divalgo.html" data-scroll="S_divalgo" class="internal">Using Cases with the Division Algorithm</a></li>
+<li><a href="S_cases_exer.html" data-scroll="S_cases_exer" class="internal">Practice Problems for Chapter 5</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_induction.html" data-scroll="C_induction" class="internal"><span class="codenumber">6</span> <span class="title">Mathematical Induction</span></a><ul>
+<li><a href="S_use_induct.html" data-scroll="S_use_induct" class="internal">Using the Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_extend.html" data-scroll="S_induct_extend" class="internal">The Extended Principle of Mathematical Induction</a></li>
+<li><a href="S_second_induct.html" data-scroll="S_second_induct" class="internal">The Second Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_exer.html" data-scroll="S_induct_exer" class="internal">Practice Problems for Chapter 6</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_injsurj.html" data-scroll="C_injsurj" class="internal"><span class="codenumber">7</span> <span class="title">Injective and Surjective Functions</span></a><ul>
+<li><a href="S_injsurj.html" data-scroll="S_injsurj" class="internal">Definitions and Notation</a></li>
+<li><a href="S_injsurj_proofs.html" data-scroll="S_injsurj_proofs" class="internal">Some Examples and Proofs</a></li>
+<li><a href="S_injsurj_exer.html" data-scroll="S_injsurj_exer" class="internal">Practice Problems for Chapter 7</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="app_guidelines.html" data-scroll="app_guidelines" class="internal"><span class="codenumber">A</span> <span class="title">Guidelines for Writing Mathematical Proofs</span></a></li>
+<li class="link"><a href="app_solutions.html" data-scroll="app_solutions" class="internal"><span class="codenumber">B</span> <span class="title">Answers and Hints for the Practice Problems</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="S_cong_divides"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Using the Definitions of Congruence and Divides</span>
+</h2>
+<p id="p-44">We will consider the following proposition and try to determine if it is true or false.</p>
+<article class="proposition theorem-like" id="prop-mod8"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.1</span><span class="period">.</span>
+</h3>
+<p id="p-45">For all integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> if <span class="process-math">\(\modulo{a}{5}{8}\)</span> and <span class="process-math">\(\modulo{b}{6}{8}\text{,}\)</span> then <span class="process-math">\(\modulo{(a + b)}{3}{8}\text{.}\)</span></p></article><p id="p-46">Before we try to prove a proposition, it is a good idea to try some examples for which the hypothesis is true and then determine whether or not the conclusion is true for these examples. The idea is to convince ourselves that this proposition at least appears to be true. On the other hand, if we find an example where the hypothesis is true and the conclusion is false, then we have found a <dfn class="terminology">counterexample</dfn> for the proposition and we would have prove the proposition to be false. The following table summarizes four examples that suggest this proposition is true. <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r2 l2 t2 lines"><span class="process-math">\(a\)</span></th>
+<th scope="col" class="c m b2 r2 l0 t2 lines"><span class="process-math">\(b\)</span></th>
+<th scope="col" class="c m b2 r2 l0 t2 lines"><span class="process-math">\(a + b\)</span></th>
+<th scope="col" class="c m b2 r2 l0 t2 lines">Is <span class="process-math">\(\modulo{a + b}{2}{8}\text{?}\)</span>
+</th>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">5</td>
+<td class="c m b2 r2 l0 t0 lines">6</td>
+<td class="c m b2 r2 l0 t0 lines">11</td>
+<td class="c m b2 r2 l0 t0 lines">Yes, since <span class="process-math">\(\modulo{11}{3}{8}\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">13</td>
+<td class="c m b2 r2 l0 t0 lines">22</td>
+<td class="c m b2 r2 l0 t0 lines">35</td>
+<td class="c m b2 r2 l0 t0 lines">Yes, since <span class="process-math">\(\modulo{35}{3}{8}\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-3\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">14</td>
+<td class="c m b2 r2 l0 t0 lines">11</td>
+<td class="c m b2 r2 l0 t0 lines">Yes, since <span class="process-math">\(\modulo{11}{3}{8}\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-11\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-13\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">Yes, since <span class="process-math">\(\modulo{-13}{3}{8}\)</span>
+</td>
+</tr>
+</table></div></p>
+<p id="p-47">We will not attempt to construct a proof of this proposition. We will start with the backwards process. Please keep in mind that it is a good idea to write all of this down on paper. We should not try to construct a proof in our heads. Writing h</p>
+<p id="p-48">So we first know that the goal is to prove that <span class="process-math">\(\modulo{(a + b)}{3}{8}\text{.}\)</span> So a “backwards question” is, “How do we prove <span class="process-math">\(\modulo{(a + b)}{3}{8}\text{?}\)</span>” We may be able to answer this question in different ways depending on whether or not we have some previously proven results, but we can always use the definition. So an answer to this question is, “We can prove that 8 divides <span class="process-math">\((a + b) - 3\text{.}\)</span>” We now ask, “How can we prove that 8 divides <span class="process-math">\((a + b) - 3\text{?}\)</span>” Again, we can use the definition and answer that we can prove that there exists an integer <span class="process-math">\(k\)</span> such that <span class="process-math">\((a + b) - 3 = 8k\text{.}\)</span> So here is what we should have written down.</p>
+<ul class="disc">
+<li id="li-12"><p id="p-49"><span class="process-math">\(Q\text{:}\)</span> <span class="process-math">\(\modulo{(a + b)}{3}{8}\)</span></p></li>
+<li id="li-13"><p id="p-50"><span class="process-math">\(Q1\text{:}\)</span> 8 divides <span class="process-math">\((a + b) - 3\)</span></p></li>
+<li id="li-14"><p id="p-51"><span class="process-math">\(Q2\text{:}\)</span> There exists and integer <span class="process-math">\(k\)</span> such that <span class="process-math">\((a + b) - 3 = 8k\)</span></p></li>
+</ul>
+<p class="continuation">The idea is that if we can prove that <span class="process-math">\(Q2\)</span> is true, then we can conclude that <span class="process-math">\(Q1\)</span> is true, and then we can conclude that <span class="process-math">\(Q\)</span> is true. <span class="process-math">\(Q2\)</span> is a good place to stop the backwards process since it involves proving that something exists and we have an equation with which to work. So we start the forwards process. We start by writing down the assumptions stated in the hypothesis of the proposition and then make conclusions based on these assumptions. While doing this, we look at the items in the backward process and try to find ways to connect the conclusions in the forward process to the backward process. The forward process can be summarized as</p>
+<ul class="disc">
+<li id="li-15"><p id="p-52"><span class="process-math">\(P\text{:}\)</span> <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are integers and <span class="process-math">\(\modulo{a}{5}{8}\)</span> and <span class="process-math">\(\modulo{b}{6}{8}\text{.}\)</span></p></li>
+<li id="li-16"><p id="p-53"><span class="process-math">\(P1\text{:}\)</span> 8 divides <span class="process-math">\(a - 5\)</span> and 8 divides <span class="process-math">\(b - 6\text{.}\)</span></p></li>
+<li id="li-17"><p id="p-54"><span class="process-math">\(P2\text{:}\)</span> There exists and integer <span class="process-math">\(m\)</span> such that <span class="process-math">\(a - 5 = 8m\)</span> and there exists and integer <span class="process-math">\(n\)</span> such that <span class="process-math">\(b - 6 = 8n\)</span></p></li>
+</ul>
+<p class="continuation">It now seems that there is a way to connect the forward part (<span class="process-math">\(P2\)</span>) to the backward part <span class="process-math">\((Q2)\)</span> using the existence of <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> (which have been proven to exist) and the equations in <span class="process-math">\(P2\)</span> and <span class="process-math">\(Q2\text{.}\)</span></p>
+<p id="p-55">Solving the two equations in <span class="process-math">\(P2\)</span> for <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we obtain <span class="process-math">\(a = 8m + 5\)</span> and <span class="process-math">\(b = 8n + 6\text{.}\)</span> We can now use these in <span class="process-math">\(Q2\text{.}\)</span></p>
+<section class="paragraphs" id="paragraphs-1"><h3 class="heading"><span class="title">Important Notes.</span></h3>
+<ul id="p-56" class="disc">
+<li id="li-18"><p id="p-57">We used the letter <span class="process-math">\(k\)</span> in step <span class="process-math">\(Q2\)</span> and so we could not use that again in the forward process since there is no way of guaranteeing that the same integer produces the equations for the equations in <span class="process-math">\(Q2\)</span> and <span class="process-math">\(P2\text{.}\)</span></p></li>
+<li id="li-19"><p id="p-58">In the proof, we cannot use the integer represent by <span class="process-math">\(k\)</span> in <span class="process-math">\(Q2\)</span> since we have not proven that such an integer exists. The goal is to prove that such an integer exists.</p></li>
+</ul></section><p id="p-59">So now we can proceed as followings:</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/app_guidelines.html" id="md-2">
+\begin{align*}
+(a + b) - 3 \amp = (8m + 5) + (8n + 6) - 3\\
+\amp = 8m + 8n + 8\\
+\amp = 8 (m + n + 3)
+\end{align*}
+</div>
+<p class="continuation">Since the integers are closed under addition, we conclude that <span class="process-math">\(m + n + 3\)</span> is an integer and so the last equation implies that 8 divides <span class="process-math">\((a + b) - 3\text{.}\)</span> We can now write a proof. The following proof is written according to the writing guidelines in <a href="app_guidelines.html" class="internal" title="Appendix A: Guidelines for Writing Mathematical Proofs">Appendix A</a>.</p>
+<article class="proposition theorem-like" id="prop-mod8-repeated"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2</span><span class="period">.</span>
+</h3>
+<p id="p-60">For all integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> if <span class="process-math">\(\modulo{a}{5}{8}\)</span> and <span class="process-math">\(\modulo{b}{6}{8}\text{,}\)</span> then <span class="process-math">\(\modulo{(a + b)}{3}{8}\text{.}\)</span></p></article><article class="proof" id="proof-1"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<p id="p-61">We assume that <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are integers and that <span class="process-math">\(\modulo{a}{5}{8}\)</span> and <span class="process-math">\(\modulo{b}{6}{8}\text{.}\)</span> We will prove that <span class="process-math">\(\modulo{(a + b)}{3}{8}\text{.}\)</span> From the assumptions, we conclude that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+8 \text{ divides } (a - 5) \text{ and } 8 \text{ divides } (b - 6)
+\end{equation*}
+</div>
+<p class="continuation">So there exist integers <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a - 5 = 8m \text{ and } b - 6 = 8n
+\end{equation*}
+</div>
+<p class="continuation">Solving these equations for <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we obtain <span class="process-math">\(a = 8m + 5\)</span> and <span class="process-math">\(b = 8n + 6\text{.}\)</span> We can now substitute for <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> in the expression <span class="process-math">\((a + b) - 3\text{.}\)</span> This gives</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-3">
+\begin{align*}
+(a + b) - 3 \amp = (8m + 5) + (8n + 6) - 3\\
+\amp = 8m + 8n + 8\\
+\amp = 8 (m + n + 3)
+\end{align*}
+</div>
+<p class="continuation">Since the integers are closed under addition, we conclude that <span class="process-math">\((m + n + 3)\)</span> is an integer and so the last equation implies that 8 divides <span class="process-math">\((a + b) - 3\text{.}\)</span> So by the definition of congruece, we can conclude that <span class="process-math">\(\modulo{(a + b)}{3}{8}\text{.}\)</span> This proves that for all integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> if <span class="process-math">\(\modulo{(a)}{5}{8}\)</span> and <span class="process-math">\(\modulo{(b)}{6}{8}\text{,}\)</span> then <span class="process-math">\(\modulo{(a + b)}{3}{8}\)</span></p></article><section class="paragraphs" id="paragraphs-2"><h3 class="heading"><span class="title">Note.</span></h3>
+<p id="p-62">This shows a typical way to construct and write a direct proof of a proposition or theorem. We will not be going into this much detail on the construction process in all of the results proved in this book. In fact, most textbooks do not do this. What they most often show is only the final product as shown in the preceding proof. Do not be fooled that this is the way that proofs are constructed. Constructing a proof often requires trial and error and because of this, it is always a good idea to write down what is being assumed and what it is we are trying to prove. Then be willing to work backwards for what it is to be proved and works forwards from the assumptions. The hard part is often connecting the forward process to the backward process. This becomes extremely difficult if we do not write things down and try to work only in our heads.</p></section><p id="p-63">We will now consider the following proposition.</p>
+<article class="proposition theorem-like" id="prop-7-divides"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.3</span><span class="period">.</span>
+</h3>
+<p id="p-64">For each integer <span class="process-math">\(n\text{,}\)</span> if 7 divides <span class="process-math">\(( n^2 - 4 )\text{,}\)</span> then 7 divides <span class="process-math">\(( n - 2 )\text{.}\)</span></p></article><p id="p-65">If we think about starting a a proof, we would let <span class="process-math">\(n\)</span> be an integer, assume that 7 divides <span class="process-math">\(( n^2 - 4 )\)</span> and from this assumption, try to prove that 7 divides <span class="process-math">\(( n - 2 )\text{.}\)</span> That is, we would assume that there exists an integer <span class="process-math">\(k\)</span> such that <span class="process-math">\(n^2 - 4 = 7k\)</span> and try to prove that there exists an integer <span class="process-math">\(m\)</span> such that <span class="process-math">\(n - 2 = 7m\text{.}\)</span> From the assumption, we can using factoring and conclude that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-7-divides.html ./knowl/prop-7-divides.html">
+\begin{equation*}
+( n - 2 )(n + 2 ) = 7k
+\end{equation*}
+</div>
+<p class="continuation">There does not seem to be a direct way to prove that there is an integer <span class="process-math">\(m\)</span> such that <span class="process-math">\(n - 2 = 7m\text{.}\)</span> So we start looking for examples of integers <span class="process-math">\(n\)</span> such that 7 divides <span class="process-math">\(( n^2 - 4 )\)</span> and see if 7 divides <span class="process-math">\(( n - 2 )\)</span> for these examples. After trying a few examples, we find that for <span class="process-math">\(n = 0\)</span> and <span class="process-math">\(n = 5\text{,}\)</span> 7 divides <span class="process-math">\(( n^2 - 4 )\)</span> . (There are many other such values for <span class="process-math">\(n\text{.}\)</span>) For <span class="process-math">\(n = 5\text{,}\)</span> we see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-7-divides.html ./knowl/prop-7-divides.html">
+\begin{equation*}
+n^2 - 4 = 21 = 7 \cdot 3 \text{ and } n - 2 = 3
+\end{equation*}
+</div>
+<p class="continuation">However, 7 does not divides 3. This shows that for <span class="process-math">\(n = 5\text{,}\)</span> the hypothesis of <a href="" class="xref" data-knowl="./knowl/prop-7-divides.html" title="Proposition 2.3">Proposition 2.3</a> is true and the conclusion is false. This is a counterexample for the proposition and proves that <a href="" class="xref" data-knowl="./knowl/prop-7-divides.html" title="Proposition 2.3">Proposition 2.3</a> is false.</p>
+<section class="paragraphs" id="paragraphs-3"><h3 class="heading"><span class="title">Note.</span></h3>
+<p id="p-66">This is the standard way to prove a conditional statement is false. Find an example (called a counterexample) in which the hypothesis is true and the conclusion is false. Sometimes, even though a proposition is false, we can modify the statement of the proposition and create a new true proposition. We can do this for <a href="" class="xref" data-knowl="./knowl/prop-7-divides.html" title="Proposition 2.3">Proposition 2.3</a> once we have studied more number theory. There is a theorem from number theory that states: <blockquote class="blockquote" id="blockquote-4">For each prime number <span class="process-math">\(p\)</span> and all integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> if <span class="process-math">\(p\)</span> divides <span class="process-math">\(ab\text{,}\)</span> then <span class="process-math">\(p\)</span> divides <span class="process-math">\(a\)</span> or <span class="process-math">\(p\)</span> divides <span class="process-math">\(b\text{.}\)</span>
+</blockquote> This result is known as Euclid's Lemma. Using this result, when we get to the part where we conclude that <span class="process-math">\(( n - 2)( n + 2) = 7k\text{,}\)</span> we can conclude that 7 divides <span class="process-math">\((n - 2)(n + 2)\)</span> and hence, 7 divides <span class="process-math">\(n - 2/\)</span> or 7 divides <span class="process-math">\((n + 2)/\text{.}\)</span> So we would have the following true proposition.</p></section><article class="assemblage assemblage-like" id="assemblage-13"><h3 class="heading"><span class="title">Proposition.</span></h3>
+<p id="p-67">For each integer <span class="process-math">\(n\text{,}\)</span> if 7 divides <span class="process-math">\((n^2 - 4 )\)</span> , then 7 divides <span class="process-math">\((n - 2)\)</span> or 7 divides <span class="process-math">\(( n + 2 )\text{.}\)</span></p></article></section></div></main>
+</div>
+</body>
+</html>

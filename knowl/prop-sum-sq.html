@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:15-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="proposition theorem-like"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">6.1</span><span class="period">.</span>
+</h3>
+<p>For each natural number <span class="process-math">\(n\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}\text{.}
+\end{equation*}
+</div></article><article class="proof"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<p>We will use a proof by mathematical induction. For each natural number <span class="process-math">\(n\text{,}\)</span> we let <span class="process-math">\(P (n)\)</span> be</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We first prove that <span class="process-math">\(P (1)\)</span> is true. Notice that <span class="process-math">\(\frac{1(1 + 1)(2 \cdot 1 + 1)}{6} = 1\text{.}\)</span> This shows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1^2 = \frac{1(1 + 1)(2 \cdot 1 + 1)}{6}
+\end{equation*}
+</div>
+<p class="continuation">which proves that <span class="process-math">\(P(1)\)</span> is true.</p>
+<p>For the inductive step, we prove that for each <span class="process-math">\(k \in N\text{,}\)</span> if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true. So let <span class="process-math">\(k\)</span> be a natural number and assume that <span class="process-math">\(P (k)\)</span> is true. That is, assume that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html">
+\begin{equation}
+1^2 + 2^2 + \cdots + k^2 = \frac{k (k + 1)(2k + 1)}{6}\tag{6}
+\end{equation}
+</div>
+<p class="continuation">The goal now is to prove that <span class="process-math">\(P (k + 1)\)</span> is true. That is, is must be proved that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html">
+\begin{align}
+1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 \amp = \frac{(k + 1)[(k + 1) +1][(2(k + 1) + 1]}{6}\notag\\
+\amp = \frac{(k + 1)(k + 2)(2k + 3)}{6}\tag{7}
+\end{align}
+</div>
+<p class="continuation">To do this, we add <span class="process-math">\((k + 1)^2\)</span> to both sides of equation <a href="" class="xref" data-knowl="./knowl/eqn-sumk-sq.html" title="Equation 6">(6)</a> and algebraically rewrite the right side of the resulting equation. This gives</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html">
+\begin{align*}
+1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 \amp = \frac{k (k + 1)(2k + 1)}{6} + (k + 1)^2\\
+\amp = \frac{k (k + 1)(2k + 1) + 6(k + 1)^2}{6}\\
+\amp = \frac{(k + 1)[k(2k + 1) + 6(k + 1)]}{6}\\
+\amp = \frac{(k + 1)(2k^2 + 7k + 6)}{6}\\
+\amp = \frac{(k + 1)(k+ 2)(2k + 3)}{6}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Comparing this result to equation <a href="" class="xref" data-knowl="./knowl/eqn-sumk1-sq.html" title="Equation 7">(7)</a>, we see that if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true. Hence, the inductive step has been established, and by the Principle of Mathematical Induction, we have proved that for each natural number <span class="process-math">\(n\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html">
+\begin{equation*}
+1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}
+\end{equation*}
+</div></article><span class="incontext"><a href="S_use_induct.html#prop-sum-sq" class="internal">in-context</a></span>
+</body>
+</html>

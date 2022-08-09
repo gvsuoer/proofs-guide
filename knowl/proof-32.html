@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:17-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="proof"><h3 class="heading"><span class="type">Proof</span></h3>
+<p>We let <span class="process-math">\(f(x) = mx + b\)</span> be a nonzero real number and let <span class="process-math">\(b\)</span> be a real number and define <span class="process-math">\(f: \R \to \R\)</span> by <span class="process-math">\(f(x) = mx + b\)</span> for all <span class="process-math">\(x\)</span> in <span class="process-math">\(\R\text{.}\)</span> We will prove that <span class="process-math">\(f\)</span> is a bijection by proving it is both an injection and a surjection.</p>
+<p>To prove that <span class="process-math">\(f\)</span> is an injection, we let <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> be real numbers (hence, in the domain of <span class="process-math">\(f\)</span>) and assume that <span class="process-math">\(f (x_1) = f(x_2)\text{.}\)</span> This means that <span class="process-math">\(mx_1 + b = mx_2 + b\text{.}\)</span> We can then subtract <span class="process-math">\(b\)</span> from both sides of this equation and then divide both sides by <span class="process-math">\(m\)</span> since <span class="process-math">\(m \ne 0\)</span> as follows:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+mx_1 + b \amp = mx_2 + b\\
+mx_1 \amp = mx_2\\
+x_1 \amp = x_2
+\end{align*}
+</div>
+<p class="continuation">So we have proved that for all <span class="process-math">\(x_1, x_2 \in \R\text{,}\)</span> if <span class="process-math">\(f (x_1) = f(x_2)\text{,}\)</span> then <span class="process-math">\(x_1 = x_2\text{,}\)</span> and hence, <span class="process-math">\(f\)</span> is an injection.</p>
+<p>To prove that <span class="process-math">\(f\)</span> is a surjection, we choose a real number <span class="process-math">\(y\)</span> in the codomain of <span class="process-math">\(f\)</span> . We need to prove that there exists an <span class="process-math">\(x \in \R\)</span> such that <span class="process-math">\(f (x) = y\text{.}\)</span> Working backward, we see that if <span class="process-math">\(mx + b = y\text{,}\)</span> then <span class="process-math">\(x = \frac{y - b}{m}\)</span> (since <span class="process-math">\(m \ne 0\)</span>). We see that <span class="process-math">\(x \in \R\)</span> (the domain of <span class="process-math">\(f\)</span> ) since the real numbers are closed under subtraction and division by nonzero real numbers. This is done as follows:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+f(x) \amp = f \left( \frac{y - b}{m} \right)\\
+\amp = m \left( \frac{y - b}{m} \right) + b\\
+\amp = ( y - b) + b\\
+\amp = b
+\end{align*}
+</div>
+<p class="continuation">This proves that for each <span class="process-math">\(y \in \R\text{,}\)</span> there exists an <span class="process-math">\(x \in \R\)</span> such that <span class="process-math">\(f(x) = y\text{,}\)</span> and hence, <span class="process-math">\(f\)</span> is a surjection.</p>
+<p>Since we have proved that <span class="process-math">\(f\)</span> is both an injection and a surjection, we have proved that <span class="process-math">\(f\)</span> is a bijection.</p></article><span class="incontext"><a href="S_injsurj_proofs.html#proof-32" class="internal">in-context</a></span>
+</body>
+</html>

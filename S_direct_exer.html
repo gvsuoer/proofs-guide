@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:10-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Practice Problems for Chapter 2</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Constructing and Writing Mathematical Proofs">
+<meta property="book:author" content="Ted Sundstrom, Professor Emeritus">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom_style.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\notmodulo}[3]{#1 \not \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\dom}[1]{\text{ dom} ( #1 )}
+\newcommand{\codom}[1]{\text{ codom} ( #1 )}
+\newcommand{\range}[1]{\text{ range} ( #1 )}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="proofs-guide.html"><span class="title">Constructing and Writing Mathematical Proofs:</span> <span class="subtitle">A Guide for Mathematics Students</span></a></h1>
+<p class="byline">Ted Sundstrom, Professor Emeritus</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="S_direct_sets.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C_directproofs.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="C_othermethods.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="S_direct_sets.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C_directproofs.html" title="Up">Up</a><a class="next-button button toolbar-item" href="C_othermethods.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Note to Students</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_preliminaries.html" data-scroll="C_preliminaries" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="S_definitions.html" data-scroll="S_definitions" class="internal">Definitions</a></li>
+<li><a href="S_prooflogic.html" data-scroll="S_prooflogic" class="internal">Useful Logic for Constructing Proofs</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_directproofs.html" data-scroll="C_directproofs" class="internal"><span class="codenumber">2</span> <span class="title">Direct Proofs</span></a><ul>
+<li><a href="S_cong_divides.html" data-scroll="S_cong_divides" class="internal">Using the Definitions of Congruence and Divides</a></li>
+<li><a href="S_direct_sets.html" data-scroll="S_direct_sets" class="internal">A Direct Proof Involving Sets</a></li>
+<li><a href="S_direct_exer.html" data-scroll="S_direct_exer" class="active">Practice Problems for Chapter 2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_othermethods.html" data-scroll="C_othermethods" class="internal"><span class="codenumber">3</span> <span class="title">Some Other Methods of Proof</span></a><ul>
+<li><a href="S_contrapositive.html" data-scroll="S_contrapositive" class="internal">Using the Contrapositive</a></li>
+<li><a href="S_otherlogequiv.html" data-scroll="S_otherlogequiv" class="internal">Using Other Logical Equivalencies</a></li>
+<li><a href="S_bicond.html" data-scroll="S_bicond" class="internal">Proofs of Biconditional Statements</a></li>
+<li><a href="S_other_exer.html" data-scroll="S_other_exer" class="internal">Practice Problems for Chapter 3</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_contradiction.html" data-scroll="C_contradiction" class="internal"><span class="codenumber">4</span> <span class="title">Proof by Contradiction</span></a><ul>
+<li><a href="S_contra_examp.html" data-scroll="S_contra_examp" class="internal">Explanation and an Example</a></li>
+<li><a href="S_dne.html" data-scroll="S_dne" class="internal">Proving that Something Does Not Exist</a></li>
+<li><a href="S_rational.html" data-scroll="S_rational" class="internal">Rational and Irrational Numbers</a></li>
+<li><a href="S_exer_contra.html" data-scroll="S_exer_contra" class="internal">Practice Problems for Chapter 4</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_cases.html" data-scroll="C_cases" class="internal"><span class="codenumber">5</span> <span class="title">Using Cases in Proofs</span></a><ul>
+<li><a href="S_commoncases.html" data-scroll="S_commoncases" class="internal">Some Common Situations to Use Cases</a></li>
+<li><a href="S_divalgo.html" data-scroll="S_divalgo" class="internal">Using Cases with the Division Algorithm</a></li>
+<li><a href="S_cases_exer.html" data-scroll="S_cases_exer" class="internal">Practice Problems for Chapter 5</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_induction.html" data-scroll="C_induction" class="internal"><span class="codenumber">6</span> <span class="title">Mathematical Induction</span></a><ul>
+<li><a href="S_use_induct.html" data-scroll="S_use_induct" class="internal">Using the Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_extend.html" data-scroll="S_induct_extend" class="internal">The Extended Principle of Mathematical Induction</a></li>
+<li><a href="S_second_induct.html" data-scroll="S_second_induct" class="internal">The Second Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_exer.html" data-scroll="S_induct_exer" class="internal">Practice Problems for Chapter 6</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_injsurj.html" data-scroll="C_injsurj" class="internal"><span class="codenumber">7</span> <span class="title">Injective and Surjective Functions</span></a><ul>
+<li><a href="S_injsurj.html" data-scroll="S_injsurj" class="internal">Definitions and Notation</a></li>
+<li><a href="S_injsurj_proofs.html" data-scroll="S_injsurj_proofs" class="internal">Some Examples and Proofs</a></li>
+<li><a href="S_injsurj_exer.html" data-scroll="S_injsurj_exer" class="internal">Practice Problems for Chapter 7</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="app_guidelines.html" data-scroll="app_guidelines" class="internal"><span class="codenumber">A</span> <span class="title">Guidelines for Writing Mathematical Proofs</span></a></li>
+<li class="link"><a href="app_solutions.html" data-scroll="app_solutions" class="internal"><span class="codenumber">B</span> <span class="title">Answers and Hints for the Practice Problems</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="S_direct_exer"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Practice Problems for Chapter 2</span>
+</h2>
+<section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title"></span>
+</h3>
+<article class="exercise exercise-like" id="exercise-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-73">Use a counterexample to prove the following statement is false. <blockquote class="blockquote" id="blockquote-6">For all integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> if 5 divides <span class="process-math">\(a\)</span> or 5 divides <span class="process-math">\(b\text{,}\)</span> then 5 divides <span class="process-math">\((5a + b)\text{.}\)</span>
+</blockquote></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-74">A counterexample for this statement will be values of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> for which 5 divides <span class="process-math">\(a\)</span> or 5 divides <span class="process-math">\(b\text{,}\)</span> and 5 does not divide <span class="process-math">\(5a + b\text{.}\)</span> One counterexample for the statement is <span class="process-math">\(a = 5\)</span> and <span class="process-math">\(b = 1\text{.}\)</span> For these values, the hypothesis is true since 5 divides <span class="process-math">\(a\)</span> and the conclusion is false since <span class="process-math">\(5a + b = 26\)</span> and 5 does not divide 26.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<p id="p-75">Construct a table of values for <span class="process-math">\(3m^2 + 4m + 6\)</span> using at least six different integers for <span class="process-math">\(m\text{.}\)</span> Make one-half of the values for <span class="process-math">\(m\)</span> even integers and the other half odd integers. Is the following proposition true or false? <blockquote class="blockquote" id="blockquote-7">If <span class="process-math">\(m\)</span> is an odd integer, then <span class="process-math">\(3m^2 + 4m + 6\)</span> is an odd integer.</blockquote> Justify your conclusion. This means that if the proposition is true, then you should write a proof of the proposition. If the proposition is false, you need to provide an example of an odd integer for which <span class="process-math">\(3m^2 + 4m + 6\)</span> is an even integer.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-76">All examples should indicate the proposition is true. Following is a proof.</p>
+<article class="proof" id="proof-3"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5>
+<p id="p-77">We assume that <span class="process-math">\(m\)</span> is an odd integer and will prove that <span class="process-math">\(( 3m^2 + 4m + 6 )\)</span> . Since <span class="process-math">\(m\)</span> is an odd integer, there exists an integer <span class="process-math">\(k\)</span> such that <span class="process-math">\(m = 2k + 1\text{.}\)</span> Substituting this into the expression <span class="process-math">\(( 3m^2 + 4m + 6 )\)</span> and using algebra, we obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
+\begin{align*}
+3m^2 + 4m + 6  \amp = 3 (2k + 1)^2 + 4 (2k+1) + 6\\
+\amp = (12k^2 + 12k + 3 ) + (8k + 4) + 6\\
+\amp = 12k^2 + 20k + 13\\
+\amp = 12k^2 + 20k + 12 + 1\\
+\amp = 2 (6k^2 + 10k + 6) + 1
+\end{align*}
+</div>
+<p class="continuation">By the closure properties of the integers, <span class="process-math">\((6k^2 + 10k + 6)\)</span> is an integer, and hence, the last equation shows that <span class="process-math">\(( 3m^2 + 4m + 6 )\)</span> is an odd integer.</p>
+<p id="p-78">This proves that if <span class="process-math">\(m\)</span> is an odd integer, then <span class="process-math">\(( 3m^2 + 4m + 6 )\)</span> is an odd integer.</p></article>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<p id="p-79">The Pythagorean Theorem for right triangles states that if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the lengths of the legs of a right triangle and <span class="process-math">\(c\)</span> is the length of the hypotenuse, then <span class="process-math">\(a^2 + b^2 = c^2\)</span> . For example, if <span class="process-math">\(a = 5\)</span> and <span class="process-math">\(b = 12\)</span> are the lengths of the two sides of a right triangle and if <span class="process-math">\(c\)</span> is the length of the hypotenuse, then the <span class="process-math">\(c^2 = 5^2 + 12^2\)</span> and so <span class="process-math">\(c^2 = 169\text{.}\)</span> Since <span class="process-math">\(c\)</span> is a length and must be positive, we conclude that <span class="process-math">\(c = 13\text{.}\)</span></p>
+<p id="p-80">Construct and provide a well-written proof for the following proposition. <blockquote class="blockquote" id="blockquote-8">Proposition. If <span class="process-math">\(m\)</span> is a real number and <span class="process-math">\(m\text{,}\)</span> <span class="process-math">\(m + 1\text{,}\)</span> and <span class="process-math">\(m + 2\)</span> are the lengths of the three sides of a right triangle, then <span class="process-math">\(m = 3\text{.}\)</span>
+</blockquote></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><article class="proof" id="proof-4"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5>
+<p id="p-81">We let <span class="process-math">\(m\)</span> be a real number and assume that <span class="process-math">\(m\text{,}\)</span> <span class="process-math">\(m + 1\text{,}\)</span> and <span class="process-math">\(m + 2\)</span> are the lengths of the three sides of a right triangle. We will use the Pythagorean Theorem to prove that <span class="process-math">\(m = 3\text{.}\)</span> Since the hypotenuse is the longest of the three sides, the Pythagorean Theorem implies that <span class="process-math">\(m^2 + (m + 1)^2 = (m+ 2)^2\text{.}\)</span> We will now use algebra to rewrite both sides of this equation as follows</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-5">
+\begin{align*}
+m^2 + (m^2 + 2m + 1) \amp = m^2 + 4m + 4\\
+2m^2 + 2m +1 \amp = m^2 + 4m + 4
+\end{align*}
+</div>
+<p class="continuation">The last equation is a quadratic equation. To solve for <span class="process-math">\(m\text{,}\)</span> we rewrite the equation in standard form and then factor the left side. This gives</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-6">
+\begin{align*}
+m^2 - 2m - 3 \amp = 0\\
+(m-3)(m + 1) \amp = 0
+\end{align*}
+</div>
+<p class="continuation">The two solutions of this equation are <span class="process-math">\(m = 3\)</span> and <span class="process-math">\(m = 1\text{.}\)</span> However, since m is the length of a side of a right triangle, <span class="process-math">\(m\)</span> must be positive and we conclude that <span class="process-math">\(m = 3\text{.}\)</span> This proves that if <span class="process-math">\(m\text{,}\)</span> <span class="process-math">\(m + 1\text{,}\)</span> and <span class="process-math">\(m + 2\)</span> are the lengths of the three sides of a right triangle, then <span class="process-math">\(m =3\text{.}\)</span></p></article></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-4"><p id="p-82">Let <span class="process-math">\(n\)</span> be a natural number and let <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\)</span> be integers. Prove each of the following.</p></div>
+<article class="task exercise-like" id="task-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<p id="p-83">If <span class="process-math">\(\modulo{a}{b}{n}\)</span> and <span class="process-math">\(\modulo{c}{d}{n}\text{,}\)</span> then <span class="process-math">\(\modulo{(a + c)}{(b + d)}{n}\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">
+<p id="p-84">For both parts, we assume that n is a natural number and <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\)</span> are integers and that <span class="process-math">\(\modulo{a}{b}{n}\)</span> and <span class="process-math">\(\modulo{c}{d}{n}\text{.}\)</span> We can then conclude that <span class="process-math">\(n\)</span> divides <span class="process-math">\(a - b\)</span> and <span class="process-math">\(n\)</span> divides <span class="process-math">\(c - d\text{.}\)</span> So there exist integers <span class="process-math">\(k\)</span> and <span class="process-math">\(m\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-7">
+\begin{align*}
+a - b \amp = kn \amp \amp \text{and} \amp c - d \amp = mn\\
+a \amp = b+ kn \amp \amp \text{and} \amp c \amp = d+ mn
+\end{align*}
+</div>
+<p id="p-85">We then see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-8">
+\begin{align*}
+( a + c ) - ( b + d ) \amp = (a - b) + (c - d)\\
+\amp = kn + mn\\
+\amp = (k + m)n
+\end{align*}
+</div>
+<p class="continuation">Since the integers are closed under addition, <span class="process-math">\(k + m\)</span> is an integer and the last equation proves that <span class="process-math">\(\modulo{a + c}{b + d}{n}\text{.}\)</span></p>
+</div></div>
+</div></article><article class="task exercise-like" id="task-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<p id="p-86">If <span class="process-math">\(\modulo{a}{b}{n}\)</span> and <span class="process-math">\(\modulo{c}{d}{n}\text{,}\)</span> then <span class="process-math">\(\modulo{ac}{bd}{n}\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
+<p id="p-87">For both parts, we assume that n is a natural number and <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\)</span> are integers and that <span class="process-math">\(\modulo{a}{b}{n}\)</span> and <span class="process-math">\(\modulo{c}{d}{n}\text{.}\)</span> We can then conclude that <span class="process-math">\(n\)</span> divides <span class="process-math">\(a - b\)</span> and <span class="process-math">\(n\)</span> divides <span class="process-math">\(c - d\text{.}\)</span> So there exist integers <span class="process-math">\(k\)</span> and <span class="process-math">\(m\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-9">
+\begin{align*}
+a - b \amp = kn \amp \amp \text{and} \amp c - d \amp = mn\\
+a \amp = b+ kn \amp \amp \text{and} \amp c \amp = d+ mn
+\end{align*}
+</div>
+<p id="p-88">We then see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-10">
+\begin{align*}
+ac - bd \amp = (b + kn)(d + mn) - bd\\
+\amp = ( bd + bmn + knd + kmn^2) - bd\\
+\amp = (bm + kd + kmn)n
+\end{align*}
+</div>
+<p class="continuation">Since the integers are closed under addition and multiplication, <span class="process-math">\((bm + kd + kmn)\)</span> is an integer and the last equation proves that <span class="process-math">\(\modulo{ac}{bd}{n}\text{.}\)</span></p>
+</div></div>
+</div></article></article><article class="exercise exercise-like" id="exercise-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<p id="p-89">One way to prove that two sets are equal is to prove that each one is a subset of the other one. Consider the following proposition: <blockquote class="blockquote" id="blockquote-9">Proposition. Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be subsets of some universal set. Then <span class="process-math">\(A - (A - B) = A \cap B\text{.}\)</span>
+</blockquote> Prove this proposition is true or give a counterexample to prove it is false.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
+<p id="p-90">The proposition is true. Use the choose-an-element method to prove that each set is a subset of the other set.</p>
+<article class="proof" id="proof-5"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5>
+<p id="p-91">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be subsets of some universal set. We will prove that <span class="process-math">\(A - (A - B) = A \cap B\)</span> by proving that <span class="process-math">\(A - (A - B) \subseteq A \cap B\)</span> and that <span class="process-math">\(A \cap B \subseteq A - (A - B)\text{.}\)</span></p>
+<p id="p-92">First, let <span class="process-math">\(x \in A - (A - B)\text{.}\)</span> This means that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x \in A \text{ and } x \not \in (A - B)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We know that an element is in <span class="process-math">\((A - B)\)</span> if and only if it is in <span class="process-math">\(A\)</span> and not in <span class="process-math">\(B\text{.}\)</span> Since <span class="process-math">\(x \not \in (A - B)\text{,}\)</span> we conclude that <span class="process-math">\(x \not \in A\)</span><span class="process-math">\(x \in B\text{.}\)</span> However, we also know that <span class="process-math">\(x \in A\)</span> and so we conclude that <span class="process-math">\(x \in B\text{.}\)</span> This proves that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x \in A \text{ and } x \in B
+\end{equation*}
+</div>
+<p class="continuation">This means that <span class="process-math">\(x \in A \cap B\text{,}\)</span> and hence we have proved that <span class="process-math">\(A - (A - B) \subseteq A \cap B\text{.}\)</span></p>
+<p id="p-93">Now choose <span class="process-math">\(y \in A \cap B\text{.}\)</span> This means that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y \in A \text{ and } y \in B\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We note that <span class="process-math">\(y \in (A - B)\)</span> if and only if <span class="process-math">\(y \in A\)</span> and <span class="process-math">\(y \not \in B\)</span> and hence, <span class="process-math">\(y \not \in (A - B)\)</span> if and only if <span class="process-math">\(y \not \in A\)</span> or <span class="process-math">\(y \in B\text{.}\)</span> Since we have proved that <span class="process-math">\(y \in B\text{,}\)</span> we can conclude that <span class="process-math">\(y \not \in (A - B)\text{,}\)</span> and hence, we have established that <span class="process-math">\(y \in A\)</span> and <span class="process-math">\(y \not \in (A - B)\text{.}\)</span> So, <span class="process-math">\(y \in A - (A - B)\text{,}\)</span> and this proves that if <span class="process-math">\(y \in A \cap B\text{,}\)</span> then <span class="process-math">\(y \in A - (A - B)\)</span> and hence, <span class="process-math">\(A \cap B \subseteq A - (A - B)\text{.}\)</span></p>
+<p id="p-94">Since we have proved that <span class="process-math">\(A - (A - B) \subseteq A \cap B\)</span> and <span class="process-math">\(A \cap B \subseteq A - (A - B)\text{,}\)</span> we conclude that <span class="process-math">\(A - (A - B) = A \cap B\text{.}\)</span></p></article>
+</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:11-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Using Cases with the Division Algorithm</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Constructing and Writing Mathematical Proofs">
+<meta property="book:author" content="Ted Sundstrom, Professor Emeritus">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom_style.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\notmodulo}[3]{#1 \not \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\dom}[1]{\text{ dom} ( #1 )}
+\newcommand{\codom}[1]{\text{ codom} ( #1 )}
+\newcommand{\range}[1]{\text{ range} ( #1 )}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="proofs-guide.html"><span class="title">Constructing and Writing Mathematical Proofs:</span> <span class="subtitle">A Guide for Mathematics Students</span></a></h1>
+<p class="byline">Ted Sundstrom, Professor Emeritus</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="S_commoncases.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C_cases.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="S_cases_exer.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="S_commoncases.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C_cases.html" title="Up">Up</a><a class="next-button button toolbar-item" href="S_cases_exer.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Note to Students</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_preliminaries.html" data-scroll="C_preliminaries" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="S_definitions.html" data-scroll="S_definitions" class="internal">Definitions</a></li>
+<li><a href="S_prooflogic.html" data-scroll="S_prooflogic" class="internal">Useful Logic for Constructing Proofs</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_directproofs.html" data-scroll="C_directproofs" class="internal"><span class="codenumber">2</span> <span class="title">Direct Proofs</span></a><ul>
+<li><a href="S_cong_divides.html" data-scroll="S_cong_divides" class="internal">Using the Definitions of Congruence and Divides</a></li>
+<li><a href="S_direct_sets.html" data-scroll="S_direct_sets" class="internal">A Direct Proof Involving Sets</a></li>
+<li><a href="S_direct_exer.html" data-scroll="S_direct_exer" class="internal">Practice Problems for Chapter 2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_othermethods.html" data-scroll="C_othermethods" class="internal"><span class="codenumber">3</span> <span class="title">Some Other Methods of Proof</span></a><ul>
+<li><a href="S_contrapositive.html" data-scroll="S_contrapositive" class="internal">Using the Contrapositive</a></li>
+<li><a href="S_otherlogequiv.html" data-scroll="S_otherlogequiv" class="internal">Using Other Logical Equivalencies</a></li>
+<li><a href="S_bicond.html" data-scroll="S_bicond" class="internal">Proofs of Biconditional Statements</a></li>
+<li><a href="S_other_exer.html" data-scroll="S_other_exer" class="internal">Practice Problems for Chapter 3</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_contradiction.html" data-scroll="C_contradiction" class="internal"><span class="codenumber">4</span> <span class="title">Proof by Contradiction</span></a><ul>
+<li><a href="S_contra_examp.html" data-scroll="S_contra_examp" class="internal">Explanation and an Example</a></li>
+<li><a href="S_dne.html" data-scroll="S_dne" class="internal">Proving that Something Does Not Exist</a></li>
+<li><a href="S_rational.html" data-scroll="S_rational" class="internal">Rational and Irrational Numbers</a></li>
+<li><a href="S_exer_contra.html" data-scroll="S_exer_contra" class="internal">Practice Problems for Chapter 4</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_cases.html" data-scroll="C_cases" class="internal"><span class="codenumber">5</span> <span class="title">Using Cases in Proofs</span></a><ul>
+<li><a href="S_commoncases.html" data-scroll="S_commoncases" class="internal">Some Common Situations to Use Cases</a></li>
+<li><a href="S_divalgo.html" data-scroll="S_divalgo" class="active">Using Cases with the Division Algorithm</a></li>
+<li><a href="S_cases_exer.html" data-scroll="S_cases_exer" class="internal">Practice Problems for Chapter 5</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_induction.html" data-scroll="C_induction" class="internal"><span class="codenumber">6</span> <span class="title">Mathematical Induction</span></a><ul>
+<li><a href="S_use_induct.html" data-scroll="S_use_induct" class="internal">Using the Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_extend.html" data-scroll="S_induct_extend" class="internal">The Extended Principle of Mathematical Induction</a></li>
+<li><a href="S_second_induct.html" data-scroll="S_second_induct" class="internal">The Second Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_exer.html" data-scroll="S_induct_exer" class="internal">Practice Problems for Chapter 6</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_injsurj.html" data-scroll="C_injsurj" class="internal"><span class="codenumber">7</span> <span class="title">Injective and Surjective Functions</span></a><ul>
+<li><a href="S_injsurj.html" data-scroll="S_injsurj" class="internal">Definitions and Notation</a></li>
+<li><a href="S_injsurj_proofs.html" data-scroll="S_injsurj_proofs" class="internal">Some Examples and Proofs</a></li>
+<li><a href="S_injsurj_exer.html" data-scroll="S_injsurj_exer" class="internal">Practice Problems for Chapter 7</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="app_guidelines.html" data-scroll="app_guidelines" class="internal"><span class="codenumber">A</span> <span class="title">Guidelines for Writing Mathematical Proofs</span></a></li>
+<li class="link"><a href="app_solutions.html" data-scroll="app_solutions" class="internal"><span class="codenumber">B</span> <span class="title">Answers and Hints for the Practice Problems</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="S_divalgo"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Using Cases with the Division Algorithm</span>
+</h2>
+<p id="p-196">An important result for the set of integers is known as the Division Algorithm. This is somewhat of a misnomer since it is stated in terms of addition and multiplication. The reason for this is that the set of integers is closed under addition and multiplication but is not closed under division. However, we have known for some time that when we divide one integer by another nonzero integer, we get a quotient and a remainder. For example, when we divide 337 by 6, we often write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{337}{6} = 56 + \frac{1}{6}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">When we multiply both sides of this equation by 6, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+337 = 6 \cdot 56 + 1\text{.}
+\end{equation*}
+</div>
+<p class="continuation">When we are working within the system of integers, the second equation is preferred over the first since the second one uses only integers and the operations of addition and multiplication, and the integers are closed under addition and multiplication. Following is a complete statement of the Division Algorithm.</p>
+<article class="assemblage assemblage-like" id="div-algo"><h3 class="heading"><span class="title">The Division Algorithm.</span></h3>
+<p id="p-197">For all integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> with <span class="process-math">\(b \gt 0\text{,}\)</span> there exist unique integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a = bq + r \text{ and } 0 \leq r \lt b\text{.}
+\end{equation*}
+</div></article><p id="p-198">So when we speak of <dfn class="terminology">the quotient</dfn> and <dfn class="terminology">the remainder</dfn> when we “divide an integer <span class="process-math">\(a\)</span> by the positive integer <span class="process-math">\(b\text{,}\)</span>” we will always mean the quotient <span class="process-math">\((q)\)</span> and the remainder <span class="process-math">\((r)\)</span> guaranteed by the Division Algorithm. So the remainder <span class="process-math">\(r\)</span> is the least nonnegative integer such that there exists an integer (quotient) <span class="process-math">\(q\)</span> with <span class="process-math">\(a = bq + r\text{.}\)</span></p>
+<p id="p-199">The Division Algorithm can sometimes be used to construct cases that can be used to prove a statement that is true for all integers. We have done this when we divided the integers into the even integers and the odd integers since even integers have a remainder of 0 when divided by 2 and odd integers have a remainder of 1 when divided by 2.</p>
+<p id="p-200">Sometimes it is more useful to divide the integer <span class="process-math">\(a\)</span> by an integer other than 2. For example, if <span class="process-math">\(a\)</span> is divided by 3, there are three possible remainders: 0, 1, and 2. If <span class="process-math">\(a\)</span> is divided by 4, there are four possible remainders: 0, 1, 2, and 3. The remainders form the basis for the cases.</p>
+<p id="p-201">If the hypothesis of a proposition is that “<span class="process-math">\(n\)</span> is an integer,” then we can use the Division Algorithm to claim that there are unique integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/prop-3divides-cubed.html">
+\begin{equation*}
+n = 3q + r \text{ and } 0 \leq r \lt 3
+\end{equation*}
+</div>
+<p class="continuation">We can then divide the proof into the following three cases: (1) <span class="process-math">\(r = 0\text{;}\)</span> (2) <span class="process-math">\(r = 1\text{;}\)</span> and (3) <span class="process-math">\(r = 2\text{.}\)</span> This is done in <a href="" class="xref" data-knowl="./knowl/prop-3divides-cubed.html" title="Proposition 5.3">Proposition 5.3</a>.</p>
+<article class="proposition theorem-like" id="prop-3divides-cubed"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span>
+</h3>
+<p id="p-202">If <span class="process-math">\(n\)</span> is an integer, then 3 divides <span class="process-math">\(n^3 - n\text{.}\)</span></p></article><article class="proof" id="proof-20"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<p id="p-203">Let <span class="process-math">\(n\)</span> be an integer. We will show that 3 divides <span class="process-math">\(n^3 - n\)</span> by examining the three cases for the remainder when <span class="process-math">\(n\)</span> is divided by 3. By the Division Algorithm, there exist unique integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+n = 3q + r \text{ and } 0 \leq r \lt 3
+\end{equation*}
+</div>
+<p class="continuation">This means that we can consider the following three cases: (1) <span class="process-math">\(r = 0\text{;}\)</span> (2) <span class="process-math">\(r = 1\text{;}\)</span> and (3) <span class="process-math">\(r = 2\text{.}\)</span></p>
+<p id="p-204">In the case where <span class="process-math">\(r = 0\text{,}\)</span> we have <span class="process-math">\(n = 3q\text{.}\)</span> By substituting this into the expression <span class="process-math">\(n^3 - n\text{,}\)</span> we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-25">
+\begin{align*}
+n^3 - n \amp = (3q)^3 - (3q)\\
+\amp = 27q^3 - 3q\\
+\amp = 3 (9q^3 - q)
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(9q^3 - q\)</span> is an integer, the last equation proves that <span class="process-math">\(3 | n^3 - n\text{.}\)</span></p>
+<p id="p-205">In the second case, <span class="process-math">\(r = 1\)</span> and <span class="process-math">\(n = 3q + 1\text{.}\)</span> When we substitute this into <span class="process-math">\((n^3 - n )\text{,}\)</span> we obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-26">
+\begin{align*}
+n^3 - n \amp = (3q + 1)^3 - (3q + 1)\\
+\amp = ( 27q^3 + 27q^2 + 9q + 1) - (3q + 1)\\
+\amp = 27q^3 + 27q^2 + 6q\\
+\amp = 3 (9q^3 + 9q^2 + 2q)
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(9q^3 + 9q^2 + 2q\)</span> is an integer, the last equation proves that <span class="process-math">\(3 | (n^3 + n)\text{.}\)</span></p>
+<p id="p-206">The last case is when <span class="process-math">\(r=2\text{.}\)</span> The details for this case are part of <a href="" class="xref" data-knowl="./knowl/exer-case3.html" title="Exercise 5.3.2">Exercise 5.3.2</a>. Once this case is completed, we will have proved that 3 divides <span class="process-math">\(n^3 - n\)</span> in all three cases. Hence, we may conclude that if <span class="process-math">\(n\)</span> is an integer, then 3 divides <span class="process-math">\(n^3 - n\text{.}\)</span></p></article></section></div></main>
+</div>
+</body>
+</html>

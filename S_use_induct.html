@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:11-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Using the Principle of Mathematical Induction</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Constructing and Writing Mathematical Proofs">
+<meta property="book:author" content="Ted Sundstrom, Professor Emeritus">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom_style.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\notmodulo}[3]{#1 \not \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\dom}[1]{\text{ dom} ( #1 )}
+\newcommand{\codom}[1]{\text{ codom} ( #1 )}
+\newcommand{\range}[1]{\text{ range} ( #1 )}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="proofs-guide.html"><span class="title">Constructing and Writing Mathematical Proofs:</span> <span class="subtitle">A Guide for Mathematics Students</span></a></h1>
+<p class="byline">Ted Sundstrom, Professor Emeritus</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="C_induction.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C_induction.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="S_induct_extend.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="C_induction.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C_induction.html" title="Up">Up</a><a class="next-button button toolbar-item" href="S_induct_extend.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Note to Students</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_preliminaries.html" data-scroll="C_preliminaries" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="S_definitions.html" data-scroll="S_definitions" class="internal">Definitions</a></li>
+<li><a href="S_prooflogic.html" data-scroll="S_prooflogic" class="internal">Useful Logic for Constructing Proofs</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_directproofs.html" data-scroll="C_directproofs" class="internal"><span class="codenumber">2</span> <span class="title">Direct Proofs</span></a><ul>
+<li><a href="S_cong_divides.html" data-scroll="S_cong_divides" class="internal">Using the Definitions of Congruence and Divides</a></li>
+<li><a href="S_direct_sets.html" data-scroll="S_direct_sets" class="internal">A Direct Proof Involving Sets</a></li>
+<li><a href="S_direct_exer.html" data-scroll="S_direct_exer" class="internal">Practice Problems for Chapter 2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_othermethods.html" data-scroll="C_othermethods" class="internal"><span class="codenumber">3</span> <span class="title">Some Other Methods of Proof</span></a><ul>
+<li><a href="S_contrapositive.html" data-scroll="S_contrapositive" class="internal">Using the Contrapositive</a></li>
+<li><a href="S_otherlogequiv.html" data-scroll="S_otherlogequiv" class="internal">Using Other Logical Equivalencies</a></li>
+<li><a href="S_bicond.html" data-scroll="S_bicond" class="internal">Proofs of Biconditional Statements</a></li>
+<li><a href="S_other_exer.html" data-scroll="S_other_exer" class="internal">Practice Problems for Chapter 3</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_contradiction.html" data-scroll="C_contradiction" class="internal"><span class="codenumber">4</span> <span class="title">Proof by Contradiction</span></a><ul>
+<li><a href="S_contra_examp.html" data-scroll="S_contra_examp" class="internal">Explanation and an Example</a></li>
+<li><a href="S_dne.html" data-scroll="S_dne" class="internal">Proving that Something Does Not Exist</a></li>
+<li><a href="S_rational.html" data-scroll="S_rational" class="internal">Rational and Irrational Numbers</a></li>
+<li><a href="S_exer_contra.html" data-scroll="S_exer_contra" class="internal">Practice Problems for Chapter 4</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_cases.html" data-scroll="C_cases" class="internal"><span class="codenumber">5</span> <span class="title">Using Cases in Proofs</span></a><ul>
+<li><a href="S_commoncases.html" data-scroll="S_commoncases" class="internal">Some Common Situations to Use Cases</a></li>
+<li><a href="S_divalgo.html" data-scroll="S_divalgo" class="internal">Using Cases with the Division Algorithm</a></li>
+<li><a href="S_cases_exer.html" data-scroll="S_cases_exer" class="internal">Practice Problems for Chapter 5</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_induction.html" data-scroll="C_induction" class="internal"><span class="codenumber">6</span> <span class="title">Mathematical Induction</span></a><ul>
+<li><a href="S_use_induct.html" data-scroll="S_use_induct" class="active">Using the Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_extend.html" data-scroll="S_induct_extend" class="internal">The Extended Principle of Mathematical Induction</a></li>
+<li><a href="S_second_induct.html" data-scroll="S_second_induct" class="internal">The Second Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_exer.html" data-scroll="S_induct_exer" class="internal">Practice Problems for Chapter 6</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_injsurj.html" data-scroll="C_injsurj" class="internal"><span class="codenumber">7</span> <span class="title">Injective and Surjective Functions</span></a><ul>
+<li><a href="S_injsurj.html" data-scroll="S_injsurj" class="internal">Definitions and Notation</a></li>
+<li><a href="S_injsurj_proofs.html" data-scroll="S_injsurj_proofs" class="internal">Some Examples and Proofs</a></li>
+<li><a href="S_injsurj_exer.html" data-scroll="S_injsurj_exer" class="internal">Practice Problems for Chapter 7</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="app_guidelines.html" data-scroll="app_guidelines" class="internal"><span class="codenumber">A</span> <span class="title">Guidelines for Writing Mathematical Proofs</span></a></li>
+<li class="link"><a href="app_solutions.html" data-scroll="app_solutions" class="internal"><span class="codenumber">B</span> <span class="title">Answers and Hints for the Practice Problems</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="S_use_induct"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Using the Principle of Mathematical Induction</span>
+</h2>
+<p id="p-224">The primary use of the Principle of Mathematical Induction is to prove statements of the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+( \forall n \in \N)(P(n))
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(P(n)\)</span> is some open sentence. Recall that a universally quantified statement like the preceding one is true if and only if the truth set <span class="process-math">\(T\)</span> of the open sentence <span class="process-math">\(P(n)\)</span> is the set <span class="process-math">\(N\text{.}\)</span> So our goal is to prove that <span class="process-math">\(T = \N\text{,}\)</span> which is the conclusion of the Principle of Mathematical Induction. To verify the hypothesis of the Principle of Mathematical Induction, we must</p>
+<ol class="decimal">
+<li id="li-35"><p id="p-225">Prove that <span class="process-math">\(1 \in T\text{.}\)</span> That is, prove that <span class="process-math">\(P(n)\)</span> is true.</p></li>
+<li id="li-36"><p id="p-226">Prove that if <span class="process-math">\(k \in T\text{,}\)</span> then <span class="process-math">\((k + 1) \in T\text{.}\)</span> That is, prove that if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true.</p></li>
+</ol>
+<p class="continuation">The first step is called the <dfn class="terminology">basis step</dfn> or the <dfn class="terminology">initial step</dfn>, and the second step is called the <dfn class="terminology">inductive step</dfn>. This means that a proof by mathematical induction will have the following form:</p>
+<article class="assemblage assemblage-like" id="assemblage-17"><h3 class="heading"><span class="title">Procedure for a Proof by Mathematical Induction.</span></h3>
+<p id="p-227">To prove: <span class="process-math">\(( \forall n \in \N)(P(n))\)</span></p>
+<dl class="description-list">
+<dt id="li-37">Basis step:</dt>
+<dd><p id="p-228">Prove <span class="process-math">\(P(1)\text{.}\)</span></p></dd>
+<dt id="li-38">Inductive step:</dt>
+<dd><p id="p-229">Prove that for each <span class="process-math">\(k \in N\text{,}\)</span> if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true.</p></dd>
+</dl>
+<p class="continuation">We can then conclude that <span class="process-math">\(P (n)\)</span> is true for all <span class="process-math">\(n \in N\text{.}\)</span></p></article><p id="p-230">Note that in the inductive step, we want to prove that the conditional statement “for each <span class="process-math">\(k \in N\text{,}\)</span> if <span class="process-math">\(P (k)\)</span> then <span class="process-math">\(P (k + 1)\)</span>” is true. So we will start the inductive step by assuming that <span class="process-math">\(P (k)\)</span> is true. This assumption is called the <dfn class="terminology">inductive assumption</dfn> or the <dfn class="terminology">inductive hypothesis</dfn>.</p>
+<p id="p-231">The key to constructing a proof of the inductive step is to discover how <span class="process-math">\(P (k + 1)/\)</span> is related to <span class="process-math">\(P (k)\)</span> for an arbitrary natural number <span class="process-math">\(k\text{.}\)</span> This is why it is important to write down explicitly what <span class="process-math">\(P (k)\)</span> and <span class="process-math">\(P (k + 1)\)</span> are within the proof. Notice how this is done in the proof of the following proposition.</p>
+<article class="proposition theorem-like" id="prop-sum-sq"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">6.1</span><span class="period">.</span>
+</h3>
+<p id="p-232">For each natural number <span class="process-math">\(n\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}\text{.}
+\end{equation*}
+</div></article><article class="proof" id="proof-23"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<p id="p-233">We will use a proof by mathematical induction. For each natural number <span class="process-math">\(n\text{,}\)</span> we let <span class="process-math">\(P (n)\)</span> be</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We first prove that <span class="process-math">\(P (1)\)</span> is true. Notice that <span class="process-math">\(\frac{1(1 + 1)(2 \cdot 1 + 1)}{6} = 1\text{.}\)</span> This shows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1^2 = \frac{1(1 + 1)(2 \cdot 1 + 1)}{6}
+\end{equation*}
+</div>
+<p class="continuation">which proves that <span class="process-math">\(P(1)\)</span> is true.</p>
+<p id="p-234">For the inductive step, we prove that for each <span class="process-math">\(k \in N\text{,}\)</span> if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true. So let <span class="process-math">\(k\)</span> be a natural number and assume that <span class="process-math">\(P (k)\)</span> is true. That is, assume that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html" id="eqn-sumk-sq">
+\begin{equation}
+1^2 + 2^2 + \cdots + k^2 = \frac{k (k + 1)(2k + 1)}{6}\tag{6}
+\end{equation}
+</div>
+<p class="continuation">The goal now is to prove that <span class="process-math">\(P (k + 1)\)</span> is true. That is, is must be proved that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html" id="mdn-3">
+\begin{align}
+1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 \amp = \frac{(k + 1)[(k + 1) +1][(2(k + 1) + 1]}{6}\notag\\
+\amp = \frac{(k + 1)(k + 2)(2k + 3)}{6}\tag{7}
+\end{align}
+</div>
+<p class="continuation">To do this, we add <span class="process-math">\((k + 1)^2\)</span> to both sides of equation <a href="" class="xref" data-knowl="./knowl/eqn-sumk-sq.html" title="Equation 6">(6)</a> and algebraically rewrite the right side of the resulting equation. This gives</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html" id="md-30">
+\begin{align*}
+1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 \amp = \frac{k (k + 1)(2k + 1)}{6} + (k + 1)^2\\
+\amp = \frac{k (k + 1)(2k + 1) + 6(k + 1)^2}{6}\\
+\amp = \frac{(k + 1)[k(2k + 1) + 6(k + 1)]}{6}\\
+\amp = \frac{(k + 1)(2k^2 + 7k + 6)}{6}\\
+\amp = \frac{(k + 1)(k+ 2)(2k + 3)}{6}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Comparing this result to equation <a href="" class="xref" data-knowl="./knowl/eqn-sumk1-sq.html" title="Equation 7">(7)</a>, we see that if <span class="process-math">\(P (k)\)</span> is true, then <span class="process-math">\(P (k + 1)\)</span> is true. Hence, the inductive step has been established, and by the Principle of Mathematical Induction, we have proved that for each natural number <span class="process-math">\(n\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sumk-sq.html ./knowl/eqn-sumk1-sq.html">
+\begin{equation*}
+1^2 + 2^2 + \cdots + n^2 = \frac{n (n + 1)(2n + 1)}{6}
+\end{equation*}
+</div></article></section></div></main>
+</div>
+</body>
+</html>

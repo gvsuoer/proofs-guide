@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-08-09T15:07:11-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Practice Problems for Chapter 5</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Constructing and Writing Mathematical Proofs">
+<meta property="book:author" content="Ted Sundstrom, Professor Emeritus">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom_style.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\newcommand{\modulo}[3]{#1 \equiv #2 \pmod #3}
+\newcommand{\notmodulo}[3]{#1 \not \equiv #2 \pmod #3}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\dom}[1]{\text{ dom} ( #1 )}
+\newcommand{\codom}[1]{\text{ codom} ( #1 )}
+\newcommand{\range}[1]{\text{ range} ( #1 )}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="proofs-guide.html"><span class="title">Constructing and Writing Mathematical Proofs:</span> <span class="subtitle">A Guide for Mathematics Students</span></a></h1>
+<p class="byline">Ted Sundstrom, Professor Emeritus</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="S_divalgo.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C_cases.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="C_induction.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="S_divalgo.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C_cases.html" title="Up">Up</a><a class="next-button button toolbar-item" href="C_induction.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Note to Students</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_preliminaries.html" data-scroll="C_preliminaries" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="S_definitions.html" data-scroll="S_definitions" class="internal">Definitions</a></li>
+<li><a href="S_prooflogic.html" data-scroll="S_prooflogic" class="internal">Useful Logic for Constructing Proofs</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_directproofs.html" data-scroll="C_directproofs" class="internal"><span class="codenumber">2</span> <span class="title">Direct Proofs</span></a><ul>
+<li><a href="S_cong_divides.html" data-scroll="S_cong_divides" class="internal">Using the Definitions of Congruence and Divides</a></li>
+<li><a href="S_direct_sets.html" data-scroll="S_direct_sets" class="internal">A Direct Proof Involving Sets</a></li>
+<li><a href="S_direct_exer.html" data-scroll="S_direct_exer" class="internal">Practice Problems for Chapter 2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_othermethods.html" data-scroll="C_othermethods" class="internal"><span class="codenumber">3</span> <span class="title">Some Other Methods of Proof</span></a><ul>
+<li><a href="S_contrapositive.html" data-scroll="S_contrapositive" class="internal">Using the Contrapositive</a></li>
+<li><a href="S_otherlogequiv.html" data-scroll="S_otherlogequiv" class="internal">Using Other Logical Equivalencies</a></li>
+<li><a href="S_bicond.html" data-scroll="S_bicond" class="internal">Proofs of Biconditional Statements</a></li>
+<li><a href="S_other_exer.html" data-scroll="S_other_exer" class="internal">Practice Problems for Chapter 3</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_contradiction.html" data-scroll="C_contradiction" class="internal"><span class="codenumber">4</span> <span class="title">Proof by Contradiction</span></a><ul>
+<li><a href="S_contra_examp.html" data-scroll="S_contra_examp" class="internal">Explanation and an Example</a></li>
+<li><a href="S_dne.html" data-scroll="S_dne" class="internal">Proving that Something Does Not Exist</a></li>
+<li><a href="S_rational.html" data-scroll="S_rational" class="internal">Rational and Irrational Numbers</a></li>
+<li><a href="S_exer_contra.html" data-scroll="S_exer_contra" class="internal">Practice Problems for Chapter 4</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_cases.html" data-scroll="C_cases" class="internal"><span class="codenumber">5</span> <span class="title">Using Cases in Proofs</span></a><ul>
+<li><a href="S_commoncases.html" data-scroll="S_commoncases" class="internal">Some Common Situations to Use Cases</a></li>
+<li><a href="S_divalgo.html" data-scroll="S_divalgo" class="internal">Using Cases with the Division Algorithm</a></li>
+<li><a href="S_cases_exer.html" data-scroll="S_cases_exer" class="active">Practice Problems for Chapter 5</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_induction.html" data-scroll="C_induction" class="internal"><span class="codenumber">6</span> <span class="title">Mathematical Induction</span></a><ul>
+<li><a href="S_use_induct.html" data-scroll="S_use_induct" class="internal">Using the Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_extend.html" data-scroll="S_induct_extend" class="internal">The Extended Principle of Mathematical Induction</a></li>
+<li><a href="S_second_induct.html" data-scroll="S_second_induct" class="internal">The Second Principle of Mathematical Induction</a></li>
+<li><a href="S_induct_exer.html" data-scroll="S_induct_exer" class="internal">Practice Problems for Chapter 6</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C_injsurj.html" data-scroll="C_injsurj" class="internal"><span class="codenumber">7</span> <span class="title">Injective and Surjective Functions</span></a><ul>
+<li><a href="S_injsurj.html" data-scroll="S_injsurj" class="internal">Definitions and Notation</a></li>
+<li><a href="S_injsurj_proofs.html" data-scroll="S_injsurj_proofs" class="internal">Some Examples and Proofs</a></li>
+<li><a href="S_injsurj_exer.html" data-scroll="S_injsurj_exer" class="internal">Practice Problems for Chapter 7</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="app_guidelines.html" data-scroll="app_guidelines" class="internal"><span class="codenumber">A</span> <span class="title">Guidelines for Writing Mathematical Proofs</span></a></li>
+<li class="link"><a href="app_solutions.html" data-scroll="app_solutions" class="internal"><span class="codenumber">B</span> <span class="title">Answers and Hints for the Practice Problems</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="S_cases_exer"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Practice Problems for Chapter 5</span>
+</h2>
+<section class="exercises" id="exercises-4"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title"></span>
+</h3>
+<article class="exercise exercise-like" id="exercise-13"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-8"><p id="p-207">Consider the following proposition: <blockquote class="blockquote" id="blockquote-22">Proposition. For each integer <span class="process-math">\(a\text{,}\)</span> if 3 divides <span class="process-math">\(a^2\text{,}\)</span> then 3 divides <span class="process-math">\(a\text{.}\)</span>
+</blockquote></p></div>
+<article class="task exercise-like" id="task-8"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<p id="p-208">Write the contrapositive of this proposition.</p></article><article class="task exercise-like" id="task-9"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<p id="p-209">Prove the proposition by proving its contrapositive.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-210">Consider using cases based on the Division Algorithm using the remainder for “division by 3.” There will be two cases since the hypothesis of the contrapositive is, “3 does not divide <span class="process-math">\(a\text{.}\)</span>”</p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><article class="proof" id="proof-21"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6>
+<p id="p-211">We will prove the contrapositive of this proposition, which is: <blockquote class="blockquote" id="blockquote-23">For each integer <span class="process-math">\(a\text{,}\)</span> if 3 does not divide <span class="process-math">\(a\text{,}\)</span> then 3 does not divide <span class="process-math">\(a^2\)</span>
+</blockquote> So we let <span class="process-math">\(a\)</span> be an integer, assume that 3 does not divide <span class="process-math">\(a\text{,}\)</span> and will prove that 3 does not divide <span class="process-math">\(a^2\text{.}\)</span> Since 3 does not divide <span class="process-math">\(a\text{,}\)</span> we can use the Division Algorithm to conclude that there exists an integer <span class="process-math">\(q\)</span> such that <span class="process-math">\(a = 3q + 1\)</span> or <span class="process-math">\(a = 3q + 2\text{.}\)</span></p>
+<p id="p-212">For the case where <span class="process-math">\(a = 3q + 1\text{,}\)</span> we obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-27">
+\begin{align*}
+a^2 \amp = (3q + 1)^2\\
+\amp = 9q^2 + 6q + 1\\
+\amp = 3 ( 3q^2 + 2q) + 1
+\end{align*}
+</div>
+<p class="continuation">By the closure properties of the integers <span class="process-math">\(( 3q^2 + 2q)\)</span> is an integer, and so the last equation means that <span class="process-math">\(a^2\)</span> has a remainder of 1 when divided by 3 and so 3 does not divide <span class="process-math">\(a^2\text{.}\)</span></p>
+<p id="p-213">For the case where <span class="process-math">\(a = 3q + 2\text{,}\)</span> we obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-28">
+\begin{align*}
+a^2 \amp = (3q + 2)^2\\
+\amp = 9q^2 + 12q + 4\\
+\amp = 3 ( 3q^2 + 4q + 1) + 1
+\end{align*}
+</div>
+<p class="continuation">By the closure properties of the integers <span class="process-math">\(( 3q^2 + 4q + 1)\)</span> is an integer, and so the last equation means that <span class="process-math">\(a^2\)</span> has a remainder of 1 when divided by 3 and so 3 does not divide <span class="process-math">\(a^2\text{.}\)</span></p>
+<p id="p-214">Since we have proved that 3 does not divide <span class="process-math">\(a^2\)</span> in both cases, we have proved the contrapositive of the proposition, and hence, we have proved that for each integer <span class="process-math">\(a\text{,}\)</span> if 3 divides <span class="process-math">\(a^2\)</span> , then 3 divides <span class="process-math">\(a\text{.}\)</span></p></article></div></div>
+</div></article></article><article class="exercise exercise-like" id="exer-case3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<p id="p-215">Complete the details for the proof of Case 3 of <a href="" class="xref" data-knowl="./knowl/prop-3divides-cubed.html" title="Proposition 5.3">Proposition 5.3</a>.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like">
+<p id="p-216">For the third case, <span class="process-math">\(n = 3q + 2\)</span> and <span class="process-math">\(r = 2\text{.}\)</span> When we substitute this into <span class="process-math">\((n^3 - n)\text{,}\)</span> we obtain</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-29">
+\begin{align*}
+n^3 - n \amp = (3q + 2)^3 - (3q + 2)\\
+\amp = ( 27 q^3 + 54q^2+ 36q + 8) - (3q + 2)\\
+\amp = 27 q^3 + 54q^2 + 33q + 6\\
+\amp = 3 (9q^3 + 18q^2 + 11q + 2)\text{.}
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(9q^3 + 18q^2 + 11q + 2\)</span> is an integer, the last equation proves that <span class="process-math">\(3 \ | \ (n^3 - n)\text{.}\)</span></p>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-15"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<p id="p-217">Is the following proposition true or false? Justify your conclusion with a counterexample or proof. <blockquote class="blockquote" id="blockquote-24">For each integer <span class="process-math">\(n\text{,}\)</span> if <span class="process-math">\(n\)</span> is odd, then 8 divides <span class="process-math">\(n^2 - 1\text{.}\)</span>
+</blockquote></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><article class="proof" id="proof-22"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5>
+<p id="p-218">We let <span class="process-math">\(n\)</span> be an integer, assume that <span class="process-math">\(n\)</span> is odd, and will prove that 8 divides <span class="process-math">\(n\)</span> 21. Since <span class="process-math">\(n\)</span> is odd, there exists an integer <span class="process-math">\(k\)</span> such that <span class="process-math">\(n = 2k + 1\text{.}\)</span> We then see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-4kk1.html" id="mdn-2">
+\begin{align}
+n^2 - 1 \amp = (2k + 1)^2 - 1\notag\\
+\amp = 4k^2 + 4k\notag\\
+\amp = 4k (k + 1)\tag{5}
+\end{align}
+</div>
+<p class="continuation">We also know since <span class="process-math">\(k\)</span> is an integer, either <span class="process-math">\(k\)</span> or <span class="process-math">\(k + 1\)</span> is even. In either case, the product <span class="process-math">\(k(k + 1)\)</span> must be even and so there exists an integer <span class="process-math">\(q\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-4kk1.html">
+\begin{equation*}
+k (k + 1) = 2q
+\end{equation*}
+</div>
+<p class="continuation">Substituting this into the right side of equation <a href="" class="xref" data-knowl="./knowl/eqn-4kk1.html" title="Equation 5">(5)</a>, we obtain <span class="process-math">\(n^2 - 1 = 8q\)</span> and so 8 divides <span class="process-math">\(n^2 - 1\text{.}\)</span> This proves that for each integer <span class="process-math">\(n\text{,}\)</span> if <span class="process-math">\(n\)</span> is odd, then 8 divides <span class="process-math">\(n^2 - 1\text{.}\)</span></p></article></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>
