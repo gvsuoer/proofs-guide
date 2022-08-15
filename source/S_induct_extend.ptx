@@ -7,13 +7,14 @@
     A little exploration shows that the following proposition appears to be true.
   </p>
   
-  <proposition xml:id="prop-factorial">
+  <assemblage xml:id="prop-factorial">
+    <title>Proposition</title>
     <statement>
       <p>
         For each integer <m>n</m> with <m>n \geq 4</m>, <m>n! > n^4</m>.
       </p>
     </statement>
-  </proposition>
+  </assemblage>
 
   <p>
     We would like to use mathematical induction to prove this, but the proposition has the added assumption that <m>n \geq 4</m>. So to do this, we use a slight modification of the Principle of Mathematical Induction called the Extended Principle of Mathematical Induction.

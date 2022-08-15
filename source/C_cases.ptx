@@ -14,13 +14,14 @@
       This is one of the logical equivalencies in <xref ref="thm-log-equiv"/>. In some other situations when we are trying to prove a proposition or a theorem about an element <m>x</m> in some set <m>U</m>, we often run into the problem that there does not seem to be enough information about <m>x</m> to proceed. For example, consider the following proposition:
     </p>
 
-    <proposition xml:id="prop-even-n2">
+    <assemblage xml:id="prop-even-n2">
+      <title>Proposition</title>
       <statement>
         <p>
           If <m>n</m> is an integer, then <m>(n^2 + n)</m> is an even integer.
         </p>
       </statement>
-    </proposition>
+    </assemblage>
 
     <p>
        If we were trying to write a direct proof of this proposition, the only thing we could assume is that <m>n</m> is an integer. This is not much help. In a situation such as this, we will sometimes construct our own cases to provide additional assumptions for the forward process of the proof. Cases are usually based on some common properties that the given element may or may not possess. The cases must be chosen so that they exhaust all possibilities for the object in the hypothesis of the proposition. For the <xref ref="prop-even-n2"/>, we know that an integer must be even or it must be odd. We can thus use the following two cases for the integer <m>n</m>:
