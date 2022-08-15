@@ -24,7 +24,7 @@
     </assemblage>
 
     <p>
-       If we were trying to write a direct proof of this proposition, the only thing we could assume is that <m>n</m> is an integer. This is not much help. In a situation such as this, we will sometimes construct our own cases to provide additional assumptions for the forward process of the proof. Cases are usually based on some common properties that the given element may or may not possess. The cases must be chosen so that they exhaust all possibilities for the object in the hypothesis of the proposition. For the <xref ref="prop-even-n2"/>, we know that an integer must be even or it must be odd. We can thus use the following two cases for the integer <m>n</m>:
+       If we were trying to write a direct proof of this proposition, the only thing we could assume is that <m>n</m> is an integer. This is not much help. In a situation such as this, we will sometimes construct our own cases to provide additional assumptions for the forward process of the proof. Cases are usually based on some common properties that the given element may or may not possess. The cases must be chosen so that they exhaust all possibilities for the object in the hypothesis of the proposition. For the <xref text='title' ref="prop-even-n2"/>, we know that an integer must be even or it must be odd. We can thus use the following two cases for the integer <m>n</m>:
        <ul>
         <li>
           <p>
