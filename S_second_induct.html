@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-08-09T16:29:14-04:00       *-->
+<!--*       on 2022-08-15T15:43:07-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -158,7 +158,7 @@
 <span class="process-math">\(n\)</span> is a prime number or <span class="process-math">\(n\)</span> is a product of prime numbers.</blockquote></p>
 <p id="p-252">Suppose we would like to use induction to prove that <span class="process-math">\(P (n)\)</span> is true for all natural numbers greater than 1. We have seen that the idea of the inductive step in a proof by induction is to prove that if one statement in an infinite list of statements is true, then the next statement must also be true. The problem here is that when we factor a composite number, we do not get to the previous case. For example, if assume that <span class="process-math">\(P (39)\)</span> is true and we want to prove that <span class="process-math">\(P (40)\)</span> is true, we could factor 40 as <span class="process-math">\(40 = 2 \cdot 20\text{.}\)</span> So the assumption that <span class="process-math">\(P (39)\)</span> is true does not help us prove that <span class="process-math">\(P (40)\)</span> is true. What we would like to do is use <span class="process-math">\(P (2)\)</span> and <span class="process-math">\(P (20)\text{.}\)</span></p>
 <p id="p-253">This work is intended to show the need for another principle of induction. In the inductive step of a proof by induction, we assume one statement is true and prove the next one is true. The idea of this new principle is to assume that <em class="emphasis">all</em> of the previous statements are true and use this assumption to prove the next statement is true. This is stated formally in terms of subsets of natural numbers in the <span class="booktitle">Second Principle of Mathematical Induction</span>.</p>
-<article class="assemblage assemblage-like" id="assemblage-20"><h3 class="heading"><span class="title">The Second Principle of Mathematical Induction.</span></h3>
+<article class="assemblage assemblage-like" id="assemblage-23"><h3 class="heading"><span class="title">The Second Principle of Mathematical Induction.</span></h3>
 <p id="p-254">Let <span class="process-math">\(M\)</span> be an integer. If <span class="process-math">\(T\)</span> is a subset of <span class="process-math">\(\Z\)</span> such that</p>
 <ol class="decimal">
 <li id="li-45"><p id="p-255"><span class="process-math">\(M \in T\text{,}\)</span> and</p></li>
@@ -176,7 +176,7 @@
 <li id="li-48"><p id="p-259">Prove that for every <span class="process-math">\(k \in \N\text{,}\)</span> if <span class="process-math">\(k \geq M\)</span> and <span class="process-math">\(\{M, M + 1, \ldots, k \} \subseteq T\text{,}\)</span> then <span class="process-math">\((k + 1) \in T\text{.}\)</span> That is, prove that if <span class="process-math">\(P(M), P(M + 1), \ldots, P(k)\)</span> are true, then <span class="process-math">\(P(k + 1)\)</span> is true.</p></li>
 </ol>
 <p id="p-260">As before, the first step is called the <dfn class="terminology">basis step</dfn> or the <dfn class="terminology">initial step</dfn>, and the second step is called the <dfn class="terminology">inductive step</dfn>. This means that a proof using the Second Principle of Mathematical Induction will have the following form:</p>
-<article class="assemblage assemblage-like" id="assemblage-21"><h3 class="heading"><span class="title">Using the Second Principle of Mathematical Induction.</span></h3>
+<article class="assemblage assemblage-like" id="assemblage-24"><h3 class="heading"><span class="title">Using the Second Principle of Mathematical Induction.</span></h3>
 <p id="p-261">Let <span class="process-math">\(M\)</span> be an integer. To prove: <span class="process-math">\(( \forall n \in \Z, \text{ with } n \geq M)(P(n))\)</span></p>
 <dl class="description-list">
 <dt id="li-49">Basis step</dt>
@@ -186,7 +186,7 @@
 </dl>
 <p class="continuation">We can then conclude that <span class="process-math">\(P (n)\)</span> is true for all <span class="process-math">\(n \in Z\)</span> with <span class="process-math">\(n \geq M\text{.}\)</span></p></article><p id="p-264">We will use this procedure to prove the proposition to prove the following proposition.</p>
 <article class="proposition theorem-like" id="prop-primes"><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">6.4</span><span class="period">.</span>
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">6.3</span><span class="period">.</span>
 </h3>
 <p id="p-265">Each natural number greater than 1 is either a prime number or is a product of prime numbers.</p></article><article class="proof" id="proof-25"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
 <p id="p-266">We will use the Second Principle of Mathematical Induction. We let <span class="process-math">\(P(n)\)</span> be <blockquote class="blockquote" id="blockquote-27">
