@@ -16,11 +16,9 @@
 
     <assemblage xml:id="prop-even-n2">
       <title>Proposition</title>
-      <statement>
         <p>
           If <m>n</m> is an integer, then <m>(n^2 + n)</m> is an even integer.
         </p>
-      </statement>
     </assemblage>
 
     <p>

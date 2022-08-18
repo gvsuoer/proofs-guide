@@ -10,11 +10,9 @@
   <assemblage xml:id="prop-mod8">
     <title>Proposition</title>
     
-    <statement>
       <p>
         For all integers <m>a</m> and <m>b</m>, if <m>\modulo{a}{5}{8}</m> and <m>\modulo{b}{6}{8}</m>, then <m>\modulo{(a + b)}{3}{8}</m>.
       </p>
-    </statement>
   </assemblage>
 
   <p>

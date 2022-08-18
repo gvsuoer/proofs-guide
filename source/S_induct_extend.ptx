@@ -9,11 +9,9 @@
   
   <assemblage xml:id="prop-factorial">
     <title>Proposition</title>
-    <statement>
       <p>
         For each integer <m>n</m> with <m>n \geq 4</m>, <m>n! > n^4</m>.
       </p>
-    </statement>
   </assemblage>
 
   <p>
@@ -89,7 +87,7 @@
   </assemblage>
 
   <p>
-    This is basically the same procedure as the one for using the Principle of Mathematical Induction. The only difference is that the basis step uses an integer <m>M</m> other than 1. For this reason, when we write a proof that uses the Extended Principle of Mathematical Induction, we often simply say we are going to use a proof by mathematical induction. We will prove Proposition 6.2 using the Extended Principle of Mathematical Induction.
+    This is basically the same procedure as the one for using the Principle of Mathematical Induction. The only difference is that the basis step uses an integer <m>M</m> other than 1. For this reason, when we write a proof that uses the Extended Principle of Mathematical Induction, we often simply say we are going to use a proof by mathematical induction. We will prove <xref ref="prop-factorial-repeated"/> using the Extended Principle of Mathematical Induction.
   </p>
 
   <proposition xml:id="prop-factorial-repeated">
